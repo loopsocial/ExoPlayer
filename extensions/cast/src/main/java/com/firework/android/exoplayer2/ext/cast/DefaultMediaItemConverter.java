@@ -20,9 +20,10 @@ import androidx.annotation.Nullable;
 import com.firework.android.exoplayer2.C;
 import com.firework.android.exoplayer2.MediaItem;
 import com.firework.android.exoplayer2.util.Assertions;
-import com.firework.android.gms.cast.MediaInfo;
-import com.firework.android.gms.cast.MediaMetadata;
-import com.firework.android.gms.cast.MediaQueueItem;
+
+import com.google.android.gms.cast.MediaInfo;
+import com.google.android.gms.cast.MediaMetadata;
+import com.google.android.gms.cast.MediaQueueItem;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.UUID;

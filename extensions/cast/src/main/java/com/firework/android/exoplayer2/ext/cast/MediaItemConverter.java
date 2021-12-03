@@ -16,7 +16,7 @@
 package com.firework.android.exoplayer2.ext.cast;
 
 import com.firework.android.exoplayer2.MediaItem;
-import com.firework.android.gms.cast.MediaQueueItem;
+import com.google.android.gms.cast.MediaQueueItem;
 
 /** Converts between {@link MediaItem} and the Cast SDK's {@link MediaQueueItem}. */
 public interface MediaItemConverter {

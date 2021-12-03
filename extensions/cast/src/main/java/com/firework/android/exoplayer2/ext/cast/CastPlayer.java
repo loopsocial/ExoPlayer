@@ -52,19 +52,19 @@ import com.firework.android.exoplayer2.util.Log;
 import com.firework.android.exoplayer2.util.MimeTypes;
 import com.firework.android.exoplayer2.util.Util;
 import com.firework.android.exoplayer2.video.VideoSize;
-import com.firework.android.gms.cast.CastStatusCodes;
-import com.firework.android.gms.cast.MediaInfo;
-import com.firework.android.gms.cast.MediaQueueItem;
-import com.firework.android.gms.cast.MediaStatus;
-import com.firework.android.gms.cast.MediaTrack;
-import com.firework.android.gms.cast.framework.CastContext;
-import com.firework.android.gms.cast.framework.CastSession;
-import com.firework.android.gms.cast.framework.SessionManager;
-import com.firework.android.gms.cast.framework.SessionManagerListener;
-import com.firework.android.gms.cast.framework.media.RemoteMediaClient;
-import com.firework.android.gms.cast.framework.media.RemoteMediaClient.MediaChannelResult;
-import com.firework.android.gms.common.api.PendingResult;
-import com.firework.android.gms.common.api.ResultCallback;
+
+import com.google.android.gms.cast.CastStatusCodes;
+import com.google.android.gms.cast.MediaInfo;
+import com.google.android.gms.cast.MediaQueueItem;
+import com.google.android.gms.cast.MediaStatus;
+import com.google.android.gms.cast.MediaTrack;
+import com.google.android.gms.cast.framework.CastContext;
+import com.google.android.gms.cast.framework.CastSession;
+import com.google.android.gms.cast.framework.SessionManager;
+import com.google.android.gms.cast.framework.SessionManagerListener;
+import com.google.android.gms.cast.framework.media.RemoteMediaClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
 import com.google.common.collect.ImmutableList;
 import java.util.List;
 import org.checkerframework.checker.nullness.compatqual.NullableType;
@@ -413,12 +413,12 @@ public final class CastPlayer extends BasePlayer {
     setPlayerStateAndNotifyIfChanged(
         playWhenReady, PLAY_WHEN_READY_CHANGE_REASON_USER_REQUEST, playbackState);
     listeners.flushEvents();
-    PendingResult<MediaChannelResult> pendingResult =
+    PendingResult<RemoteMediaClient.MediaChannelResult> pendingResult =
         playWhenReady ? remoteMediaClient.play() : remoteMediaClient.pause();
     this.playWhenReady.pendingResultCallback =
-        new ResultCallback<MediaChannelResult>() {
+        new ResultCallback<RemoteMediaClient.MediaChannelResult>() {
           @Override
-          public void onResult(MediaChannelResult mediaChannelResult) {
+          public void onResult(RemoteMediaClient.MediaChannelResult mediaChannelResult) {
             if (remoteMediaClient != null) {
               updatePlayerStateAndNotifyIfChanged(this);
               listeners.flushEvents();
@@ -531,12 +531,12 @@ public final class CastPlayer extends BasePlayer {
                 playbackParameters.speed, MIN_SPEED_SUPPORTED, MAX_SPEED_SUPPORTED));
     setPlaybackParametersAndNotifyIfChanged(actualPlaybackParameters);
     listeners.flushEvents();
-    PendingResult<MediaChannelResult> pendingResult =
+    PendingResult<RemoteMediaClient.MediaChannelResult> pendingResult =
         remoteMediaClient.setPlaybackRate(actualPlaybackParameters.speed, /* customData= */ null);
     this.playbackParameters.pendingResultCallback =
-        new ResultCallback<MediaChannelResult>() {
+        new ResultCallback<RemoteMediaClient.MediaChannelResult>() {
           @Override
-          public void onResult(MediaChannelResult mediaChannelResult) {
+          public void onResult(RemoteMediaClient.MediaChannelResult mediaChannelResult) {
             if (remoteMediaClient != null) {
               updatePlaybackRateAndNotifyIfChanged(this);
               listeners.flushEvents();
@@ -556,12 +556,12 @@ public final class CastPlayer extends BasePlayer {
     // the local state will be updated to reflect the state reported by the Cast SDK.
     setRepeatModeAndNotifyIfChanged(repeatMode);
     listeners.flushEvents();
-    PendingResult<MediaChannelResult> pendingResult =
+    PendingResult<RemoteMediaClient.MediaChannelResult> pendingResult =
         remoteMediaClient.queueSetRepeatMode(getCastRepeatMode(repeatMode), /* jsonObject= */ null);
     this.repeatMode.pendingResultCallback =
-        new ResultCallback<MediaChannelResult>() {
+        new ResultCallback<RemoteMediaClient.MediaChannelResult>() {
           @Override
-          public void onResult(MediaChannelResult mediaChannelResult) {
+          public void onResult(RemoteMediaClient.MediaChannelResult mediaChannelResult) {
             if (remoteMediaClient != null) {
               updateRepeatModeAndNotifyIfChanged(this);
               listeners.flushEvents();
@@ -1101,7 +1101,7 @@ public final class CastPlayer extends BasePlayer {
   }
 
   @Nullable
-  private PendingResult<MediaChannelResult> setMediaItemsInternal(
+  private PendingResult<RemoteMediaClient.MediaChannelResult> setMediaItemsInternal(
       MediaQueueItem[] mediaQueueItems,
       int startIndex,
       long startPositionMs,
@@ -1127,7 +1127,7 @@ public final class CastPlayer extends BasePlayer {
   }
 
   @Nullable
-  private PendingResult<MediaChannelResult> addMediaItemsInternal(MediaQueueItem[] items, int uid) {
+  private PendingResult<RemoteMediaClient.MediaChannelResult> addMediaItemsInternal(MediaQueueItem[] items, int uid) {
     if (remoteMediaClient == null || getMediaStatus() == null) {
       return null;
     }
@@ -1135,7 +1135,7 @@ public final class CastPlayer extends BasePlayer {
   }
 
   @Nullable
-  private PendingResult<MediaChannelResult> moveMediaItemsInternal(
+  private PendingResult<RemoteMediaClient.MediaChannelResult> moveMediaItemsInternal(
       int[] uids, int fromIndex, int newIndex) {
     if (remoteMediaClient == null || getMediaStatus() == null) {
       return null;
@@ -1149,7 +1149,7 @@ public final class CastPlayer extends BasePlayer {
   }
 
   @Nullable
-  private PendingResult<MediaChannelResult> removeMediaItemsInternal(int[] uids) {
+  private PendingResult<RemoteMediaClient.MediaChannelResult> removeMediaItemsInternal(int[] uids) {
     if (remoteMediaClient == null || getMediaStatus() == null) {
       return null;
     }
@@ -1461,13 +1461,13 @@ public final class CastPlayer extends BasePlayer {
     }
   }
 
-  private final class SeekResultCallback implements ResultCallback<MediaChannelResult> {
+  private final class SeekResultCallback implements ResultCallback<RemoteMediaClient.MediaChannelResult> {
 
     // We still call Listener#onSeekProcessed() for backwards compatibility with listeners that
     // don't implement onPositionDiscontinuity().
     @SuppressWarnings("deprecation")
     @Override
-    public void onResult(MediaChannelResult result) {
+    public void onResult(RemoteMediaClient.MediaChannelResult result) {
       int statusCode = result.getStatus().getStatusCode();
       if (statusCode != CastStatusCodes.SUCCESS && statusCode != CastStatusCodes.REPLACED) {
         Log.e(
@@ -1493,7 +1493,7 @@ public final class CastPlayer extends BasePlayer {
      * If {@link #value} is being masked, holds the result callback for the operation that triggered
      * the masking. Or null if {@link #value} is not being masked.
      */
-    @Nullable public ResultCallback<MediaChannelResult> pendingResultCallback;
+    @Nullable public ResultCallback<RemoteMediaClient.MediaChannelResult> pendingResultCallback;
 
     public StateHolder(T initialValue) {
       value = initialValue;

@@ -19,9 +19,10 @@ import androidx.annotation.Nullable;
 import com.firework.android.exoplayer2.C;
 import com.firework.android.exoplayer2.Format;
 import com.firework.android.exoplayer2.util.Util;
-import com.firework.android.gms.cast.CastStatusCodes;
-import com.firework.android.gms.cast.MediaInfo;
-import com.firework.android.gms.cast.MediaTrack;
+import com.google.android.gms.cast.CastStatusCodes;
+import com.google.android.gms.cast.MediaInfo;
+import com.google.android.gms.cast.MediaTrack;
+
 
 /** Utility methods for Cast integration. */
 /* package */ final class CastUtils {

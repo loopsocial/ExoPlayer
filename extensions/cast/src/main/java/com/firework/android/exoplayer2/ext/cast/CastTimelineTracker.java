@@ -18,10 +18,11 @@ package com.firework.android.exoplayer2.ext.cast;
 import android.util.SparseArray;
 import androidx.annotation.Nullable;
 import com.firework.android.exoplayer2.C;
-import com.firework.android.gms.cast.MediaInfo;
-import com.firework.android.gms.cast.MediaQueueItem;
-import com.firework.android.gms.cast.MediaStatus;
-import com.firework.android.gms.cast.framework.media.RemoteMediaClient;
+
+import com.google.android.gms.cast.MediaInfo;
+import com.google.android.gms.cast.MediaQueueItem;
+import com.google.android.gms.cast.MediaStatus;
+import com.google.android.gms.cast.framework.media.RemoteMediaClient;
 import java.util.HashSet;
 
 /**
