@@ -30,7 +30,7 @@ import com.firework.android.exoplayer2.ext.cast.CastPlayer;
 import com.firework.android.exoplayer2.ext.cast.SessionAvailabilityListener;
 import com.firework.android.exoplayer2.ui.StyledPlayerControlView;
 import com.firework.android.exoplayer2.ui.StyledPlayerView;
-import com.firework.android.gms.cast.framework.CastContext;
+import com.google.android.gms.cast.framework.CastContext;
 import java.util.ArrayList;
 
 /** Manages players and an internal media queue for the demo app. */

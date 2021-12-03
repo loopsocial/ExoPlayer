@@ -41,9 +41,10 @@ import com.firework.android.exoplayer2.MediaItem;
 import com.firework.android.exoplayer2.ui.StyledPlayerView;
 import com.firework.android.exoplayer2.util.Assertions;
 import com.firework.android.exoplayer2.util.Util;
-import com.firework.android.gms.cast.framework.CastButtonFactory;
-import com.firework.android.gms.cast.framework.CastContext;
-import com.firework.android.gms.dynamite.DynamiteModule;
+
+import com.google.android.gms.cast.framework.CastButtonFactory;
+import com.google.android.gms.cast.framework.CastContext;
+import com.google.android.gms.dynamite.DynamiteModule;
 
 /**
  * An activity that plays video using {@link ExoPlayer} and supports casting using ExoPlayer's Cast
