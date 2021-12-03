@@ -8,7 +8,7 @@ ExoPlayer.
 The easiest way to get the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:exoplayer-dash:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-dash:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media

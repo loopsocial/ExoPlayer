@@ -10,7 +10,7 @@ To play a SmoothStreaming stream, you need to depend on the SmoothStreaming
 module.
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-smoothstreaming:2.X.X'
 ~~~
 {: .language-gradle}
 

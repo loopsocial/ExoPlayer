@@ -12,7 +12,7 @@ widgets provided by `androidx.leanback:leanback`.
 The easiest way to get the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:extension-leanback:2.X.X'
+implementation 'com.firework.android.exoplayer:extension-leanback:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media

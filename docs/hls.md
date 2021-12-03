@@ -9,7 +9,7 @@ title: HLS
 To play an HLS stream, you need to depend on the HLS module.
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-hls:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-hls:2.X.X'
 ~~~
 {: .language-gradle}
 

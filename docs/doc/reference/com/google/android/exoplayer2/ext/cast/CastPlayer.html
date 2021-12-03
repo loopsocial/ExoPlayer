@@ -113,7 +113,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.google.android.exoplayer2.ext.cast</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.firework.android.exoplayer2.ext.cast</a></div>
 <h2 title="Class CastPlayer" class="title">Class CastPlayer</h2>
 </div>
 <div class="contentContainer">
@@ -121,10 +121,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="externalLink" target="_top">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../BasePlayer.html" title="class in com.google.android.exoplayer2">com.google.android.exoplayer2.BasePlayer</a></li>
+<li><a href="../../BasePlayer.html" title="class in com.firework.android.exoplayer2">com.firework.android.exoplayer2.BasePlayer</a></li>
 <li>
 <ul class="inheritance">
-<li>com.google.android.exoplayer2.ext.cast.CastPlayer</li>
+<li>com.firework.android.exoplayer2.ext.cast.CastPlayer</li>
 </ul>
 </li>
 </ul>
@@ -135,16 +135,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../Player.html" title="interface in com.google.android.exoplayer2">Player</a></code></dd>
+<dd><code><a href="../../Player.html" title="interface in com.firework.android.exoplayer2">Player</a></code></dd>
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">CastPlayer</span>
-extends <a href="../../BasePlayer.html" title="class in com.google.android.exoplayer2">BasePlayer</a></pre>
-<div class="block"><a href="../../Player.html" title="interface in com.google.android.exoplayer2"><code>Player</code></a> implementation that communicates with a Cast receiver app.
+extends <a href="../../BasePlayer.html" title="class in com.firework.android.exoplayer2">BasePlayer</a></pre>
+<div class="block"><a href="../../Player.html" title="interface in com.firework.android.exoplayer2"><code>Player</code></a> implementation that communicates with a Cast receiver app.
 
  <p>The behavior of this class depends on the underlying Cast session, which is obtained from the
  injected <code>CastContext</code>. To keep track of the session, <a href="#isCastSessionAvailable()"><code>isCastSessionAvailable()</code></a> can
- be queried and <a href="SessionAvailabilityListener.html" title="interface in com.google.android.exoplayer2.ext.cast"><code>SessionAvailabilityListener</code></a> can be implemented and attached to the player.
+ be queried and <a href="SessionAvailabilityListener.html" title="interface in com.firework.android.exoplayer2.ext.cast"><code>SessionAvailabilityListener</code></a> can be implemented and attached to the player.
 
  <p>If no session is available, the player state will remain unchanged and calls to methods that
  alter it will be ignored. Querying the player state is possible even when no session is
@@ -165,11 +165,11 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </a>
 <h3>Nested Class Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="nested.classes.inherited.from.class.com.google.android.exoplayer2.Player">
+<li class="blockList"><a id="nested.classes.inherited.from.class.com.firework.android.exoplayer2.Player">
 <!--   -->
 </a>
-<h3>Nested classes/interfaces inherited from interface&nbsp;com.google.android.exoplayer2.<a href="../../Player.html" title="interface in com.google.android.exoplayer2">Player</a></h3>
-<code><a href="../../Player.Command.html" title="annotation in com.google.android.exoplayer2">Player.Command</a>, <a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2">Player.Commands</a>, <a href="../../Player.DiscontinuityReason.html" title="annotation in com.google.android.exoplayer2">Player.DiscontinuityReason</a>, <a href="../../Player.Event.html" title="annotation in com.google.android.exoplayer2">Player.Event</a>, <a href="../../Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a>, <a href="../../Player.Events.html" title="class in com.google.android.exoplayer2">Player.Events</a>, <a href="../../Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a>, <a href="../../Player.MediaItemTransitionReason.html" title="annotation in com.google.android.exoplayer2">Player.MediaItemTransitionReason</a>, <a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.google.android.exoplayer2">Player.PlaybackSuppressionReason</a>, <a href="../../Player.PlayWhenReadyChangeReason.html" title="annotation in com.google.android.exoplayer2">Player.PlayWhenReadyChangeReason</a>, <a href="../../Player.PositionInfo.html" title="class in com.google.android.exoplayer2">Player.PositionInfo</a>, <a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2">Player.RepeatMode</a>, <a href="../../Player.State.html" title="annotation in com.google.android.exoplayer2">Player.State</a>, <a href="../../Player.TimelineChangeReason.html" title="annotation in com.google.android.exoplayer2">Player.TimelineChangeReason</a></code></li>
+<h3>Nested classes/interfaces inherited from interface&nbsp;com.firework.android.exoplayer2.<a href="../../Player.html" title="interface in com.firework.android.exoplayer2">Player</a></h3>
+<code><a href="../../Player.Command.html" title="annotation in com.firework.android.exoplayer2">Player.Command</a>, <a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2">Player.Commands</a>, <a href="../../Player.DiscontinuityReason.html" title="annotation in com.firework.android.exoplayer2">Player.DiscontinuityReason</a>, <a href="../../Player.Event.html" title="annotation in com.firework.android.exoplayer2">Player.Event</a>, <a href="../../Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a>, <a href="../../Player.Events.html" title="class in com.firework.android.exoplayer2">Player.Events</a>, <a href="../../Player.Listener.html" title="interface in com.firework.android.exoplayer2">Player.Listener</a>, <a href="../../Player.MediaItemTransitionReason.html" title="annotation in com.firework.android.exoplayer2">Player.MediaItemTransitionReason</a>, <a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.firework.android.exoplayer2">Player.PlaybackSuppressionReason</a>, <a href="../../Player.PlayWhenReadyChangeReason.html" title="annotation in com.firework.android.exoplayer2">Player.PlayWhenReadyChangeReason</a>, <a href="../../Player.PositionInfo.html" title="class in com.firework.android.exoplayer2">Player.PositionInfo</a>, <a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2">Player.RepeatMode</a>, <a href="../../Player.State.html" title="annotation in com.firework.android.exoplayer2">Player.State</a>, <a href="../../Player.TimelineChangeReason.html" title="annotation in com.firework.android.exoplayer2">Player.TimelineChangeReason</a></code></li>
 </ul>
 </li>
 </ul>
@@ -200,17 +200,17 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.google.android.exoplayer2.BasePlayer">
+<li class="blockList"><a id="fields.inherited.from.class.com.firework.android.exoplayer2.BasePlayer">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.google.android.exoplayer2.<a href="../../BasePlayer.html" title="class in com.google.android.exoplayer2">BasePlayer</a></h3>
+<h3>Fields inherited from class&nbsp;com.firework.android.exoplayer2.<a href="../../BasePlayer.html" title="class in com.firework.android.exoplayer2">BasePlayer</a></h3>
 <code><a href="../../BasePlayer.html#window">window</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.google.android.exoplayer2.Player">
+<li class="blockList"><a id="fields.inherited.from.class.com.firework.android.exoplayer2.Player">
 <!--   -->
 </a>
-<h3>Fields inherited from interface&nbsp;com.google.android.exoplayer2.<a href="../../Player.html" title="interface in com.google.android.exoplayer2">Player</a></h3>
+<h3>Fields inherited from interface&nbsp;com.firework.android.exoplayer2.<a href="../../Player.html" title="interface in com.firework.android.exoplayer2">Player</a></h3>
 <code><a href="../../Player.html#COMMAND_ADJUST_DEVICE_VOLUME">COMMAND_ADJUST_DEVICE_VOLUME</a>, <a href="../../Player.html#COMMAND_CHANGE_MEDIA_ITEMS">COMMAND_CHANGE_MEDIA_ITEMS</a>, <a href="../../Player.html#COMMAND_GET_AUDIO_ATTRIBUTES">COMMAND_GET_AUDIO_ATTRIBUTES</a>, <a href="../../Player.html#COMMAND_GET_CURRENT_MEDIA_ITEM">COMMAND_GET_CURRENT_MEDIA_ITEM</a>, <a href="../../Player.html#COMMAND_GET_DEVICE_VOLUME">COMMAND_GET_DEVICE_VOLUME</a>, <a href="../../Player.html#COMMAND_GET_MEDIA_ITEMS_METADATA">COMMAND_GET_MEDIA_ITEMS_METADATA</a>, <a href="../../Player.html#COMMAND_GET_TEXT">COMMAND_GET_TEXT</a>, <a href="../../Player.html#COMMAND_GET_TIMELINE">COMMAND_GET_TIMELINE</a>, <a href="../../Player.html#COMMAND_GET_TRACK_INFOS">COMMAND_GET_TRACK_INFOS</a>, <a href="../../Player.html#COMMAND_GET_VOLUME">COMMAND_GET_VOLUME</a>, <a href="../../Player.html#COMMAND_INVALID">COMMAND_INVALID</a>, <a href="../../Player.html#COMMAND_PLAY_PAUSE">COMMAND_PLAY_PAUSE</a>, <a href="../../Player.html#COMMAND_PREPARE">COMMAND_PREPARE</a>, <a href="../../Player.html#COMMAND_SEEK_BACK">COMMAND_SEEK_BACK</a>, <a href="../../Player.html#COMMAND_SEEK_FORWARD">COMMAND_SEEK_FORWARD</a>, <a href="../../Player.html#COMMAND_SEEK_IN_CURRENT_MEDIA_ITEM">COMMAND_SEEK_IN_CURRENT_MEDIA_ITEM</a>, <a href="../../Player.html#COMMAND_SEEK_IN_CURRENT_WINDOW">COMMAND_SEEK_IN_CURRENT_WINDOW</a>, <a href="../../Player.html#COMMAND_SEEK_TO_DEFAULT_POSITION">COMMAND_SEEK_TO_DEFAULT_POSITION</a>, <a href="../../Player.html#COMMAND_SEEK_TO_MEDIA_ITEM">COMMAND_SEEK_TO_MEDIA_ITEM</a>, <a href="../../Player.html#COMMAND_SEEK_TO_NEXT">COMMAND_SEEK_TO_NEXT</a>, <a href="../../Player.html#COMMAND_SEEK_TO_NEXT_MEDIA_ITEM">COMMAND_SEEK_TO_NEXT_MEDIA_ITEM</a>, <a href="../../Player.html#COMMAND_SEEK_TO_NEXT_WINDOW">COMMAND_SEEK_TO_NEXT_WINDOW</a>, <a href="../../Player.html#COMMAND_SEEK_TO_PREVIOUS">COMMAND_SEEK_TO_PREVIOUS</a>, <a href="../../Player.html#COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM">COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM</a>, <a href="../../Player.html#COMMAND_SEEK_TO_PREVIOUS_WINDOW">COMMAND_SEEK_TO_PREVIOUS_WINDOW</a>, <a href="../../Player.html#COMMAND_SEEK_TO_WINDOW">COMMAND_SEEK_TO_WINDOW</a>, <a href="../../Player.html#COMMAND_SET_DEVICE_VOLUME">COMMAND_SET_DEVICE_VOLUME</a>, <a href="../../Player.html#COMMAND_SET_MEDIA_ITEMS_METADATA">COMMAND_SET_MEDIA_ITEMS_METADATA</a>, <a href="../../Player.html#COMMAND_SET_REPEAT_MODE">COMMAND_SET_REPEAT_MODE</a>, <a href="../../Player.html#COMMAND_SET_SHUFFLE_MODE">COMMAND_SET_SHUFFLE_MODE</a>, <a href="../../Player.html#COMMAND_SET_SPEED_AND_PITCH">COMMAND_SET_SPEED_AND_PITCH</a>, <a href="../../Player.html#COMMAND_SET_TRACK_SELECTION_PARAMETERS">COMMAND_SET_TRACK_SELECTION_PARAMETERS</a>, <a href="../../Player.html#COMMAND_SET_VIDEO_SURFACE">COMMAND_SET_VIDEO_SURFACE</a>, <a href="../../Player.html#COMMAND_SET_VOLUME">COMMAND_SET_VOLUME</a>, <a href="../../Player.html#COMMAND_STOP">COMMAND_STOP</a>, <a href="../../Player.html#DISCONTINUITY_REASON_AUTO_TRANSITION">DISCONTINUITY_REASON_AUTO_TRANSITION</a>, <a href="../../Player.html#DISCONTINUITY_REASON_INTERNAL">DISCONTINUITY_REASON_INTERNAL</a>, <a href="../../Player.html#DISCONTINUITY_REASON_REMOVE">DISCONTINUITY_REASON_REMOVE</a>, <a href="../../Player.html#DISCONTINUITY_REASON_SEEK">DISCONTINUITY_REASON_SEEK</a>, <a href="../../Player.html#DISCONTINUITY_REASON_SEEK_ADJUSTMENT">DISCONTINUITY_REASON_SEEK_ADJUSTMENT</a>, <a href="../../Player.html#DISCONTINUITY_REASON_SKIP">DISCONTINUITY_REASON_SKIP</a>, <a href="../../Player.html#EVENT_AVAILABLE_COMMANDS_CHANGED">EVENT_AVAILABLE_COMMANDS_CHANGED</a>, <a href="../../Player.html#EVENT_IS_LOADING_CHANGED">EVENT_IS_LOADING_CHANGED</a>, <a href="../../Player.html#EVENT_IS_PLAYING_CHANGED">EVENT_IS_PLAYING_CHANGED</a>, <a href="../../Player.html#EVENT_MAX_SEEK_TO_PREVIOUS_POSITION_CHANGED">EVENT_MAX_SEEK_TO_PREVIOUS_POSITION_CHANGED</a>, <a href="../../Player.html#EVENT_MEDIA_ITEM_TRANSITION">EVENT_MEDIA_ITEM_TRANSITION</a>, <a href="../../Player.html#EVENT_MEDIA_METADATA_CHANGED">EVENT_MEDIA_METADATA_CHANGED</a>, <a href="../../Player.html#EVENT_PLAY_WHEN_READY_CHANGED">EVENT_PLAY_WHEN_READY_CHANGED</a>, <a href="../../Player.html#EVENT_PLAYBACK_PARAMETERS_CHANGED">EVENT_PLAYBACK_PARAMETERS_CHANGED</a>, <a href="../../Player.html#EVENT_PLAYBACK_STATE_CHANGED">EVENT_PLAYBACK_STATE_CHANGED</a>, <a href="../../Player.html#EVENT_PLAYBACK_SUPPRESSION_REASON_CHANGED">EVENT_PLAYBACK_SUPPRESSION_REASON_CHANGED</a>, <a href="../../Player.html#EVENT_PLAYER_ERROR">EVENT_PLAYER_ERROR</a>, <a href="../../Player.html#EVENT_PLAYLIST_METADATA_CHANGED">EVENT_PLAYLIST_METADATA_CHANGED</a>, <a href="../../Player.html#EVENT_POSITION_DISCONTINUITY">EVENT_POSITION_DISCONTINUITY</a>, <a href="../../Player.html#EVENT_REPEAT_MODE_CHANGED">EVENT_REPEAT_MODE_CHANGED</a>, <a href="../../Player.html#EVENT_SEEK_BACK_INCREMENT_CHANGED">EVENT_SEEK_BACK_INCREMENT_CHANGED</a>, <a href="../../Player.html#EVENT_SEEK_FORWARD_INCREMENT_CHANGED">EVENT_SEEK_FORWARD_INCREMENT_CHANGED</a>, <a href="../../Player.html#EVENT_SHUFFLE_MODE_ENABLED_CHANGED">EVENT_SHUFFLE_MODE_ENABLED_CHANGED</a>, <a href="../../Player.html#EVENT_TIMELINE_CHANGED">EVENT_TIMELINE_CHANGED</a>, <a href="../../Player.html#EVENT_TRACK_SELECTION_PARAMETERS_CHANGED">EVENT_TRACK_SELECTION_PARAMETERS_CHANGED</a>, <a href="../../Player.html#EVENT_TRACKS_CHANGED">EVENT_TRACKS_CHANGED</a>, <a href="../../Player.html#MEDIA_ITEM_TRANSITION_REASON_AUTO">MEDIA_ITEM_TRANSITION_REASON_AUTO</a>, <a href="../../Player.html#MEDIA_ITEM_TRANSITION_REASON_PLAYLIST_CHANGED">MEDIA_ITEM_TRANSITION_REASON_PLAYLIST_CHANGED</a>, <a href="../../Player.html#MEDIA_ITEM_TRANSITION_REASON_REPEAT">MEDIA_ITEM_TRANSITION_REASON_REPEAT</a>, <a href="../../Player.html#MEDIA_ITEM_TRANSITION_REASON_SEEK">MEDIA_ITEM_TRANSITION_REASON_SEEK</a>, <a href="../../Player.html#PLAY_WHEN_READY_CHANGE_REASON_AUDIO_BECOMING_NOISY">PLAY_WHEN_READY_CHANGE_REASON_AUDIO_BECOMING_NOISY</a>, <a href="../../Player.html#PLAY_WHEN_READY_CHANGE_REASON_AUDIO_FOCUS_LOSS">PLAY_WHEN_READY_CHANGE_REASON_AUDIO_FOCUS_LOSS</a>, <a href="../../Player.html#PLAY_WHEN_READY_CHANGE_REASON_END_OF_MEDIA_ITEM">PLAY_WHEN_READY_CHANGE_REASON_END_OF_MEDIA_ITEM</a>, <a href="../../Player.html#PLAY_WHEN_READY_CHANGE_REASON_REMOTE">PLAY_WHEN_READY_CHANGE_REASON_REMOTE</a>, <a href="../../Player.html#PLAY_WHEN_READY_CHANGE_REASON_USER_REQUEST">PLAY_WHEN_READY_CHANGE_REASON_USER_REQUEST</a>, <a href="../../Player.html#PLAYBACK_SUPPRESSION_REASON_NONE">PLAYBACK_SUPPRESSION_REASON_NONE</a>, <a href="../../Player.html#PLAYBACK_SUPPRESSION_REASON_TRANSIENT_AUDIO_FOCUS_LOSS">PLAYBACK_SUPPRESSION_REASON_TRANSIENT_AUDIO_FOCUS_LOSS</a>, <a href="../../Player.html#REPEAT_MODE_ALL">REPEAT_MODE_ALL</a>, <a href="../../Player.html#REPEAT_MODE_OFF">REPEAT_MODE_OFF</a>, <a href="../../Player.html#REPEAT_MODE_ONE">REPEAT_MODE_ONE</a>, <a href="../../Player.html#STATE_BUFFERING">STATE_BUFFERING</a>, <a href="../../Player.html#STATE_ENDED">STATE_ENDED</a>, <a href="../../Player.html#STATE_IDLE">STATE_IDLE</a>, <a href="../../Player.html#STATE_READY">STATE_READY</a>, <a href="../../Player.html#TIMELINE_CHANGE_REASON_PLAYLIST_CHANGED">TIMELINE_CHANGE_REASON_PLAYLIST_CHANGED</a>, <a href="../../Player.html#TIMELINE_CHANGE_REASON_SOURCE_UPDATE">TIMELINE_CHANGE_REASON_SOURCE_UPDATE</a></code></li>
 </ul>
 </li>
@@ -230,21 +230,21 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.google.android.gms.cast.framework.CastContext)">CastPlayer</a></span>&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.firework.android.gms.cast.framework.CastContext)">CastPlayer</a></span>&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext)</code></th>
 <td class="colLast">
 <div class="block">Creates a new cast player.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.google.android.gms.cast.framework.CastContext,com.google.android.exoplayer2.ext.cast.MediaItemConverter)">CastPlayer</a></span>&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext,
-          <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.firework.android.gms.cast.framework.CastContext,com.firework.android.exoplayer2.ext.cast.MediaItemConverter)">CastPlayer</a></span>&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext,
+          <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter)</code></th>
 <td class="colLast">
 <div class="block">Creates a new cast player.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.google.android.gms.cast.framework.CastContext,com.google.android.exoplayer2.ext.cast.MediaItemConverter,long,long)">CastPlayer</a></span>&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext,
-          <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.firework.android.gms.cast.framework.CastContext,com.firework.android.exoplayer2.ext.cast.MediaItemConverter,long,long)">CastPlayer</a></span>&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext,
+          <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter,
           long&nbsp;seekBackIncrementMs,
           long&nbsp;seekForwardIncrementMs)</code></th>
 <td class="colLast">
@@ -271,16 +271,16 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addListener(com.google.android.exoplayer2.Player.EventListener)">addListener</a></span>&#8203;(<a href="../../Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addListener(com.firework.android.exoplayer2.Player.EventListener)">addListener</a></span>&#8203;(<a href="../../Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="#addListener(com.google.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.google.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.firework.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
 </div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addListener(com.google.android.exoplayer2.Player.Listener)">addListener</a></span>&#8203;(<a href="../../Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addListener(com.firework.android.exoplayer2.Player.Listener)">addListener</a></span>&#8203;(<a href="../../Player.Listener.html" title="interface in com.firework.android.exoplayer2">Player.Listener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">Registers a listener to receive all events from the player.</div>
 </td>
@@ -288,7 +288,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addMediaItems(int,java.util.List)">addMediaItems</a></span>&#8203;(int&nbsp;index,
-             <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems)</code></th>
+             <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems)</code></th>
 <td class="colLast">
 <div class="block">Adds a list of media items at the given index of the playlist.</div>
 </td>
@@ -344,17 +344,17 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../audio/AudioAttributes.html" title="class in com.google.android.exoplayer2.audio">AudioAttributes</a></code></td>
+<td class="colFirst"><code><a href="../../audio/AudioAttributes.html" title="class in com.firework.android.exoplayer2.audio">AudioAttributes</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAudioAttributes()">getAudioAttributes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method is not supported and returns <a href="../../audio/AudioAttributes.html#DEFAULT"><code>AudioAttributes.DEFAULT</code></a>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2">Player.Commands</a></code></td>
+<td class="colFirst"><code><a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2">Player.Commands</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAvailableCommands()">getAvailableCommands</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the player's currently available <a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2"><code>Player.Commands</code></a>.</div>
+<div class="block">Returns the player's currently available <a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2"><code>Player.Commands</code></a>.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
@@ -397,7 +397,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/27.1-android/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../text/Cue.html" title="class in com.google.android.exoplayer2.text">Cue</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/27.1-android/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../text/Cue.html" title="class in com.firework.android.exoplayer2.text">Cue</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentCues()">getCurrentCues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method is not supported and returns an empty list.</div>
@@ -407,7 +407,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentMediaItemIndex()">getCurrentMediaItemIndex</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the index of the current <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> in the <a href="../../Player.html#getCurrentTimeline()"><code>timeline</code></a>, or the prospective index if the <a href="../../Player.html#getCurrentTimeline()"><code>current timeline</code></a> is
+<div class="block">Returns the index of the current <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> in the <a href="../../Player.html#getCurrentTimeline()"><code>timeline</code></a>, or the prospective index if the <a href="../../Player.html#getCurrentTimeline()"><code>current timeline</code></a> is
  empty.</div>
 </td>
 </tr>
@@ -427,35 +427,35 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../Timeline.html" title="class in com.google.android.exoplayer2">Timeline</a></code></td>
+<td class="colFirst"><code><a href="../../Timeline.html" title="class in com.firework.android.exoplayer2">Timeline</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentTimeline()">getCurrentTimeline</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the current <a href="../../Timeline.html" title="class in com.google.android.exoplayer2"><code>Timeline</code></a>.</div>
+<div class="block">Returns the current <a href="../../Timeline.html" title="class in com.firework.android.exoplayer2"><code>Timeline</code></a>.</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../../source/TrackGroupArray.html" title="class in com.google.android.exoplayer2.source">TrackGroupArray</a></code></td>
+<td class="colFirst"><code><a href="../../source/TrackGroupArray.html" title="class in com.firework.android.exoplayer2.source">TrackGroupArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentTrackGroups()">getCurrentTrackGroups</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the available track groups.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../trackselection/TrackSelectionArray.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionArray</a></code></td>
+<td class="colFirst"><code><a href="../../trackselection/TrackSelectionArray.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionArray</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentTrackSelections()">getCurrentTrackSelections</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the current track selections.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../TracksInfo.html" title="class in com.google.android.exoplayer2">TracksInfo</a></code></td>
+<td class="colFirst"><code><a href="../../TracksInfo.html" title="class in com.firework.android.exoplayer2">TracksInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentTracksInfo()">getCurrentTracksInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the available tracks, as well as the tracks' support, type, and selection status.</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="../../DeviceInfo.html" title="class in com.google.android.exoplayer2">DeviceInfo</a></code></td>
+<td class="colFirst"><code><a href="../../DeviceInfo.html" title="class in com.firework.android.exoplayer2">DeviceInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDeviceInfo()">getDeviceInfo</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method is not supported and always returns <a href="../../DeviceInfo.html#UNKNOWN"><code>DeviceInfo.UNKNOWN</code></a>.</div>
@@ -477,7 +477,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i28" class="altColor">
-<td class="colFirst"><code>com.google.android.gms.cast.MediaQueueItem</code></td>
+<td class="colFirst"><code>com.firework.android.gms.cast.MediaQueueItem</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItem(int)">getItem</a></span>&#8203;(int&nbsp;periodId)</code></th>
 <td class="colLast">
 <div class="block">Returns the item that corresponds to the period with the given id, or null if no media queue or
@@ -488,33 +488,33 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <td class="colFirst"><code>long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaxSeekToPreviousPosition()">getMaxSeekToPreviousPosition</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the maximum position for which <a href="../../Player.html#seekToPrevious()"><code>Player.seekToPrevious()</code></a> seeks to the previous <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>, in milliseconds.</div>
+<div class="block">Returns the maximum position for which <a href="../../Player.html#seekToPrevious()"><code>Player.seekToPrevious()</code></a> seeks to the previous <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>, in milliseconds.</div>
 </td>
 </tr>
 <tr id="i30" class="altColor">
-<td class="colFirst"><code><a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a></code></td>
+<td class="colFirst"><code><a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMediaMetadata()">getMediaMetadata</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the current combined <a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not
+<div class="block">Returns the current combined <a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not
  supported.</div>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
-<td class="colFirst"><code><a href="../../PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a></code></td>
+<td class="colFirst"><code><a href="../../PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlaybackParameters()">getPlaybackParameters</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the currently active playback parameters.</div>
 </td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code>@com.google.android.exoplayer2.Player.State int</code></td>
+<td class="colFirst"><code>@com.firework.android.exoplayer2.Player.State int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlaybackState()">getPlaybackState</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the current <a href="../../Player.State.html" title="annotation in com.google.android.exoplayer2"><code>playback state</code></a> of the player.</div>
+<div class="block">Returns the current <a href="../../Player.State.html" title="annotation in com.firework.android.exoplayer2"><code>playback state</code></a> of the player.</div>
 </td>
 </tr>
 <tr id="i33" class="rowColor">
-<td class="colFirst"><code>@com.google.android.exoplayer2.Player.PlaybackSuppressionReason int</code></td>
+<td class="colFirst"><code>@com.firework.android.exoplayer2.Player.PlaybackSuppressionReason int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlaybackSuppressionReason()">getPlaybackSuppressionReason</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reason why playback is suppressed even though <a href="../../Player.html#getPlayWhenReady()"><code>Player.getPlayWhenReady()</code></a> is <code>
@@ -522,17 +522,17 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="../../PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a></code></td>
+<td class="colFirst"><code><a href="../../PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerError()">getPlayerError</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the error that caused playback to fail.</div>
 </td>
 </tr>
 <tr id="i35" class="rowColor">
-<td class="colFirst"><code><a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a></code></td>
+<td class="colFirst"><code><a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlaylistMetadata()">getPlaylistMetadata</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the playlist <a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a>, as set by <a href="../../Player.html#setPlaylistMetadata(com.google.android.exoplayer2.MediaMetadata)"><code>Player.setPlaylistMetadata(MediaMetadata)</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not supported.</div>
+<div class="block">Returns the playlist <a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a>, as set by <a href="../../Player.html#setPlaylistMetadata(com.firework.android.exoplayer2.MediaMetadata)"><code>Player.setPlaylistMetadata(MediaMetadata)</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not supported.</div>
 </td>
 </tr>
 <tr id="i36" class="altColor">
@@ -543,10 +543,10 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i37" class="rowColor">
-<td class="colFirst"><code>@com.google.android.exoplayer2.Player.RepeatMode int</code></td>
+<td class="colFirst"><code>@com.firework.android.exoplayer2.Player.RepeatMode int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRepeatMode()">getRepeatMode</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the current <a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</div>
+<div class="block">Returns the current <a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</div>
 </td>
 </tr>
 <tr id="i38" class="altColor">
@@ -578,14 +578,14 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </td>
 </tr>
 <tr id="i42" class="altColor">
-<td class="colFirst"><code><a href="../../trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionParameters</a></code></td>
+<td class="colFirst"><code><a href="../../trackselection/TrackSelectionParameters.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionParameters</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTrackSelectionParameters()">getTrackSelectionParameters</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the parameters constraining the track selection.</div>
 </td>
 </tr>
 <tr id="i43" class="rowColor">
-<td class="colFirst"><code><a href="../../video/VideoSize.html" title="class in com.google.android.exoplayer2.video">VideoSize</a></code></td>
+<td class="colFirst"><code><a href="../../video/VideoSize.html" title="class in com.firework.android.exoplayer2.video">VideoSize</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVideoSize()">getVideoSize</a></span>()</code></th>
 <td class="colLast">
 <div class="block">This method is not supported and returns <a href="../../video/VideoSize.html#UNKNOWN"><code>VideoSize.UNKNOWN</code></a>.</div>
@@ -658,18 +658,18 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 <tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeListener(com.google.android.exoplayer2.Player.EventListener)">removeListener</a></span>&#8203;(<a href="../../Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeListener(com.firework.android.exoplayer2.Player.EventListener)">removeListener</a></span>&#8203;(<a href="../../Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="#addListener(com.google.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.google.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.firework.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
 </div>
 </td>
 </tr>
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeListener(com.google.android.exoplayer2.Player.Listener)">removeListener</a></span>&#8203;(<a href="../../Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeListener(com.firework.android.exoplayer2.Player.Listener)">removeListener</a></span>&#8203;(<a href="../../Player.Listener.html" title="interface in com.firework.android.exoplayer2">Player.Listener</a>&nbsp;listener)</code></th>
 <td class="colLast">
-<div class="block">Unregister a listener registered through <a href="../../Player.html#addListener(com.google.android.exoplayer2.Player.Listener)"><code>Player.addListener(Listener)</code></a>.</div>
+<div class="block">Unregister a listener registered through <a href="../../Player.html#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>Player.addListener(Listener)</code></a>.</div>
 </td>
 </tr>
 <tr id="i55" class="rowColor">
@@ -685,7 +685,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#seekTo(int,long)">seekTo</a></span>&#8203;(int&nbsp;mediaItemIndex,
       long&nbsp;positionMs)</code></th>
 <td class="colLast">
-<div class="block">Seeks to a position specified in milliseconds in the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</div>
+<div class="block">Seeks to a position specified in milliseconds in the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</div>
 </td>
 </tr>
 <tr id="i57" class="rowColor">
@@ -704,31 +704,31 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 <tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMediaItems(java.util.List,boolean)">setMediaItems</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMediaItems(java.util.List,boolean)">setMediaItems</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
              boolean&nbsp;resetPosition)</code></th>
 <td class="colLast">
-<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</div>
+<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</div>
 </td>
 </tr>
 <tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMediaItems(java.util.List,int,long)">setMediaItems</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMediaItems(java.util.List,int,long)">setMediaItems</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
              int&nbsp;startIndex,
              long&nbsp;startPositionMs)</code></th>
 <td class="colLast">
-<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</div>
+<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</div>
 </td>
 </tr>
 <tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPlaybackParameters(com.google.android.exoplayer2.PlaybackParameters)">setPlaybackParameters</a></span>&#8203;(<a href="../../PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPlaybackParameters(com.firework.android.exoplayer2.PlaybackParameters)">setPlaybackParameters</a></span>&#8203;(<a href="../../PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</code></th>
 <td class="colLast">
 <div class="block">Attempts to set the playback parameters.</div>
 </td>
 </tr>
 <tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPlaylistMetadata(com.google.android.exoplayer2.MediaMetadata)">setPlaylistMetadata</a></span>&#8203;(<a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPlaylistMetadata(com.firework.android.exoplayer2.MediaMetadata)">setPlaylistMetadata</a></span>&#8203;(<a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
 <td class="colLast">
 <div class="block">This method is not supported and does nothing.</div>
 </td>
@@ -742,14 +742,14 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 <tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRepeatMode(@com.google.android.exoplayer2.Player.RepeatModeint)">setRepeatMode</a></span>&#8203;(@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRepeatMode(@com.firework.android.exoplayer2.Player.RepeatModeint)">setRepeatMode</a></span>&#8203;(@com.firework.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</code></th>
 <td class="colLast">
-<div class="block">Sets the <a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2"><code>Player.RepeatMode</code></a> to be used for playback.</div>
+<div class="block">Sets the <a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2"><code>Player.RepeatMode</code></a> to be used for playback.</div>
 </td>
 </tr>
 <tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSessionAvailabilityListener(com.google.android.exoplayer2.ext.cast.SessionAvailabilityListener)">setSessionAvailabilityListener</a></span>&#8203;(<a href="SessionAvailabilityListener.html" title="interface in com.google.android.exoplayer2.ext.cast">SessionAvailabilityListener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSessionAvailabilityListener(com.firework.android.exoplayer2.ext.cast.SessionAvailabilityListener)">setSessionAvailabilityListener</a></span>&#8203;(<a href="SessionAvailabilityListener.html" title="interface in com.firework.android.exoplayer2.ext.cast">SessionAvailabilityListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">Sets a listener for updates on the cast session availability.</div>
 </td>
@@ -763,7 +763,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 <tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrackSelectionParameters(com.google.android.exoplayer2.trackselection.TrackSelectionParameters)">setTrackSelectionParameters</a></span>&#8203;(<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;parameters)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrackSelectionParameters(com.firework.android.exoplayer2.trackselection.TrackSelectionParameters)">setTrackSelectionParameters</a></span>&#8203;(<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;parameters)</code></th>
 <td class="colLast">
 <div class="block">Sets the parameters constraining the track selection.</div>
 </td>
@@ -819,11 +819,11 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.google.android.exoplayer2.BasePlayer">
+<li class="blockList"><a id="methods.inherited.from.class.com.firework.android.exoplayer2.BasePlayer">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.google.android.exoplayer2.<a href="../../BasePlayer.html" title="class in com.google.android.exoplayer2">BasePlayer</a></h3>
-<code><a href="../../BasePlayer.html#addMediaItem(int,com.google.android.exoplayer2.MediaItem)">addMediaItem</a>, <a href="../../BasePlayer.html#addMediaItem(com.google.android.exoplayer2.MediaItem)">addMediaItem</a>, <a href="../../BasePlayer.html#addMediaItems(java.util.List)">addMediaItems</a>, <a href="../../BasePlayer.html#canAdvertiseSession()">canAdvertiseSession</a>, <a href="../../BasePlayer.html#clearMediaItems()">clearMediaItems</a>, <a href="../../BasePlayer.html#getAvailableCommands(com.google.android.exoplayer2.Player.Commands)">getAvailableCommands</a>, <a href="../../BasePlayer.html#getBufferedPercentage()">getBufferedPercentage</a>, <a href="../../BasePlayer.html#getContentDuration()">getContentDuration</a>, <a href="../../BasePlayer.html#getCurrentLiveOffset()">getCurrentLiveOffset</a>, <a href="../../BasePlayer.html#getCurrentManifest()">getCurrentManifest</a>, <a href="../../BasePlayer.html#getCurrentMediaItem()">getCurrentMediaItem</a>, <a href="../../BasePlayer.html#getCurrentWindowIndex()">getCurrentWindowIndex</a>, <a href="../../BasePlayer.html#getMediaItemAt(int)">getMediaItemAt</a>, <a href="../../BasePlayer.html#getMediaItemCount()">getMediaItemCount</a>, <a href="../../BasePlayer.html#getNextMediaItemIndex()">getNextMediaItemIndex</a>, <a href="../../BasePlayer.html#getNextWindowIndex()">getNextWindowIndex</a>, <a href="../../BasePlayer.html#getPreviousMediaItemIndex()">getPreviousMediaItemIndex</a>, <a href="../../BasePlayer.html#getPreviousWindowIndex()">getPreviousWindowIndex</a>, <a href="../../BasePlayer.html#hasNext()">hasNext</a>, <a href="../../BasePlayer.html#hasNextMediaItem()">hasNextMediaItem</a>, <a href="../../BasePlayer.html#hasNextWindow()">hasNextWindow</a>, <a href="../../BasePlayer.html#hasPrevious()">hasPrevious</a>, <a href="../../BasePlayer.html#hasPreviousMediaItem()">hasPreviousMediaItem</a>, <a href="../../BasePlayer.html#hasPreviousWindow()">hasPreviousWindow</a>, <a href="../../BasePlayer.html#isCommandAvailable(@com.google.android.exoplayer2.Player.Commandint)">isCommandAvailable</a>, <a href="../../BasePlayer.html#isCurrentMediaItemDynamic()">isCurrentMediaItemDynamic</a>, <a href="../../BasePlayer.html#isCurrentMediaItemLive()">isCurrentMediaItemLive</a>, <a href="../../BasePlayer.html#isCurrentMediaItemSeekable()">isCurrentMediaItemSeekable</a>, <a href="../../BasePlayer.html#isCurrentWindowDynamic()">isCurrentWindowDynamic</a>, <a href="../../BasePlayer.html#isCurrentWindowLive()">isCurrentWindowLive</a>, <a href="../../BasePlayer.html#isCurrentWindowSeekable()">isCurrentWindowSeekable</a>, <a href="../../BasePlayer.html#isPlaying()">isPlaying</a>, <a href="../../BasePlayer.html#moveMediaItem(int,int)">moveMediaItem</a>, <a href="../../BasePlayer.html#next()">next</a>, <a href="../../BasePlayer.html#pause()">pause</a>, <a href="../../BasePlayer.html#play()">play</a>, <a href="../../BasePlayer.html#previous()">previous</a>, <a href="../../BasePlayer.html#removeMediaItem(int)">removeMediaItem</a>, <a href="../../BasePlayer.html#seekBack()">seekBack</a>, <a href="../../BasePlayer.html#seekForward()">seekForward</a>, <a href="../../BasePlayer.html#seekTo(long)">seekTo</a>, <a href="../../BasePlayer.html#seekToDefaultPosition()">seekToDefaultPosition</a>, <a href="../../BasePlayer.html#seekToDefaultPosition(int)">seekToDefaultPosition</a>, <a href="../../BasePlayer.html#seekToNext()">seekToNext</a>, <a href="../../BasePlayer.html#seekToNextMediaItem()">seekToNextMediaItem</a>, <a href="../../BasePlayer.html#seekToNextWindow()">seekToNextWindow</a>, <a href="../../BasePlayer.html#seekToPrevious()">seekToPrevious</a>, <a href="../../BasePlayer.html#seekToPreviousMediaItem()">seekToPreviousMediaItem</a>, <a href="../../BasePlayer.html#seekToPreviousWindow()">seekToPreviousWindow</a>, <a href="../../BasePlayer.html#setMediaItem(com.google.android.exoplayer2.MediaItem)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItem(com.google.android.exoplayer2.MediaItem,boolean)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItem(com.google.android.exoplayer2.MediaItem,long)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItems(java.util.List)">setMediaItems</a>, <a href="../../BasePlayer.html#setPlaybackSpeed(float)">setPlaybackSpeed</a></code></li>
+<h3>Methods inherited from class&nbsp;com.firework.android.exoplayer2.<a href="../../BasePlayer.html" title="class in com.firework.android.exoplayer2">BasePlayer</a></h3>
+<code><a href="../../BasePlayer.html#addMediaItem(int,com.firework.android.exoplayer2.MediaItem)">addMediaItem</a>, <a href="../../BasePlayer.html#addMediaItem(com.firework.android.exoplayer2.MediaItem)">addMediaItem</a>, <a href="../../BasePlayer.html#addMediaItems(java.util.List)">addMediaItems</a>, <a href="../../BasePlayer.html#canAdvertiseSession()">canAdvertiseSession</a>, <a href="../../BasePlayer.html#clearMediaItems()">clearMediaItems</a>, <a href="../../BasePlayer.html#getAvailableCommands(com.firework.android.exoplayer2.Player.Commands)">getAvailableCommands</a>, <a href="../../BasePlayer.html#getBufferedPercentage()">getBufferedPercentage</a>, <a href="../../BasePlayer.html#getContentDuration()">getContentDuration</a>, <a href="../../BasePlayer.html#getCurrentLiveOffset()">getCurrentLiveOffset</a>, <a href="../../BasePlayer.html#getCurrentManifest()">getCurrentManifest</a>, <a href="../../BasePlayer.html#getCurrentMediaItem()">getCurrentMediaItem</a>, <a href="../../BasePlayer.html#getCurrentWindowIndex()">getCurrentWindowIndex</a>, <a href="../../BasePlayer.html#getMediaItemAt(int)">getMediaItemAt</a>, <a href="../../BasePlayer.html#getMediaItemCount()">getMediaItemCount</a>, <a href="../../BasePlayer.html#getNextMediaItemIndex()">getNextMediaItemIndex</a>, <a href="../../BasePlayer.html#getNextWindowIndex()">getNextWindowIndex</a>, <a href="../../BasePlayer.html#getPreviousMediaItemIndex()">getPreviousMediaItemIndex</a>, <a href="../../BasePlayer.html#getPreviousWindowIndex()">getPreviousWindowIndex</a>, <a href="../../BasePlayer.html#hasNext()">hasNext</a>, <a href="../../BasePlayer.html#hasNextMediaItem()">hasNextMediaItem</a>, <a href="../../BasePlayer.html#hasNextWindow()">hasNextWindow</a>, <a href="../../BasePlayer.html#hasPrevious()">hasPrevious</a>, <a href="../../BasePlayer.html#hasPreviousMediaItem()">hasPreviousMediaItem</a>, <a href="../../BasePlayer.html#hasPreviousWindow()">hasPreviousWindow</a>, <a href="../../BasePlayer.html#isCommandAvailable(@com.firework.android.exoplayer2.Player.Commandint)">isCommandAvailable</a>, <a href="../../BasePlayer.html#isCurrentMediaItemDynamic()">isCurrentMediaItemDynamic</a>, <a href="../../BasePlayer.html#isCurrentMediaItemLive()">isCurrentMediaItemLive</a>, <a href="../../BasePlayer.html#isCurrentMediaItemSeekable()">isCurrentMediaItemSeekable</a>, <a href="../../BasePlayer.html#isCurrentWindowDynamic()">isCurrentWindowDynamic</a>, <a href="../../BasePlayer.html#isCurrentWindowLive()">isCurrentWindowLive</a>, <a href="../../BasePlayer.html#isCurrentWindowSeekable()">isCurrentWindowSeekable</a>, <a href="../../BasePlayer.html#isPlaying()">isPlaying</a>, <a href="../../BasePlayer.html#moveMediaItem(int,int)">moveMediaItem</a>, <a href="../../BasePlayer.html#next()">next</a>, <a href="../../BasePlayer.html#pause()">pause</a>, <a href="../../BasePlayer.html#play()">play</a>, <a href="../../BasePlayer.html#previous()">previous</a>, <a href="../../BasePlayer.html#removeMediaItem(int)">removeMediaItem</a>, <a href="../../BasePlayer.html#seekBack()">seekBack</a>, <a href="../../BasePlayer.html#seekForward()">seekForward</a>, <a href="../../BasePlayer.html#seekTo(long)">seekTo</a>, <a href="../../BasePlayer.html#seekToDefaultPosition()">seekToDefaultPosition</a>, <a href="../../BasePlayer.html#seekToDefaultPosition(int)">seekToDefaultPosition</a>, <a href="../../BasePlayer.html#seekToNext()">seekToNext</a>, <a href="../../BasePlayer.html#seekToNextMediaItem()">seekToNextMediaItem</a>, <a href="../../BasePlayer.html#seekToNextWindow()">seekToNextWindow</a>, <a href="../../BasePlayer.html#seekToPrevious()">seekToPrevious</a>, <a href="../../BasePlayer.html#seekToPreviousMediaItem()">seekToPreviousMediaItem</a>, <a href="../../BasePlayer.html#seekToPreviousWindow()">seekToPreviousWindow</a>, <a href="../../BasePlayer.html#setMediaItem(com.firework.android.exoplayer2.MediaItem)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItem(com.firework.android.exoplayer2.MediaItem,boolean)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItem(com.firework.android.exoplayer2.MediaItem,long)">setMediaItem</a>, <a href="../../BasePlayer.html#setMediaItems(java.util.List)">setMediaItems</a>, <a href="../../BasePlayer.html#setPlaybackSpeed(float)">setPlaybackSpeed</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -857,7 +857,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <pre>public static final&nbsp;float MIN_SPEED_SUPPORTED</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../constant-values.html#com.google.android.exoplayer2.ext.cast.CastPlayer.MIN_SPEED_SUPPORTED">Constant Field Values</a></dd>
+<dd><a href="../../../../../../constant-values.html#com.firework.android.exoplayer2.ext.cast.CastPlayer.MIN_SPEED_SUPPORTED">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -870,7 +870,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <pre>public static final&nbsp;float MAX_SPEED_SUPPORTED</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../constant-values.html#com.google.android.exoplayer2.ext.cast.CastPlayer.MAX_SPEED_SUPPORTED">Constant Field Values</a></dd>
+<dd><a href="../../../../../../constant-values.html#com.firework.android.exoplayer2.ext.cast.CastPlayer.MAX_SPEED_SUPPORTED">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -884,18 +884,18 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.google.android.gms.cast.framework.CastContext)">
+<a id="&lt;init&gt;(com.firework.android.gms.cast.framework.CastContext)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>CastPlayer</h4>
-<pre>public&nbsp;CastPlayer&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext)</pre>
+<pre>public&nbsp;CastPlayer&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext)</pre>
 <div class="block">Creates a new cast player.
 
- <p>The returned player uses a <a href="DefaultMediaItemConverter.html" title="class in com.google.android.exoplayer2.ext.cast"><code>DefaultMediaItemConverter</code></a> and
+ <p>The returned player uses a <a href="DefaultMediaItemConverter.html" title="class in com.firework.android.exoplayer2.ext.cast"><code>DefaultMediaItemConverter</code></a> and
 
- <p><code>mediaItemConverter</code> is set to a <a href="DefaultMediaItemConverter.html" title="class in com.google.android.exoplayer2.ext.cast"><code>DefaultMediaItemConverter</code></a>, <code>
+ <p><code>mediaItemConverter</code> is set to a <a href="DefaultMediaItemConverter.html" title="class in com.firework.android.exoplayer2.ext.cast"><code>DefaultMediaItemConverter</code></a>, <code>
  seekBackIncrementMs</code> is set to <a href="../../C.html#DEFAULT_SEEK_BACK_INCREMENT_MS"><code>C.DEFAULT_SEEK_BACK_INCREMENT_MS</code></a> and <code>
  seekForwardIncrementMs</code> is set to <a href="../../C.html#DEFAULT_SEEK_FORWARD_INCREMENT_MS"><code>C.DEFAULT_SEEK_FORWARD_INCREMENT_MS</code></a>.</div>
 <dl>
@@ -904,14 +904,14 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 </dl>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.google.android.gms.cast.framework.CastContext,com.google.android.exoplayer2.ext.cast.MediaItemConverter)">
+<a id="&lt;init&gt;(com.firework.android.gms.cast.framework.CastContext,com.firework.android.exoplayer2.ext.cast.MediaItemConverter)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>CastPlayer</h4>
-<pre>public&nbsp;CastPlayer&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext,
-                  <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter)</pre>
+<pre>public&nbsp;CastPlayer&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext,
+                  <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter)</pre>
 <div class="block">Creates a new cast player.
 
  <p><code>seekBackIncrementMs</code> is set to <a href="../../C.html#DEFAULT_SEEK_BACK_INCREMENT_MS"><code>C.DEFAULT_SEEK_BACK_INCREMENT_MS</code></a> and <code>
@@ -919,18 +919,18 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>castContext</code> - The context from which the cast session is obtained.</dd>
-<dd><code>mediaItemConverter</code> - The <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast"><code>MediaItemConverter</code></a> to use.</dd>
+<dd><code>mediaItemConverter</code> - The <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast"><code>MediaItemConverter</code></a> to use.</dd>
 </dl>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.google.android.gms.cast.framework.CastContext,com.google.android.exoplayer2.ext.cast.MediaItemConverter,long,long)">
+<a id="&lt;init&gt;(com.firework.android.gms.cast.framework.CastContext,com.firework.android.exoplayer2.ext.cast.MediaItemConverter,long,long)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CastPlayer</h4>
-<pre>public&nbsp;CastPlayer&#8203;(com.google.android.gms.cast.framework.CastContext&nbsp;castContext,
-                  <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter,
+<pre>public&nbsp;CastPlayer&#8203;(com.firework.android.gms.cast.framework.CastContext&nbsp;castContext,
+                  <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast">MediaItemConverter</a>&nbsp;mediaItemConverter,
                   @IntRange(from=1L)
                   long&nbsp;seekBackIncrementMs,
                   @IntRange(from=1L)
@@ -939,7 +939,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>castContext</code> - The context from which the cast session is obtained.</dd>
-<dd><code>mediaItemConverter</code> - The <a href="MediaItemConverter.html" title="interface in com.google.android.exoplayer2.ext.cast"><code>MediaItemConverter</code></a> to use.</dd>
+<dd><code>mediaItemConverter</code> - The <a href="MediaItemConverter.html" title="interface in com.firework.android.exoplayer2.ext.cast"><code>MediaItemConverter</code></a> to use.</dd>
 <dd><code>seekBackIncrementMs</code> - The <a href="../../BasePlayer.html#seekBack()"><code>BasePlayer.seekBack()</code></a> increment, in milliseconds.</dd>
 <dd><code>seekForwardIncrementMs</code> - The <a href="../../BasePlayer.html#seekForward()"><code>BasePlayer.seekForward()</code></a> increment, in milliseconds.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -965,7 +965,7 @@ extends <a href="../../BasePlayer.html" title="class in com.google.android.exopl
 <li class="blockList">
 <h4>getItem</h4>
 <pre class="methodSignature">@Nullable
-public&nbsp;com.google.android.gms.cast.MediaQueueItem&nbsp;getItem&#8203;(int&nbsp;periodId)</pre>
+public&nbsp;com.firework.android.gms.cast.MediaQueueItem&nbsp;getItem&#8203;(int&nbsp;periodId)</pre>
 <div class="block">Returns the item that corresponds to the period with the given id, or null if no media queue or
  period with id <code>periodId</code> exist.</div>
 <dl>
@@ -988,18 +988,18 @@ public&nbsp;com.google.android.gms.cast.MediaQueueItem&nbsp;getItem&#8203;(int&n
 <div class="block">Returns whether a cast session is available.</div>
 </li>
 </ul>
-<a id="setSessionAvailabilityListener(com.google.android.exoplayer2.ext.cast.SessionAvailabilityListener)">
+<a id="setSessionAvailabilityListener(com.firework.android.exoplayer2.ext.cast.SessionAvailabilityListener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSessionAvailabilityListener</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setSessionAvailabilityListener&#8203;(@Nullable
-                                           <a href="SessionAvailabilityListener.html" title="interface in com.google.android.exoplayer2.ext.cast">SessionAvailabilityListener</a>&nbsp;listener)</pre>
+                                           <a href="SessionAvailabilityListener.html" title="interface in com.firework.android.exoplayer2.ext.cast">SessionAvailabilityListener</a>&nbsp;listener)</pre>
 <div class="block">Sets a listener for updates on the cast session availability.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - The <a href="SessionAvailabilityListener.html" title="interface in com.google.android.exoplayer2.ext.cast"><code>SessionAvailabilityListener</code></a>, or null to clear the listener.</dd>
+<dd><code>listener</code> - The <a href="SessionAvailabilityListener.html" title="interface in com.firework.android.exoplayer2.ext.cast"><code>SessionAvailabilityListener</code></a>, or null to clear the listener.</dd>
 </dl>
 </li>
 </ul>
@@ -1015,14 +1015,14 @@ public&nbsp;com.google.android.gms.cast.MediaQueueItem&nbsp;getItem&#8203;(int&n
  player and on which player events are received.</div>
 </li>
 </ul>
-<a id="addListener(com.google.android.exoplayer2.Player.Listener)">
+<a id="addListener(com.firework.android.exoplayer2.Player.Listener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a>&nbsp;listener)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#addListener(com.google.android.exoplayer2.Player.Listener)">Player</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.Listener.html" title="interface in com.firework.android.exoplayer2">Player.Listener</a>&nbsp;listener)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#addListener(com.firework.android.exoplayer2.Player.Listener)">Player</a></code></span></div>
 <div class="block">Registers a listener to receive all events from the player.
 
  <p>The listener's methods will be called on the thread associated with <a href="../../Player.html#getApplicationLooper()"><code>Player.getApplicationLooper()</code></a>.</div>
@@ -1032,16 +1032,16 @@ public&nbsp;com.google.android.gms.cast.MediaQueueItem&nbsp;getItem&#8203;(int&n
 </dl>
 </li>
 </ul>
-<a id="addListener(com.google.android.exoplayer2.Player.EventListener)">
+<a id="addListener(com.firework.android.exoplayer2.Player.EventListener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addListener</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/java/lang/Deprecated.html" title="class or interface in java.lang" class="externalLink" target="_top">@Deprecated</a>
-public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</pre>
+public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="#addListener(com.google.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.google.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.firework.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
 </div>
 <div class="block">Registers a listener to receive events from the player.
 
@@ -1052,15 +1052,15 @@ public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.EventListener.htm
 </dl>
 </li>
 </ul>
-<a id="removeListener(com.google.android.exoplayer2.Player.Listener)">
+<a id="removeListener(com.firework.android.exoplayer2.Player.Listener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.Listener.html" title="interface in com.google.android.exoplayer2">Player.Listener</a>&nbsp;listener)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#removeListener(com.google.android.exoplayer2.Player.Listener)">Player</a></code></span></div>
-<div class="block">Unregister a listener registered through <a href="../../Player.html#addListener(com.google.android.exoplayer2.Player.Listener)"><code>Player.addListener(Listener)</code></a>. The listener will no
+<pre class="methodSignature">public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.Listener.html" title="interface in com.firework.android.exoplayer2">Player.Listener</a>&nbsp;listener)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#removeListener(com.firework.android.exoplayer2.Player.Listener)">Player</a></code></span></div>
+<div class="block">Unregister a listener registered through <a href="../../Player.html#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>Player.addListener(Listener)</code></a>. The listener will no
  longer receive events.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1068,18 +1068,18 @@ public&nbsp;void&nbsp;addListener&#8203;(<a href="../../Player.EventListener.htm
 </dl>
 </li>
 </ul>
-<a id="removeListener(com.google.android.exoplayer2.Player.EventListener)">
+<a id="removeListener(com.firework.android.exoplayer2.Player.EventListener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeListener</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/java/lang/Deprecated.html" title="class or interface in java.lang" class="externalLink" target="_top">@Deprecated</a>
-public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</pre>
+public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a>&nbsp;listener)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Use <a href="#addListener(com.google.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.google.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
+<div class="deprecationComment">Use <a href="#addListener(com.firework.android.exoplayer2.Player.Listener)"><code>addListener(Listener)</code></a> and <a href="#removeListener(com.firework.android.exoplayer2.Player.Listener)"><code>removeListener(Listener)</code></a> instead.</div>
 </div>
-<div class="block">Unregister a listener registered through <a href="#addListener(com.google.android.exoplayer2.Player.EventListener)"><code>addListener(EventListener)</code></a>. The listener will
+<div class="block">Unregister a listener registered through <a href="#addListener(com.firework.android.exoplayer2.Player.EventListener)"><code>addListener(EventListener)</code></a>. The listener will
  no longer receive events from the player.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1093,15 +1093,15 @@ public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.
 <ul class="blockList">
 <li class="blockList">
 <h4>setMediaItems</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setMediaItems&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
+<pre class="methodSignature">public&nbsp;void&nbsp;setMediaItems&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
                           boolean&nbsp;resetPosition)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setMediaItems(java.util.List,boolean)">Player</a></code></span></div>
-<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</div>
+<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItems</code> - The new <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</dd>
+<dd><code>mediaItems</code> - The new <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</dd>
 <dd><code>resetPosition</code> - Whether the playback position should be reset to the default position in
-     the first <a href="../../Timeline.Window.html" title="class in com.google.android.exoplayer2"><code>Timeline.Window</code></a>. If false, playback will start from the position defined
+     the first <a href="../../Timeline.Window.html" title="class in com.firework.android.exoplayer2"><code>Timeline.Window</code></a>. If false, playback will start from the position defined
      by <a href="../../Player.html#getCurrentMediaItemIndex()"><code>Player.getCurrentMediaItemIndex()</code></a> and <a href="../../Player.html#getCurrentPosition()"><code>Player.getCurrentPosition()</code></a>.</dd>
 </dl>
 </li>
@@ -1112,17 +1112,17 @@ public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.
 <ul class="blockList">
 <li class="blockList">
 <h4>setMediaItems</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setMediaItems&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
+<pre class="methodSignature">public&nbsp;void&nbsp;setMediaItems&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems,
                           int&nbsp;startIndex,
                           long&nbsp;startPositionMs)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setMediaItems(java.util.List,int,long)">Player</a></code></span></div>
-<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</div>
+<div class="block">Clears the playlist and adds the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItems</code> - The new <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a>.</dd>
-<dd><code>startIndex</code> - The <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> index to start playback from. If <a href="../../C.html#INDEX_UNSET"><code>C.INDEX_UNSET</code></a>
+<dd><code>mediaItems</code> - The new <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a>.</dd>
+<dd><code>startIndex</code> - The <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> index to start playback from. If <a href="../../C.html#INDEX_UNSET"><code>C.INDEX_UNSET</code></a>
      is passed, the current position is not reset.</dd>
-<dd><code>startPositionMs</code> - The position in milliseconds to start playback from. If <a href="../../C.html#TIME_UNSET"><code>C.TIME_UNSET</code></a> is passed, the default position of the given <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> is used. In
+<dd><code>startPositionMs</code> - The position in milliseconds to start playback from. If <a href="../../C.html#TIME_UNSET"><code>C.TIME_UNSET</code></a> is passed, the default position of the given <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> is used. In
      any case, if <code>startIndex</code> is set to <a href="../../C.html#INDEX_UNSET"><code>C.INDEX_UNSET</code></a>, this parameter is ignored
      and the position is not reset at all.</dd>
 </dl>
@@ -1135,14 +1135,14 @@ public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.
 <li class="blockList">
 <h4>addMediaItems</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;addMediaItems&#8203;(int&nbsp;index,
-                          <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.google.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems)</pre>
+                          <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2" target="_top">MediaItem</a>&gt;&nbsp;mediaItems)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#addMediaItems(int,java.util.List)">Player</a></code></span></div>
 <div class="block">Adds a list of media items at the given index of the playlist.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - The index at which to add the media items. If the index is larger than the size of
      the playlist, the media items are added to the end of the playlist.</dd>
-<dd><code>mediaItems</code> - The <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItems</code></a> to add.</dd>
+<dd><code>mediaItems</code> - The <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItems</code></a> to add.</dd>
 </dl>
 </li>
 </ul>
@@ -1191,23 +1191,23 @@ public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.
 <ul class="blockList">
 <li class="blockList">
 <h4>getAvailableCommands</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2">Player.Commands</a>&nbsp;getAvailableCommands()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2">Player.Commands</a>&nbsp;getAvailableCommands()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getAvailableCommands()">Player</a></code></span></div>
-<div class="block">Returns the player's currently available <a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2"><code>Player.Commands</code></a>.
+<div class="block">Returns the player's currently available <a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2"><code>Player.Commands</code></a>.
 
- <p>The returned <a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2"><code>Player.Commands</code></a> are not updated when available commands change. Use <a href="../../Player.Listener.html#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)"><code>Player.Listener.onAvailableCommandsChanged(Commands)</code></a> to get an update when the available commands
+ <p>The returned <a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2"><code>Player.Commands</code></a> are not updated when available commands change. Use <a href="../../Player.Listener.html#onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)"><code>Player.Listener.onAvailableCommandsChanged(Commands)</code></a> to get an update when the available commands
  change.
 
  <p>Executing a command that is not available (for example, calling <a href="../../Player.html#seekToNextMediaItem()"><code>Player.seekToNextMediaItem()</code></a> if <a href="../../Player.html#COMMAND_SEEK_TO_NEXT_MEDIA_ITEM"><code>Player.COMMAND_SEEK_TO_NEXT_MEDIA_ITEM</code></a> is unavailable) will
  neither throw an exception nor generate a <a href="../../Player.html#getPlayerError()"><code>Player.getPlayerError()</code></a> player error}.
 
  <p><a href="../../Player.html#COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM"><code>Player.COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM</code></a> and <a href="../../Player.html#COMMAND_SEEK_TO_NEXT_MEDIA_ITEM"><code>Player.COMMAND_SEEK_TO_NEXT_MEDIA_ITEM</code></a>
- are unavailable if there is no such <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</div>
+ are unavailable if there is no such <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The currently available <a href="../../Player.Commands.html" title="class in com.google.android.exoplayer2"><code>Player.Commands</code></a>.</dd>
+<dd>The currently available <a href="../../Player.Commands.html" title="class in com.firework.android.exoplayer2"><code>Player.Commands</code></a>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)"><code>Player.Listener.onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)"><code>Player.Listener.onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1231,15 +1231,15 @@ public&nbsp;void&nbsp;removeListener&#8203;(<a href="../../Player.EventListener.
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlaybackState</h4>
-<pre class="methodSignature"><a href="../../Player.State.html" title="annotation in com.google.android.exoplayer2">@State</a>
-public&nbsp;@com.google.android.exoplayer2.Player.State int&nbsp;getPlaybackState()</pre>
+<pre class="methodSignature"><a href="../../Player.State.html" title="annotation in com.firework.android.exoplayer2">@State</a>
+public&nbsp;@com.firework.android.exoplayer2.Player.State int&nbsp;getPlaybackState()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getPlaybackState()">Player</a></code></span></div>
-<div class="block">Returns the current <a href="../../Player.State.html" title="annotation in com.google.android.exoplayer2"><code>playback state</code></a> of the player.</div>
+<div class="block">Returns the current <a href="../../Player.State.html" title="annotation in com.firework.android.exoplayer2"><code>playback state</code></a> of the player.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The current <a href="../../Player.State.html" title="annotation in com.google.android.exoplayer2"><code>playback state</code></a>.</dd>
+<dd>The current <a href="../../Player.State.html" title="annotation in com.firework.android.exoplayer2"><code>playback state</code></a>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)"><code>Player.Listener.onPlaybackStateChanged(int)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)"><code>Player.Listener.onPlaybackStateChanged(int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1249,16 +1249,16 @@ public&nbsp;@com.google.android.exoplayer2.Player.State int&nbsp;getPlaybackStat
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlaybackSuppressionReason</h4>
-<pre class="methodSignature"><a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.google.android.exoplayer2">@PlaybackSuppressionReason</a>
-public&nbsp;@com.google.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;getPlaybackSuppressionReason()</pre>
+<pre class="methodSignature"><a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.firework.android.exoplayer2">@PlaybackSuppressionReason</a>
+public&nbsp;@com.firework.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;getPlaybackSuppressionReason()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getPlaybackSuppressionReason()">Player</a></code></span></div>
 <div class="block">Returns the reason why playback is suppressed even though <a href="../../Player.html#getPlayWhenReady()"><code>Player.getPlayWhenReady()</code></a> is <code>
  true</code>, or <a href="../../Player.html#PLAYBACK_SUPPRESSION_REASON_NONE"><code>Player.PLAYBACK_SUPPRESSION_REASON_NONE</code></a> if playback is not suppressed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The current <a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.google.android.exoplayer2"><code>playback suppression reason</code></a>.</dd>
+<dd>The current <a href="../../Player.PlaybackSuppressionReason.html" title="annotation in com.firework.android.exoplayer2"><code>playback suppression reason</code></a>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onPlaybackSuppressionReasonChanged(@com.google.android.exoplayer2.Player.PlaybackSuppressionReasonint)"><code>Player.Listener.onPlaybackSuppressionReasonChanged(int)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onPlaybackSuppressionReasonChanged(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReasonint)"><code>Player.Listener.onPlaybackSuppressionReasonChanged(int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1269,10 +1269,10 @@ public&nbsp;@com.google.android.exoplayer2.Player.PlaybackSuppressionReason int&
 <li class="blockList">
 <h4>getPlayerError</h4>
 <pre class="methodSignature">@Nullable
-public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a>&nbsp;getPlayerError()</pre>
+public&nbsp;<a href="../../PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a>&nbsp;getPlayerError()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getPlayerError()">Player</a></code></span></div>
 <div class="block">Returns the error that caused playback to fail. This is the same error that will have been
- reported via <a href="../../Player.Listener.html#onPlayerError(com.google.android.exoplayer2.PlaybackException)"><code>Player.Listener.onPlayerError(PlaybackException)</code></a> at the time of failure. It can
+ reported via <a href="../../Player.Listener.html#onPlayerError(com.firework.android.exoplayer2.PlaybackException)"><code>Player.Listener.onPlayerError(PlaybackException)</code></a> at the time of failure. It can
  be queried using this method until the player is re-prepared.
 
  <p>Note that this method will always return <code>null</code> if <a href="../../Player.html#getPlaybackState()"><code>Player.getPlaybackState()</code></a> is not
@@ -1281,7 +1281,7 @@ public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.an
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The error, or <code>null</code>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onPlayerError(com.google.android.exoplayer2.PlaybackException)"><code>Player.Listener.onPlayerError(PlaybackException)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onPlayerError(com.firework.android.exoplayer2.PlaybackException)"><code>Player.Listener.onPlayerError(PlaybackException)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1315,7 +1315,7 @@ public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.an
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Whether playback will proceed when ready.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)"><code>Player.Listener.onPlayWhenReadyChanged(boolean, int)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)"><code>Player.Listener.onPlayWhenReadyChanged(boolean, int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1328,11 +1328,11 @@ public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.an
 <pre class="methodSignature">public&nbsp;void&nbsp;seekTo&#8203;(int&nbsp;mediaItemIndex,
                    long&nbsp;positionMs)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#seekTo(int,long)">Player</a></code></span></div>
-<div class="block">Seeks to a position specified in milliseconds in the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</div>
+<div class="block">Seeks to a position specified in milliseconds in the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItemIndex</code> - The index of the <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</dd>
-<dd><code>positionMs</code> - The seek position in the specified <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>, or <a href="../../C.html#TIME_UNSET"><code>C.TIME_UNSET</code></a>
+<dd><code>mediaItemIndex</code> - The index of the <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</dd>
+<dd><code>positionMs</code> - The seek position in the specified <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>, or <a href="../../C.html#TIME_UNSET"><code>C.TIME_UNSET</code></a>
      to seek to the media item's default position.</dd>
 </dl>
 </li>
@@ -1379,7 +1379,7 @@ public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.an
 <h4>getMaxSeekToPreviousPosition</h4>
 <pre class="methodSignature">public&nbsp;long&nbsp;getMaxSeekToPreviousPosition()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getMaxSeekToPreviousPosition()">Player</a></code></span></div>
-<div class="block">Returns the maximum position for which <a href="../../Player.html#seekToPrevious()"><code>Player.seekToPrevious()</code></a> seeks to the previous <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>, in milliseconds.</div>
+<div class="block">Returns the maximum position for which <a href="../../Player.html#seekToPrevious()"><code>Player.seekToPrevious()</code></a> seeks to the previous <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>, in milliseconds.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The maximum seek to previous position, in milliseconds.</dd>
@@ -1394,12 +1394,12 @@ public&nbsp;<a href="../../PlaybackException.html" title="class in com.google.an
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlaybackParameters</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a>&nbsp;getPlaybackParameters()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a>&nbsp;getPlaybackParameters()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getPlaybackParameters()">Player</a></code></span></div>
 <div class="block">Returns the currently active playback parameters.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)"><code>Player.Listener.onPlaybackParametersChanged(PlaybackParameters)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)"><code>Player.Listener.onPlaybackParametersChanged(PlaybackParameters)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1446,18 +1446,18 @@ public&nbsp;void&nbsp;stop&#8203;(boolean&nbsp;reset)</pre>
  player must not be used after calling this method.</div>
 </li>
 </ul>
-<a id="setPlaybackParameters(com.google.android.exoplayer2.PlaybackParameters)">
+<a id="setPlaybackParameters(com.firework.android.exoplayer2.PlaybackParameters)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPlaybackParameters</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setPlaybackParameters&#8203;(<a href="../../PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setPlaybackParameters(com.google.android.exoplayer2.PlaybackParameters)">Player</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPlaybackParameters&#8203;(<a href="../../PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setPlaybackParameters(com.firework.android.exoplayer2.PlaybackParameters)">Player</a></code></span></div>
 <div class="block">Attempts to set the playback parameters. Passing <a href="../../PlaybackParameters.html#DEFAULT"><code>PlaybackParameters.DEFAULT</code></a> resets the
  player to the default, which means there is no speed or pitch adjustment.
 
- <p>Playback parameters changes may cause the player to buffer. <a href="../../Player.Listener.html#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)"><code>Player.Listener.onPlaybackParametersChanged(PlaybackParameters)</code></a> will be called whenever the currently
+ <p>Playback parameters changes may cause the player to buffer. <a href="../../Player.Listener.html#onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)"><code>Player.Listener.onPlaybackParametersChanged(PlaybackParameters)</code></a> will be called whenever the currently
  active playback parameters change.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1465,16 +1465,16 @@ public&nbsp;void&nbsp;stop&#8203;(boolean&nbsp;reset)</pre>
 </dl>
 </li>
 </ul>
-<a id="setRepeatMode(@com.google.android.exoplayer2.Player.RepeatModeint)">
+<a id="setRepeatMode(@com.firework.android.exoplayer2.Player.RepeatModeint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setRepeatMode</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setRepeatMode&#8203;(<a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2">@RepeatMode</a>
-                          @com.google.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setRepeatMode(@com.google.android.exoplayer2.Player.RepeatModeint)">Player</a></code></span></div>
-<div class="block">Sets the <a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2"><code>Player.RepeatMode</code></a> to be used for playback.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;setRepeatMode&#8203;(<a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2">@RepeatMode</a>
+                          @com.firework.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setRepeatMode(@com.firework.android.exoplayer2.Player.RepeatModeint)">Player</a></code></span></div>
+<div class="block">Sets the <a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2"><code>Player.RepeatMode</code></a> to be used for playback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>repeatMode</code> - The repeat mode.</dd>
@@ -1487,15 +1487,15 @@ public&nbsp;void&nbsp;stop&#8203;(boolean&nbsp;reset)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getRepeatMode</h4>
-<pre class="methodSignature"><a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2">@RepeatMode</a>
-public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatMode()</pre>
+<pre class="methodSignature"><a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2">@RepeatMode</a>
+public&nbsp;@com.firework.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatMode()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getRepeatMode()">Player</a></code></span></div>
-<div class="block">Returns the current <a href="../../Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</div>
+<div class="block">Returns the current <a href="../../Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The current repeat mode.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onRepeatModeChanged(@com.google.android.exoplayer2.Player.RepeatModeint)"><code>Player.Listener.onRepeatModeChanged(int)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onRepeatModeChanged(@com.firework.android.exoplayer2.Player.RepeatModeint)"><code>Player.Listener.onRepeatModeChanged(int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1535,12 +1535,12 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentTrackGroups</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../source/TrackGroupArray.html" title="class in com.google.android.exoplayer2.source">TrackGroupArray</a>&nbsp;getCurrentTrackGroups()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../source/TrackGroupArray.html" title="class in com.firework.android.exoplayer2.source">TrackGroupArray</a>&nbsp;getCurrentTrackGroups()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getCurrentTrackGroups()">Player</a></code></span></div>
 <div class="block">Returns the available track groups.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.EventListener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
+<dd><a href="../../Player.EventListener.html#onTracksChanged(com.firework.android.exoplayer2.source.TrackGroupArray,com.firework.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1550,7 +1550,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentTrackSelections</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../trackselection/TrackSelectionArray.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionArray</a>&nbsp;getCurrentTrackSelections()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../trackselection/TrackSelectionArray.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionArray</a>&nbsp;getCurrentTrackSelections()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getCurrentTrackSelections()">Player</a></code></span></div>
 <div class="block">Returns the current track selections.
 
@@ -1559,7 +1559,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
  components that is not assigned any selected tracks.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.EventListener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
+<dd><a href="../../Player.EventListener.html#onTracksChanged(com.firework.android.exoplayer2.source.TrackGroupArray,com.firework.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1569,12 +1569,12 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentTracksInfo</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../TracksInfo.html" title="class in com.google.android.exoplayer2">TracksInfo</a>&nbsp;getCurrentTracksInfo()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../TracksInfo.html" title="class in com.firework.android.exoplayer2">TracksInfo</a>&nbsp;getCurrentTracksInfo()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getCurrentTracksInfo()">Player</a></code></span></div>
 <div class="block">Returns the available tracks, as well as the tracks' support, type, and selection status.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.EventListener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
+<dd><a href="../../Player.EventListener.html#onTracksChanged(com.firework.android.exoplayer2.source.TrackGroupArray,com.firework.android.exoplayer2.trackselection.TrackSelectionArray)"><code>Player.EventListener.onTracksChanged(TrackGroupArray, TrackSelectionArray)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1584,23 +1584,23 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getTrackSelectionParameters</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;getTrackSelectionParameters()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;getTrackSelectionParameters()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getTrackSelectionParameters()">Player</a></code></span></div>
 <div class="block">Returns the parameters constraining the track selection.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.EventListener.html#onTrackSelectionParametersChanged(com.google.android.exoplayer2.trackselection.TrackSelectionParameters)"><code>}</code></a></dd>
+<dd><a href="../../Player.EventListener.html#onTrackSelectionParametersChanged(com.firework.android.exoplayer2.trackselection.TrackSelectionParameters)"><code>}</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="setTrackSelectionParameters(com.google.android.exoplayer2.trackselection.TrackSelectionParameters)">
+<a id="setTrackSelectionParameters(com.firework.android.exoplayer2.trackselection.TrackSelectionParameters)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTrackSelectionParameters</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTrackSelectionParameters&#8203;(<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.google.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;parameters)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setTrackSelectionParameters(com.google.android.exoplayer2.trackselection.TrackSelectionParameters)">Player</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTrackSelectionParameters&#8203;(<a href="../../trackselection/TrackSelectionParameters.html" title="class in com.firework.android.exoplayer2.trackselection">TrackSelectionParameters</a>&nbsp;parameters)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#setTrackSelectionParameters(com.firework.android.exoplayer2.trackselection.TrackSelectionParameters)">Player</a></code></span></div>
 <div class="block">Sets the parameters constraining the track selection.
 
  <p>Unsupported parameters will be silently ignored.
@@ -1624,14 +1624,14 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getMediaMetadata</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;getMediaMetadata()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;getMediaMetadata()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getMediaMetadata()">Player</a></code></span></div>
-<div class="block">Returns the current combined <a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not
+<div class="block">Returns the current combined <a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not
  supported.
 
- <p>This <a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> is a combination of the <a href="../../MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a> and the
+ <p>This <a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> is a combination of the <a href="../../MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a> and the
  static and dynamic metadata from the <a href="../../trackselection/TrackSelection.html#getFormat(int)"><code>track selections'
- formats</code></a> and <a href="../../Player.Listener.html#onMetadata(com.google.android.exoplayer2.metadata.Metadata)"><code>Player.Listener.onMetadata(Metadata)</code></a>. If a field is populated in the <a href="../../MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a>, it will be prioritised above the same field coming from static or
+ formats</code></a> and <a href="../../Player.Listener.html#onMetadata(com.firework.android.exoplayer2.metadata.Metadata)"><code>Player.Listener.onMetadata(Metadata)</code></a>. If a field is populated in the <a href="../../MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a>, it will be prioritised above the same field coming from static or
  dynamic metadata.</div>
 </li>
 </ul>
@@ -1641,18 +1641,18 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlaylistMetadata</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;getPlaylistMetadata()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;getPlaylistMetadata()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getPlaylistMetadata()">Player</a></code></span></div>
-<div class="block">Returns the playlist <a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a>, as set by <a href="../../Player.html#setPlaylistMetadata(com.google.android.exoplayer2.MediaMetadata)"><code>Player.setPlaylistMetadata(MediaMetadata)</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not supported.</div>
+<div class="block">Returns the playlist <a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a>, as set by <a href="../../Player.html#setPlaylistMetadata(com.firework.android.exoplayer2.MediaMetadata)"><code>Player.setPlaylistMetadata(MediaMetadata)</code></a>, or <a href="../../MediaMetadata.html#EMPTY"><code>MediaMetadata.EMPTY</code></a> if not supported.</div>
 </li>
 </ul>
-<a id="setPlaylistMetadata(com.google.android.exoplayer2.MediaMetadata)">
+<a id="setPlaylistMetadata(com.firework.android.exoplayer2.MediaMetadata)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPlaylistMetadata</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setPlaylistMetadata&#8203;(<a href="../../MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPlaylistMetadata&#8203;(<a href="../../MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
 <div class="block">This method is not supported and does nothing.</div>
 </li>
 </ul>
@@ -1662,12 +1662,12 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentTimeline</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../Timeline.html" title="class in com.google.android.exoplayer2">Timeline</a>&nbsp;getCurrentTimeline()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../Timeline.html" title="class in com.firework.android.exoplayer2">Timeline</a>&nbsp;getCurrentTimeline()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getCurrentTimeline()">Player</a></code></span></div>
-<div class="block">Returns the current <a href="../../Timeline.html" title="class in com.google.android.exoplayer2"><code>Timeline</code></a>. Never null, but may be empty.</div>
+<div class="block">Returns the current <a href="../../Timeline.html" title="class in com.firework.android.exoplayer2"><code>Timeline</code></a>. Never null, but may be empty.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)"><code>Player.Listener.onTimelineChanged(Timeline, int)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)"><code>Player.Listener.onTimelineChanged(Timeline, int)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1690,7 +1690,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <h4>getCurrentMediaItemIndex</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getCurrentMediaItemIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getCurrentMediaItemIndex()">Player</a></code></span></div>
-<div class="block">Returns the index of the current <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> in the <a href="../../Player.html#getCurrentTimeline()"><code>timeline</code></a>, or the prospective index if the <a href="../../Player.html#getCurrentTimeline()"><code>current timeline</code></a> is
+<div class="block">Returns the index of the current <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> in the <a href="../../Player.html#getCurrentTimeline()"><code>timeline</code></a>, or the prospective index if the <a href="../../Player.html#getCurrentTimeline()"><code>current timeline</code></a> is
  empty.</div>
 </li>
 </ul>
@@ -1739,7 +1739,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <pre class="methodSignature">public&nbsp;long&nbsp;getTotalBufferedDuration()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../Player.html#getTotalBufferedDuration()">Player</a></code></span></div>
 <div class="block">Returns an estimate of the total buffered duration from the current position, in milliseconds.
- This includes pre-buffered data for subsequent ads and <a href="../../MediaItem.html" title="class in com.google.android.exoplayer2"><code>media items</code></a>.</div>
+ This includes pre-buffered data for subsequent ads and <a href="../../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>media items</code></a>.</div>
 </li>
 </ul>
 <a id="isPlayingAd()">
@@ -1826,7 +1826,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getAudioAttributes</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../audio/AudioAttributes.html" title="class in com.google.android.exoplayer2.audio">AudioAttributes</a>&nbsp;getAudioAttributes()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../audio/AudioAttributes.html" title="class in com.firework.android.exoplayer2.audio">AudioAttributes</a>&nbsp;getAudioAttributes()</pre>
 <div class="block">This method is not supported and returns <a href="../../audio/AudioAttributes.html#DEFAULT"><code>AudioAttributes.DEFAULT</code></a>.</div>
 </li>
 </ul>
@@ -1994,11 +1994,11 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getVideoSize</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../video/VideoSize.html" title="class in com.google.android.exoplayer2.video">VideoSize</a>&nbsp;getVideoSize()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../video/VideoSize.html" title="class in com.firework.android.exoplayer2.video">VideoSize</a>&nbsp;getVideoSize()</pre>
 <div class="block">This method is not supported and returns <a href="../../video/VideoSize.html#UNKNOWN"><code>VideoSize.UNKNOWN</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../Player.Listener.html#onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)"><code>Player.Listener.onVideoSizeChanged(VideoSize)</code></a></dd>
+<dd><a href="../../Player.Listener.html#onVideoSizeChanged(com.firework.android.exoplayer2.video.VideoSize)"><code>Player.Listener.onVideoSizeChanged(VideoSize)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -2008,7 +2008,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentCues</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/27.1-android/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../text/Cue.html" title="class in com.google.android.exoplayer2.text">Cue</a>&gt;&nbsp;getCurrentCues()</pre>
+<pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/27.1-android/api/docs/com/google/common/collect/ImmutableList.html?is-external=true" title="class or interface in com.google.common.collect" class="externalLink">ImmutableList</a>&lt;<a href="../../text/Cue.html" title="class in com.firework.android.exoplayer2.text">Cue</a>&gt;&nbsp;getCurrentCues()</pre>
 <div class="block">This method is not supported and returns an empty list.</div>
 </li>
 </ul>
@@ -2018,7 +2018,7 @@ public&nbsp;@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;getRepeatM
 <ul class="blockList">
 <li class="blockList">
 <h4>getDeviceInfo</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../DeviceInfo.html" title="class in com.google.android.exoplayer2">DeviceInfo</a>&nbsp;getDeviceInfo()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../DeviceInfo.html" title="class in com.firework.android.exoplayer2">DeviceInfo</a>&nbsp;getDeviceInfo()</pre>
 <div class="block">This method is not supported and always returns <a href="../../DeviceInfo.html#UNKNOWN"><code>DeviceInfo.UNKNOWN</code></a>.</div>
 </li>
 </ul>

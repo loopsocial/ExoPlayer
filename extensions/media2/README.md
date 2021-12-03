@@ -11,7 +11,7 @@ control for incoming calls, so you can selectively allow/reject commands per con
 The easiest way to get the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:extension-media2:2.X.X'
+implementation 'com.firework.android.exoplayer:extension-media2:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media
@@ -38,7 +38,7 @@ collaborators. You can use a [MediaSession.SessionCallback][] to build a [MediaS
 ## Links
 
 * [Javadoc][]: Classes matching
-  `com.google.android.exoplayer2.ext.media2.*` belong to this module.
+  `com.firework.android.exoplayer2.ext.media2.*` belong to this module.
 
 [Javadoc]: https://exoplayer.dev/doc/reference/index.html
 

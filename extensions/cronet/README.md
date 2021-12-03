@@ -17,7 +17,7 @@ and is our recommended network stack for most use cases.
 The easiest way to get the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:extension-cronet:2.X.X'
+implementation 'com.firework.android.exoplayer:extension-cronet:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media
@@ -56,7 +56,7 @@ instance.
 #### Google Play Services
 
 By default, this module depends on
-`com.google.android.gms:play-services-cronet`, which loads an implementation of
+`com.firework.android.gms:play-services-cronet`, which loads an implementation of
 Cronet from Google Play Services. When Google Play Services is available, this
 approach is beneficial because:
 

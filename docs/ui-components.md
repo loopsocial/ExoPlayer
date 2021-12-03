@@ -8,7 +8,7 @@ a number of UI components. To depend on the UI module add a dependency as shown
 below.
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-ui:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-ui:2.X.X'
 ~~~
 {: .language-gradle}
 
@@ -36,7 +36,7 @@ your layout files like any other UI component. For example, a `StyledPlayerView`
 can be included with the following XML:
 
 ~~~
-<com.google.android.exoplayer2.ui.StyledPlayerView
+<com.firework.android.exoplayer2.ui.StyledPlayerView
     android:id="@+id/player_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -136,7 +136,7 @@ also be used as standalone components. They can be included in your layout file
 as normal. For example:
 
 ~~~
-<com.google.android.exoplayer2.ui.StyledPlayerControlView
+<com.firework.android.exoplayer2.ui.StyledPlayerControlView
     android:id="@+id/player_control_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
@@ -239,7 +239,7 @@ layout should be used when inflating the view. For example when using
 specified using the `controller_layout_id` attribute:
 
 ~~~
-<com.google.android.exoplayer2.ui.PlayerView android:id="@+id/player_view"
+<com.firework.android.exoplayer2.ui.PlayerView android:id="@+id/player_view"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      app:controller_layout_id="@layout/custom_controls"/>

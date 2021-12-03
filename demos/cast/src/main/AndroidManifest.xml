@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.exoplayer2.castdemo">
+    package="com.firework.android.exoplayer2.castdemo">
 
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -25,8 +25,8 @@
   <application android:label="@string/application_name" android:icon="@mipmap/ic_launcher"
       android:largeHeap="true" android:allowBackup="false">
 
-    <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-        android:value="com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider"/>
+    <meta-data android:name="com.firework.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+        android:value="com.firework.android.exoplayer2.ext.cast.DefaultCastOptionsProvider"/>
 
     <activity android:name=".MainActivity"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"

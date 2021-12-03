@@ -14,12 +14,12 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.exoplayer2.ext.ima">
+    package="com.firework.android.exoplayer2.ext.ima">
   <uses-sdk />
   <application>
-    <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+    <meta-data android:name="com.firework.android.gms.ads.AD_MANAGER_APP"
         android:value="true"/>
-    <meta-data android:name="com.google.android.gms.version"
+    <meta-data android:name="com.firework.android.gms.version"
         android:value="@integer/google_play_services_version"/>
   </application>
 </manifest>

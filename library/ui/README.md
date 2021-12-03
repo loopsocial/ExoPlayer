@@ -7,7 +7,7 @@ Provides UI components for media playback.
 The easiest way to use the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:exoplayer-ui:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-ui:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media

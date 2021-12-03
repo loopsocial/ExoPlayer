@@ -14,7 +14,7 @@ The most convenient way to use ExoPlayer is to add a dependency to the full
 library:
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer:2.X.X'
 ~~~
 {: .language-gradle}
 
@@ -24,9 +24,9 @@ add dependencies on the Core, DASH and UI library modules, as might be required
 for an app that only plays DASH content:
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-core:2.X.X'
-implementation 'com.google.android.exoplayer:exoplayer-dash:2.X.X'
-implementation 'com.google.android.exoplayer:exoplayer-ui:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-core:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-dash:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-ui:2.X.X'
 ~~~
 {: .language-gradle}
 

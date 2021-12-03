@@ -113,7 +113,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.google.android.exoplayer2.transformer</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.firework.android.exoplayer2.transformer</a></div>
 <h2 title="Class TranscodingTransformer" class="title">Class TranscodingTransformer</h2>
 </div>
 <div class="contentContainer">
@@ -121,7 +121,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="externalLink" target="_top">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.google.android.exoplayer2.transformer.TranscodingTransformer</li>
+<li>com.firework.android.exoplayer2.transformer.TranscodingTransformer</li>
 </ul>
 </li>
 </ul>
@@ -134,7 +134,7 @@ public final class <span class="typeNameLabel">TranscodingTransformer</span>
 extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="externalLink" target="_top">Object</a></pre>
 <div class="block">A transcoding transformer to transform media inputs.
 
- <p>Temporary copy of the <a href="Transformer.html" title="class in com.google.android.exoplayer2.transformer"><code>Transformer</code></a> class, which transforms by transcoding rather than
+ <p>Temporary copy of the <a href="Transformer.html" title="class in com.firework.android.exoplayer2.transformer"><code>Transformer</code></a> class, which transforms by transcoding rather than
  by muxing. This class is intended to replace the Transformer class.
 
  <p>TODO(http://b/202131097): Replace the Transformer class with TranscodingTransformer, and
@@ -146,7 +146,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
  <p>TranscodingTransformer instances must be accessed from a single application thread. For the
  vast majority of cases this should be the application's main thread. The thread on which a
  TranscodingTransformer instance must be accessed can be explicitly specified by passing a <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> when creating the transcoding transformer. If no Looper is specified, then the Looper of
- the thread that the <a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> is created on is used, or if that
+ the thread that the <a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> is created on is used, or if that
  thread does not have a Looper, the Looper of the application's main thread is used. In all cases
  the Looper of the thread from which the transcoding transformer must be accessed can be queried
  using <a href="#getApplicationLooper()"><code>getApplicationLooper()</code></a>.</div>
@@ -172,21 +172,21 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer">TranscodingTransformer.Builder</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Builder</a></span></code></th>
 <td class="colLast">
-<div class="block">A builder for <a href="TranscodingTransformer.html" title="class in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer</code></a> instances.</div>
+<div class="block">A builder for <a href="TranscodingTransformer.html" title="class in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer</code></a> instances.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer">TranscodingTransformer.Listener</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Listener</a></span></code></th>
 <td class="colLast">
 <div class="block">A listener for the transformation events.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.ProgressState.html" title="annotation in com.google.android.exoplayer2.transformer">TranscodingTransformer.ProgressState</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="TranscodingTransformer.ProgressState.html" title="annotation in com.firework.android.exoplayer2.transformer">TranscodingTransformer.ProgressState</a></span></code></th>
 <td class="colLast">
 <div class="block">Progress state.</div>
 </td>
@@ -257,10 +257,10 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer">TranscodingTransformer.Builder</a></code></td>
+<td class="colFirst"><code><a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buildUpon()">buildUpon</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> initialized with the values of this instance.</div>
+<div class="block">Returns a <a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> initialized with the values of this instance.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -280,33 +280,33 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProgress(com.google.android.exoplayer2.transformer.ProgressHolder)">getProgress</a></span>&#8203;(<a href="ProgressHolder.html" title="class in com.google.android.exoplayer2.transformer">ProgressHolder</a>&nbsp;progressHolder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProgress(com.firework.android.exoplayer2.transformer.ProgressHolder)">getProgress</a></span>&#8203;(<a href="ProgressHolder.html" title="class in com.firework.android.exoplayer2.transformer">ProgressHolder</a>&nbsp;progressHolder)</code></th>
 <td class="colLast">
-<div class="block">Returns the current <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a> and updates <code>progressHolder</code> with the current
+<div class="block">Returns the current <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a> and updates <code>progressHolder</code> with the current
  progress if it is <a href="#PROGRESS_STATE_AVAILABLE"><code>available</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setListener(com.google.android.exoplayer2.transformer.TranscodingTransformer.Listener)">setListener</a></span>&#8203;(<a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer">TranscodingTransformer.Listener</a>&nbsp;listener)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setListener(com.firework.android.exoplayer2.transformer.TranscodingTransformer.Listener)">setListener</a></span>&#8203;(<a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Listener</a>&nbsp;listener)</code></th>
 <td class="colLast">
-<div class="block">Sets the <a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a> to listen to the transformation events.</div>
+<div class="block">Sets the <a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a> to listen to the transformation events.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startTransformation(com.google.android.exoplayer2.MediaItem,android.os.ParcelFileDescriptor)">startTransformation</a></span>&#8203;(<a href="../MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startTransformation(com.firework.android.exoplayer2.MediaItem,android.os.ParcelFileDescriptor)">startTransformation</a></span>&#8203;(<a href="../MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
                    <a href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html" title="class or interface in android.os" class="externalLink" target="_top">ParcelFileDescriptor</a>&nbsp;parcelFileDescriptor)</code></th>
 <td class="colLast">
-<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</div>
+<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startTransformation(com.google.android.exoplayer2.MediaItem,java.lang.String)">startTransformation</a></span>&#8203;(<a href="../MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startTransformation(com.firework.android.exoplayer2.MediaItem,java.lang.String)">startTransformation</a></span>&#8203;(<a href="../MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
                    <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="externalLink" target="_top">String</a>&nbsp;path)</code></th>
 <td class="colLast">
-<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.</div>
+<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -344,7 +344,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
  available.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.google.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_WAITING_FOR_AVAILABILITY">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#com.firework.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_WAITING_FOR_AVAILABILITY">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -358,7 +358,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 <div class="block">Indicates that the progress is available.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.google.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_AVAILABLE">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#com.firework.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_AVAILABLE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -372,7 +372,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 <div class="block">Indicates that the progress is permanently unavailable for the current transformation.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.google.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_UNAVAILABLE">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#com.firework.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_UNAVAILABLE">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -386,7 +386,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 <div class="block">Indicates that there is no current transformation.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../constant-values.html#com.google.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_NO_TRANSFORMATION">Constant Field Values</a></dd>
+<dd><a href="../../../../../constant-values.html#com.firework.android.exoplayer2.transformer.TranscodingTransformer.PROGRESS_STATE_NO_TRANSFORMATION">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -406,47 +406,47 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>buildUpon</h4>
-<pre class="methodSignature">public&nbsp;<a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer">TranscodingTransformer.Builder</a>&nbsp;buildUpon()</pre>
-<div class="block">Returns a <a href="TranscodingTransformer.Builder.html" title="class in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> initialized with the values of this instance.</div>
+<pre class="methodSignature">public&nbsp;<a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Builder</a>&nbsp;buildUpon()</pre>
+<div class="block">Returns a <a href="TranscodingTransformer.Builder.html" title="class in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Builder</code></a> initialized with the values of this instance.</div>
 </li>
 </ul>
-<a id="setListener(com.google.android.exoplayer2.transformer.TranscodingTransformer.Listener)">
+<a id="setListener(com.firework.android.exoplayer2.transformer.TranscodingTransformer.Listener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setListener</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setListener&#8203;(<a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer">TranscodingTransformer.Listener</a>&nbsp;listener)</pre>
-<div class="block">Sets the <a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a> to listen to the transformation events.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;setListener&#8203;(<a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer">TranscodingTransformer.Listener</a>&nbsp;listener)</pre>
+<div class="block">Sets the <a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a> to listen to the transformation events.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - A <a href="TranscodingTransformer.Listener.html" title="interface in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a>.</dd>
+<dd><code>listener</code> - A <a href="TranscodingTransformer.Listener.html" title="interface in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.Listener</code></a>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="externalLink" target="_top">IllegalStateException</a></code> - If this method is called from the wrong thread.</dd>
 </dl>
 </li>
 </ul>
-<a id="startTransformation(com.google.android.exoplayer2.MediaItem,java.lang.String)">
+<a id="startTransformation(com.firework.android.exoplayer2.MediaItem,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>startTransformation</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;startTransformation&#8203;(<a href="../MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+<pre class="methodSignature">public&nbsp;void&nbsp;startTransformation&#8203;(<a href="../MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
                                 <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="externalLink" target="_top">String</a>&nbsp;path)
                          throws <a href="https://developer.android.com/reference/java/io/IOException.html" title="class or interface in java.io" class="externalLink" target="_top">IOException</a></pre>
-<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.
+<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.
 
- <p>The transformation state is notified through the <a href="TranscodingTransformer.Builder.html#setListener(com.google.android.exoplayer2.transformer.TranscodingTransformer.Listener)"><code>listener</code></a>.
+ <p>The transformation state is notified through the <a href="TranscodingTransformer.Builder.html#setListener(com.firework.android.exoplayer2.transformer.TranscodingTransformer.Listener)"><code>listener</code></a>.
 
  <p>Concurrent transformations on the same TranscodingTransformer object are not allowed.
 
  <p>The output can contain at most one video track and one audio track. Other track types are
- ignored. For adaptive bitrate <a href="../source/MediaSource.html" title="interface in com.google.android.exoplayer2.source"><code>media sources</code></a>, the highest bitrate video and
+ ignored. For adaptive bitrate <a href="../source/MediaSource.html" title="interface in com.firework.android.exoplayer2.source"><code>media sources</code></a>, the highest bitrate video and
  audio streams are selected.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItem</code> - The <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> to transform. The supported sample formats depend on the
+<dd><code>mediaItem</code> - The <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> to transform. The supported sample formats depend on the
      <code>Muxer</code> and on the output container format. For the <code>FrameworkMuxer</code>, they are
      described in <a href="https://developer.android.com/reference/android/media/MediaMuxer.html#addTrack(android.media.MediaFormat)" title="class or interface in android.media" class="externalLink" target="_top"><code>MediaMuxer.addTrack(MediaFormat)</code></a>.</dd>
 <dd><code>path</code> - The path to the output file.</dd>
@@ -458,28 +458,28 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html" 
 </dl>
 </li>
 </ul>
-<a id="startTransformation(com.google.android.exoplayer2.MediaItem,android.os.ParcelFileDescriptor)">
+<a id="startTransformation(com.firework.android.exoplayer2.MediaItem,android.os.ParcelFileDescriptor)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>startTransformation</h4>
 <pre class="methodSignature">@RequiresApi(26)
-public&nbsp;void&nbsp;startTransformation&#8203;(<a href="../MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+public&nbsp;void&nbsp;startTransformation&#8203;(<a href="../MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
                                 <a href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html" title="class or interface in android.os" class="externalLink" target="_top">ParcelFileDescriptor</a>&nbsp;parcelFileDescriptor)
                          throws <a href="https://developer.android.com/reference/java/io/IOException.html" title="class or interface in java.io" class="externalLink" target="_top">IOException</a></pre>
-<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>.
+<div class="block">Starts an asynchronous operation to transform the given <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>.
 
- <p>The transformation state is notified through the <a href="TranscodingTransformer.Builder.html#setListener(com.google.android.exoplayer2.transformer.TranscodingTransformer.Listener)"><code>listener</code></a>.
+ <p>The transformation state is notified through the <a href="TranscodingTransformer.Builder.html#setListener(com.firework.android.exoplayer2.transformer.TranscodingTransformer.Listener)"><code>listener</code></a>.
 
  <p>Concurrent transformations on the same TranscodingTransformer object are not allowed.
 
  <p>The output can contain at most one video track and one audio track. Other track types are
- ignored. For adaptive bitrate <a href="../source/MediaSource.html" title="interface in com.google.android.exoplayer2.source"><code>media sources</code></a>, the highest bitrate video and
+ ignored. For adaptive bitrate <a href="../source/MediaSource.html" title="interface in com.firework.android.exoplayer2.source"><code>media sources</code></a>, the highest bitrate video and
  audio streams are selected.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItem</code> - The <a href="../MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> to transform. The supported sample formats depend on the
+<dd><code>mediaItem</code> - The <a href="../MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> to transform. The supported sample formats depend on the
      <code>Muxer</code> and on the output container format. For the <code>FrameworkMuxer</code>, they are
      described in <a href="https://developer.android.com/reference/android/media/MediaMuxer.html#addTrack(android.media.MediaFormat)" title="class or interface in android.media" class="externalLink" target="_top"><code>MediaMuxer.addTrack(MediaFormat)</code></a>.</dd>
 <dd><code>parcelFileDescriptor</code> - A readable and writable <a href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html" title="class or interface in android.os" class="externalLink" target="_top"><code>ParcelFileDescriptor</code></a> of the output.
@@ -505,25 +505,25 @@ public&nbsp;void&nbsp;startTransformation&#8203;(<a href="../MediaItem.html" tit
  transcoding transformer and on which transcoding transformer events are received.</div>
 </li>
 </ul>
-<a id="getProgress(com.google.android.exoplayer2.transformer.ProgressHolder)">
+<a id="getProgress(com.firework.android.exoplayer2.transformer.ProgressHolder)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProgress</h4>
-<pre class="methodSignature"><a href="TranscodingTransformer.ProgressState.html" title="annotation in com.google.android.exoplayer2.transformer">@ProgressState</a>
-public&nbsp;int&nbsp;getProgress&#8203;(<a href="ProgressHolder.html" title="class in com.google.android.exoplayer2.transformer">ProgressHolder</a>&nbsp;progressHolder)</pre>
-<div class="block">Returns the current <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a> and updates <code>progressHolder</code> with the current
+<pre class="methodSignature"><a href="TranscodingTransformer.ProgressState.html" title="annotation in com.firework.android.exoplayer2.transformer">@ProgressState</a>
+public&nbsp;int&nbsp;getProgress&#8203;(<a href="ProgressHolder.html" title="class in com.firework.android.exoplayer2.transformer">ProgressHolder</a>&nbsp;progressHolder)</pre>
+<div class="block">Returns the current <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a> and updates <code>progressHolder</code> with the current
  progress if it is <a href="#PROGRESS_STATE_AVAILABLE"><code>available</code></a>.
 
- <p>After a transformation <a href="TranscodingTransformer.Listener.html#onTransformationCompleted(com.google.android.exoplayer2.MediaItem)"><code>completes</code></a>, this
+ <p>After a transformation <a href="TranscodingTransformer.Listener.html#onTransformationCompleted(com.firework.android.exoplayer2.MediaItem)"><code>completes</code></a>, this
  method returns <a href="#PROGRESS_STATE_NO_TRANSFORMATION"><code>PROGRESS_STATE_NO_TRANSFORMATION</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>progressHolder</code> - A <a href="ProgressHolder.html" title="class in com.google.android.exoplayer2.transformer"><code>ProgressHolder</code></a>, updated to hold the percentage progress if
+<dd><code>progressHolder</code> - A <a href="ProgressHolder.html" title="class in com.firework.android.exoplayer2.transformer"><code>ProgressHolder</code></a>, updated to hold the percentage progress if
      <a href="#PROGRESS_STATE_AVAILABLE"><code>available</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.google.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a>.</dd>
+<dd>The <a href="TranscodingTransformer.ProgressState.html" title="annotation in com.firework.android.exoplayer2.transformer"><code>TranscodingTransformer.ProgressState</code></a>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="externalLink" target="_top">IllegalStateException</a></code> - If this method is called from the wrong thread.</dd>
 </dl>

@@ -31,7 +31,7 @@ dependency in the `build.gradle` file of your app module. The following will add
 a dependency to the full library:
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer:2.X.X'
 ~~~
 {: .language-gradle}
 
@@ -44,9 +44,9 @@ on the Core, DASH and UI library modules, as might be required for an app that
 only plays DASH content:
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-core:2.X.X'
-implementation 'com.google.android.exoplayer:exoplayer-dash:2.X.X'
-implementation 'com.google.android.exoplayer:exoplayer-ui:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-core:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-dash:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-ui:2.X.X'
 ~~~
 {: .language-gradle}
 
@@ -232,4 +232,4 @@ can be done by calling `ExoPlayer.release`.
 [Playlists page]: {{ site.baseurl }}/playlists.html
 [Media items page]: {{ site.baseurl }}/media-items.html
 [Media sources page]: {{ site.baseurl }}/media-sources.html
-[Google Maven ExoPlayer page]: https://maven.google.com/web/index.html#com.google.android.exoplayer
+[Google Maven ExoPlayer page]: https://maven.google.com/web/index.html#com.firework.android.exoplayer

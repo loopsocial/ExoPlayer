@@ -113,7 +113,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.google.android.exoplayer2.upstream</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.firework.android.exoplayer2.upstream</a></div>
 <h2 title="Interface Allocator" class="title">Interface Allocator</h2>
 </div>
 <div class="contentContainer">
@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="DefaultAllocator.html" title="class in com.google.android.exoplayer2.upstream">DefaultAllocator</a></code></dd>
+<dd><code><a href="DefaultAllocator.html" title="class in com.firework.android.exoplayer2.upstream">DefaultAllocator</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">Allocator</span></pre>
@@ -148,17 +148,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a></code></td>
+<td class="colFirst"><code><a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allocate()">allocate</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Obtain an <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
+<div class="block">Obtain an <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndividualAllocationLength()">getIndividualAllocationLength</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the length of each individual <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
+<div class="block">Returns the length of each individual <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -170,23 +170,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#release(com.google.android.exoplayer2.upstream.Allocation)">release</a></span>&#8203;(<a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a>&nbsp;allocation)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#release(com.firework.android.exoplayer2.upstream.Allocation)">release</a></span>&#8203;(<a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a>&nbsp;allocation)</code></th>
 <td class="colLast">
-<div class="block">Releases an <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a> back to the allocator.</div>
+<div class="block">Releases an <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a> back to the allocator.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#release(com.google.android.exoplayer2.upstream.Allocation%5B%5D)">release</a></span>&#8203;(<a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a>[]&nbsp;allocations)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#release(com.firework.android.exoplayer2.upstream.Allocation%5B%5D)">release</a></span>&#8203;(<a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a>[]&nbsp;allocations)</code></th>
 <td class="colLast">
-<div class="block">Releases an array of <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>s back to the allocator.</div>
+<div class="block">Releases an array of <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>s back to the allocator.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#trim()">trim</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Hints to the allocator that it should make a best effort to release any excess <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>s.</div>
+<div class="block">Hints to the allocator that it should make a best effort to release any excess <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>s.</div>
 </td>
 </tr>
 </table>
@@ -212,42 +212,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>allocate</h4>
-<pre class="methodSignature"><a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a>&nbsp;allocate()</pre>
-<div class="block">Obtain an <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>.
+<pre class="methodSignature"><a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a>&nbsp;allocate()</pre>
+<div class="block">Obtain an <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>.
 
- <p>When the caller has finished with the <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>, it should be returned by calling
- <a href="#release(com.google.android.exoplayer2.upstream.Allocation)"><code>release(Allocation)</code></a>.</div>
+ <p>When the caller has finished with the <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>, it should be returned by calling
+ <a href="#release(com.firework.android.exoplayer2.upstream.Allocation)"><code>release(Allocation)</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>.</dd>
+<dd>The <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="release(com.google.android.exoplayer2.upstream.Allocation)">
+<a id="release(com.firework.android.exoplayer2.upstream.Allocation)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>release</h4>
-<pre class="methodSignature">void&nbsp;release&#8203;(<a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a>&nbsp;allocation)</pre>
-<div class="block">Releases an <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a> back to the allocator.</div>
+<pre class="methodSignature">void&nbsp;release&#8203;(<a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a>&nbsp;allocation)</pre>
+<div class="block">Releases an <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a> back to the allocator.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>allocation</code> - The <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a> being released.</dd>
+<dd><code>allocation</code> - The <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a> being released.</dd>
 </dl>
 </li>
 </ul>
-<a id="release(com.google.android.exoplayer2.upstream.Allocation[])">
+<a id="release(com.firework.android.exoplayer2.upstream.Allocation[])">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>release</h4>
-<pre class="methodSignature">void&nbsp;release&#8203;(<a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream">Allocation</a>[]&nbsp;allocations)</pre>
-<div class="block">Releases an array of <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>s back to the allocator.</div>
+<pre class="methodSignature">void&nbsp;release&#8203;(<a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream">Allocation</a>[]&nbsp;allocations)</pre>
+<div class="block">Releases an array of <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>s back to the allocator.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>allocations</code> - The array of <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>s being released.</dd>
+<dd><code>allocations</code> - The array of <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>s being released.</dd>
 </dl>
 </li>
 </ul>
@@ -258,7 +258,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>trim</h4>
 <pre class="methodSignature">void&nbsp;trim()</pre>
-<div class="block">Hints to the allocator that it should make a best effort to release any excess <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>s.</div>
+<div class="block">Hints to the allocator that it should make a best effort to release any excess <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>s.</div>
 </li>
 </ul>
 <a id="getTotalBytesAllocated()">
@@ -278,7 +278,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getIndividualAllocationLength</h4>
 <pre class="methodSignature">int&nbsp;getIndividualAllocationLength()</pre>
-<div class="block">Returns the length of each individual <a href="Allocation.html" title="class in com.google.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
+<div class="block">Returns the length of each individual <a href="Allocation.html" title="class in com.firework.android.exoplayer2.upstream"><code>Allocation</code></a>.</div>
 </li>
 </ul>
 </li>

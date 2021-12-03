@@ -46,7 +46,7 @@ Finally, you need to define the service in your `AndroidManifest.xml` file:
     android:exported="false">
   <!-- This is needed for Scheduler -->
   <intent-filter>
-    <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+    <action android:name="com.firework.android.exoplayer.downloadService.action.RESTART"/>
     <category android:name="android.intent.category.DEFAULT"/>
   </intent-filter>
 </service>

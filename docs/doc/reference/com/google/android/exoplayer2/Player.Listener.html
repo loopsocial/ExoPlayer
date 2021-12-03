@@ -113,7 +113,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.google.android.exoplayer2</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.firework.android.exoplayer2</a></div>
 <h2 title="Interface Player.Listener" class="title">Interface Player.Listener</h2>
 </div>
 <div class="contentContainer">
@@ -122,19 +122,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="analytics/AnalyticsCollector.html" title="class in com.google.android.exoplayer2.analytics">AnalyticsCollector</a></code>, <code><a href="util/DebugTextViewHelper.html" title="class in com.google.android.exoplayer2.util">DebugTextViewHelper</a></code>, <code><a href="testutil/ExoPlayerTestRunner.html" title="class in com.google.android.exoplayer2.testutil">ExoPlayerTestRunner</a></code>, <code><a href="ext/ima/ImaAdsLoader.html" title="class in com.google.android.exoplayer2.ext.ima">ImaAdsLoader</a></code>, <code><a href="ui/SubtitleView.html" title="class in com.google.android.exoplayer2.ui">SubtitleView</a></code></dd>
+<dd><code><a href="analytics/AnalyticsCollector.html" title="class in com.firework.android.exoplayer2.analytics">AnalyticsCollector</a></code>, <code><a href="util/DebugTextViewHelper.html" title="class in com.firework.android.exoplayer2.util">DebugTextViewHelper</a></code>, <code><a href="testutil/ExoPlayerTestRunner.html" title="class in com.firework.android.exoplayer2.testutil">ExoPlayerTestRunner</a></code>, <code><a href="ext/ima/ImaAdsLoader.html" title="class in com.firework.android.exoplayer2.ext.ima">ImaAdsLoader</a></code>, <code><a href="ui/SubtitleView.html" title="class in com.firework.android.exoplayer2.ui">SubtitleView</a></code></dd>
 </dl>
 <dl>
 <dt>Enclosing interface:</dt>
-<dd><a href="Player.html" title="interface in com.google.android.exoplayer2">Player</a></dd>
+<dd><a href="Player.html" title="interface in com.firework.android.exoplayer2">Player</a></dd>
 </dl>
 <hr>
 <pre>public static interface <span class="typeNameLabel">Player.Listener</span>
-extends <a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></pre>
+extends <a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></pre>
 <div class="block">Listener of all changes in the Player.
 
  <p>All methods have no-op default implementations to allow selective overrides.</div>
@@ -160,7 +160,7 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onAudioAttributesChanged(com.google.android.exoplayer2.audio.AudioAttributes)">onAudioAttributesChanged</a></span>&#8203;(<a href="audio/AudioAttributes.html" title="class in com.google.android.exoplayer2.audio">AudioAttributes</a>&nbsp;audioAttributes)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onAudioAttributesChanged(com.firework.android.exoplayer2.audio.AudioAttributes)">onAudioAttributesChanged</a></span>&#8203;(<a href="audio/AudioAttributes.html" title="class in com.firework.android.exoplayer2.audio">AudioAttributes</a>&nbsp;audioAttributes)</code></th>
 <td class="colLast">
 <div class="block">Called when the audio attributes change.</div>
 </td>
@@ -174,22 +174,22 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)">onAvailableCommandsChanged</a></span>&#8203;(<a href="Player.Commands.html" title="class in com.google.android.exoplayer2">Player.Commands</a>&nbsp;availableCommands)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)">onAvailableCommandsChanged</a></span>&#8203;(<a href="Player.Commands.html" title="class in com.firework.android.exoplayer2">Player.Commands</a>&nbsp;availableCommands)</code></th>
 <td class="colLast">
-<div class="block">Called when the value returned from <a href="Player.html#isCommandAvailable(@com.google.android.exoplayer2.Player.Commandint)"><code>Player.isCommandAvailable(int)</code></a> changes for at least one
- <a href="Player.Command.html" title="annotation in com.google.android.exoplayer2"><code>Player.Command</code></a>.</div>
+<div class="block">Called when the value returned from <a href="Player.html#isCommandAvailable(@com.firework.android.exoplayer2.Player.Commandint)"><code>Player.isCommandAvailable(int)</code></a> changes for at least one
+ <a href="Player.Command.html" title="annotation in com.firework.android.exoplayer2"><code>Player.Command</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCues(java.util.List)">onCues</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="text/Cue.html" title="class in com.google.android.exoplayer2.text" target="_top">Cue</a>&gt;&nbsp;cues)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCues(java.util.List)">onCues</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text" target="_top">Cue</a>&gt;&nbsp;cues)</code></th>
 <td class="colLast">
-<div class="block">Called when there is a change in the <a href="text/Cue.html" title="class in com.google.android.exoplayer2.text"><code>Cues</code></a>.</div>
+<div class="block">Called when there is a change in the <a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text"><code>Cues</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDeviceInfoChanged(com.google.android.exoplayer2.DeviceInfo)">onDeviceInfoChanged</a></span>&#8203;(<a href="DeviceInfo.html" title="class in com.google.android.exoplayer2">DeviceInfo</a>&nbsp;deviceInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDeviceInfoChanged(com.firework.android.exoplayer2.DeviceInfo)">onDeviceInfoChanged</a></span>&#8203;(<a href="DeviceInfo.html" title="class in com.firework.android.exoplayer2">DeviceInfo</a>&nbsp;deviceInfo)</code></th>
 <td class="colLast">
 <div class="block">Called when the device information changes.</div>
 </td>
@@ -204,8 +204,8 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)">onEvents</a></span>&#8203;(<a href="Player.html" title="interface in com.google.android.exoplayer2">Player</a>&nbsp;player,
-        <a href="Player.Events.html" title="class in com.google.android.exoplayer2">Player.Events</a>&nbsp;events)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)">onEvents</a></span>&#8203;(<a href="Player.html" title="interface in com.firework.android.exoplayer2">Player</a>&nbsp;player,
+        <a href="Player.Events.html" title="class in com.firework.android.exoplayer2">Player.Events</a>&nbsp;events)</code></th>
 <td class="colLast">
 <div class="block">Called when one or more player states changed.</div>
 </td>
@@ -226,8 +226,8 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)">onMediaItemTransition</a></span>&#8203;(<a href="MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
-                     @com.google.android.exoplayer2.Player.MediaItemTransitionReason int&nbsp;reason)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)">onMediaItemTransition</a></span>&#8203;(<a href="MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+                     @com.firework.android.exoplayer2.Player.MediaItemTransitionReason int&nbsp;reason)</code></th>
 <td class="colLast">
 <div class="block">Called when playback transitions to a media item or starts repeating a media item according
  to the current <a href="Player.html#getRepeatMode()"><code>repeat mode</code></a>.</div>
@@ -235,73 +235,73 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMediaMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged</a></span>&#8203;(<a href="MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMediaMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged</a></span>&#8203;(<a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
 <td class="colLast">
-<div class="block">Called when the combined <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
+<div class="block">Called when the combined <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMetadata(com.google.android.exoplayer2.metadata.Metadata)">onMetadata</a></span>&#8203;(<a href="metadata/Metadata.html" title="class in com.google.android.exoplayer2.metadata">Metadata</a>&nbsp;metadata)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onMetadata(com.firework.android.exoplayer2.metadata.Metadata)">onMetadata</a></span>&#8203;(<a href="metadata/Metadata.html" title="class in com.firework.android.exoplayer2.metadata">Metadata</a>&nbsp;metadata)</code></th>
 <td class="colLast">
 <div class="block">Called when there is metadata associated with the current playback time.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)">onPlaybackParametersChanged</a></span>&#8203;(<a href="PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)">onPlaybackParametersChanged</a></span>&#8203;(<a href="PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</code></th>
 <td class="colLast">
 <div class="block">Called when the current playback parameters change.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)">onPlaybackStateChanged</a></span>&#8203;(@com.google.android.exoplayer2.Player.State int&nbsp;playbackState)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)">onPlaybackStateChanged</a></span>&#8203;(@com.firework.android.exoplayer2.Player.State int&nbsp;playbackState)</code></th>
 <td class="colLast">
 <div class="block">Called when the value returned from <a href="Player.html#getPlaybackState()"><code>Player.getPlaybackState()</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackSuppressionReasonChanged(@com.google.android.exoplayer2.Player.PlaybackSuppressionReasonint)">onPlaybackSuppressionReasonChanged</a></span>&#8203;(@com.google.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;playbackSuppressionReason)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaybackSuppressionReasonChanged(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReasonint)">onPlaybackSuppressionReasonChanged</a></span>&#8203;(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;playbackSuppressionReason)</code></th>
 <td class="colLast">
 <div class="block">Called when the value returned from <a href="Player.html#getPlaybackSuppressionReason()"><code>Player.getPlaybackSuppressionReason()</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayerError(com.google.android.exoplayer2.PlaybackException)">onPlayerError</a></span>&#8203;(<a href="PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a>&nbsp;error)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayerError(com.firework.android.exoplayer2.PlaybackException)">onPlayerError</a></span>&#8203;(<a href="PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a>&nbsp;error)</code></th>
 <td class="colLast">
 <div class="block">Called when an error occurs.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayerErrorChanged(com.google.android.exoplayer2.PlaybackException)">onPlayerErrorChanged</a></span>&#8203;(<a href="PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a>&nbsp;error)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayerErrorChanged(com.firework.android.exoplayer2.PlaybackException)">onPlayerErrorChanged</a></span>&#8203;(<a href="PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a>&nbsp;error)</code></th>
 <td class="colLast">
-<div class="block">Called when the <a href="PlaybackException.html" title="class in com.google.android.exoplayer2"><code>PlaybackException</code></a> returned by <a href="Player.html#getPlayerError()"><code>Player.getPlayerError()</code></a> changes.</div>
+<div class="block">Called when the <a href="PlaybackException.html" title="class in com.firework.android.exoplayer2"><code>PlaybackException</code></a> returned by <a href="Player.html#getPlayerError()"><code>Player.getPlayerError()</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaylistMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">onPlaylistMetadataChanged</a></span>&#8203;(<a href="MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlaylistMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">onPlaylistMetadataChanged</a></span>&#8203;(<a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</code></th>
 <td class="colLast">
-<div class="block">Called when the playlist <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
+<div class="block">Called when the playlist <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">onPlayWhenReadyChanged</a></span>&#8203;(boolean&nbsp;playWhenReady,
-                      @com.google.android.exoplayer2.Player.PlayWhenReadyChangeReason int&nbsp;reason)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">onPlayWhenReadyChanged</a></span>&#8203;(boolean&nbsp;playWhenReady,
+                      @com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReason int&nbsp;reason)</code></th>
 <td class="colLast">
 <div class="block">Called when the value returned from <a href="Player.html#getPlayWhenReady()"><code>Player.getPlayWhenReady()</code></a> changes.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,@com.google.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a></span>&#8203;(<a href="Player.PositionInfo.html" title="class in com.google.android.exoplayer2">Player.PositionInfo</a>&nbsp;oldPosition,
-                       <a href="Player.PositionInfo.html" title="class in com.google.android.exoplayer2">Player.PositionInfo</a>&nbsp;newPosition,
-                       @com.google.android.exoplayer2.Player.DiscontinuityReason int&nbsp;reason)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPositionDiscontinuity(com.firework.android.exoplayer2.Player.PositionInfo,com.firework.android.exoplayer2.Player.PositionInfo,@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a></span>&#8203;(<a href="Player.PositionInfo.html" title="class in com.firework.android.exoplayer2">Player.PositionInfo</a>&nbsp;oldPosition,
+                       <a href="Player.PositionInfo.html" title="class in com.firework.android.exoplayer2">Player.PositionInfo</a>&nbsp;newPosition,
+                       @com.firework.android.exoplayer2.Player.DiscontinuityReason int&nbsp;reason)</code></th>
 <td class="colLast">
 <div class="block">Called when a position discontinuity occurs.</div>
 </td>
@@ -316,7 +316,7 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRepeatModeChanged(@com.google.android.exoplayer2.Player.RepeatModeint)">onRepeatModeChanged</a></span>&#8203;(@com.google.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRepeatModeChanged(@com.firework.android.exoplayer2.Player.RepeatModeint)">onRepeatModeChanged</a></span>&#8203;(@com.firework.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</code></th>
 <td class="colLast">
 <div class="block">Called when the value of <a href="Player.html#getRepeatMode()"><code>Player.getRepeatMode()</code></a> changes.</div>
 </td>
@@ -360,22 +360,22 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)">onTimelineChanged</a></span>&#8203;(<a href="Timeline.html" title="class in com.google.android.exoplayer2">Timeline</a>&nbsp;timeline,
-                 @com.google.android.exoplayer2.Player.TimelineChangeReason int&nbsp;reason)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)">onTimelineChanged</a></span>&#8203;(<a href="Timeline.html" title="class in com.firework.android.exoplayer2">Timeline</a>&nbsp;timeline,
+                 @com.firework.android.exoplayer2.Player.TimelineChangeReason int&nbsp;reason)</code></th>
 <td class="colLast">
 <div class="block">Called when the timeline has been refreshed.</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTracksInfoChanged(com.google.android.exoplayer2.TracksInfo)">onTracksInfoChanged</a></span>&#8203;(<a href="TracksInfo.html" title="class in com.google.android.exoplayer2">TracksInfo</a>&nbsp;tracksInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTracksInfoChanged(com.firework.android.exoplayer2.TracksInfo)">onTracksInfoChanged</a></span>&#8203;(<a href="TracksInfo.html" title="class in com.firework.android.exoplayer2">TracksInfo</a>&nbsp;tracksInfo)</code></th>
 <td class="colLast">
 <div class="block">Called when the available or selected tracks change.</div>
 </td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)">onVideoSizeChanged</a></span>&#8203;(<a href="video/VideoSize.html" title="class in com.google.android.exoplayer2.video">VideoSize</a>&nbsp;videoSize)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onVideoSizeChanged(com.firework.android.exoplayer2.video.VideoSize)">onVideoSizeChanged</a></span>&#8203;(<a href="video/VideoSize.html" title="class in com.firework.android.exoplayer2.video">VideoSize</a>&nbsp;videoSize)</code></th>
 <td class="colLast">
 <div class="block">Called each time there's a change in the size of the video being rendered.</div>
 </td>
@@ -389,11 +389,11 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.google.android.exoplayer2.Player.EventListener">
+<li class="blockList"><a id="methods.inherited.from.class.com.firework.android.exoplayer2.Player.EventListener">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.google.android.exoplayer2.<a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></h3>
-<code><a href="Player.EventListener.html#onLoadingChanged(boolean)">onLoadingChanged</a>, <a href="Player.EventListener.html#onMaxSeekToPreviousPositionChanged(long)">onMaxSeekToPreviousPositionChanged</a>, <a href="Player.EventListener.html#onPlayerStateChanged(boolean,@com.google.android.exoplayer2.Player.Stateint)">onPlayerStateChanged</a>, <a href="Player.EventListener.html#onPositionDiscontinuity(@com.google.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a>, <a href="Player.EventListener.html#onSeekProcessed()">onSeekProcessed</a>, <a href="Player.EventListener.html#onTracksChanged(com.google.android.exoplayer2.source.TrackGroupArray,com.google.android.exoplayer2.trackselection.TrackSelectionArray)">onTracksChanged</a>, <a href="Player.EventListener.html#onTrackSelectionParametersChanged(com.google.android.exoplayer2.trackselection.TrackSelectionParameters)">onTrackSelectionParametersChanged</a></code></li>
+<h3>Methods inherited from interface&nbsp;com.firework.android.exoplayer2.<a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></h3>
+<code><a href="Player.EventListener.html#onLoadingChanged(boolean)">onLoadingChanged</a>, <a href="Player.EventListener.html#onMaxSeekToPreviousPositionChanged(long)">onMaxSeekToPreviousPositionChanged</a>, <a href="Player.EventListener.html#onPlayerStateChanged(boolean,@com.firework.android.exoplayer2.Player.Stateint)">onPlayerStateChanged</a>, <a href="Player.EventListener.html#onPositionDiscontinuity(@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a>, <a href="Player.EventListener.html#onSeekProcessed()">onSeekProcessed</a>, <a href="Player.EventListener.html#onTracksChanged(com.firework.android.exoplayer2.source.TrackGroupArray,com.firework.android.exoplayer2.trackselection.TrackSelectionArray)">onTracksChanged</a>, <a href="Player.EventListener.html#onTrackSelectionParametersChanged(com.firework.android.exoplayer2.trackselection.TrackSelectionParameters)">onTrackSelectionParametersChanged</a></code></li>
 </ul>
 </li>
 </ul>
@@ -411,77 +411,77 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)">
+<a id="onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onTimelineChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onTimelineChanged&#8203;(<a href="Timeline.html" title="class in com.google.android.exoplayer2">Timeline</a>&nbsp;timeline,
-                               <a href="Player.TimelineChangeReason.html" title="annotation in com.google.android.exoplayer2">@TimelineChangeReason</a>
-                               @com.google.android.exoplayer2.Player.TimelineChangeReason int&nbsp;reason)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onTimelineChanged&#8203;(<a href="Timeline.html" title="class in com.firework.android.exoplayer2">Timeline</a>&nbsp;timeline,
+                               <a href="Player.TimelineChangeReason.html" title="annotation in com.firework.android.exoplayer2">@TimelineChangeReason</a>
+                               @com.firework.android.exoplayer2.Player.TimelineChangeReason int&nbsp;reason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the timeline has been refreshed.
 
- <p>Note that the current <a href="MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a> or playback position may change as a result of a
+ <p>Note that the current <a href="MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a> or playback position may change as a result of a
  timeline change. If playback can't continue smoothly because of this timeline change, a
- separate <a href="Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,@com.google.android.exoplayer2.Player.DiscontinuityReasonint)"><code>Player.EventListener.onPositionDiscontinuity(PositionInfo, PositionInfo, int)</code></a> callback will be
+ separate <a href="Player.EventListener.html#onPositionDiscontinuity(com.firework.android.exoplayer2.Player.PositionInfo,com.firework.android.exoplayer2.Player.PositionInfo,@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)"><code>Player.EventListener.onPositionDiscontinuity(PositionInfo, PositionInfo, int)</code></a> callback will be
  triggered.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)">onTimelineChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)">onTimelineChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>timeline</code> - The latest timeline. Never null, but may be empty.</dd>
-<dd><code>reason</code> - The <a href="Player.TimelineChangeReason.html" title="annotation in com.google.android.exoplayer2"><code>Player.TimelineChangeReason</code></a> responsible for this timeline change.</dd>
+<dd><code>reason</code> - The <a href="Player.TimelineChangeReason.html" title="annotation in com.firework.android.exoplayer2"><code>Player.TimelineChangeReason</code></a> responsible for this timeline change.</dd>
 </dl>
 </li>
 </ul>
-<a id="onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)">
+<a id="onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onMediaItemTransition</h4>
 <pre class="methodSignature">default&nbsp;void&nbsp;onMediaItemTransition&#8203;(@Nullable
-                                   <a href="MediaItem.html" title="class in com.google.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
-                                   <a href="Player.MediaItemTransitionReason.html" title="annotation in com.google.android.exoplayer2">@MediaItemTransitionReason</a>
-                                   @com.google.android.exoplayer2.Player.MediaItemTransitionReason int&nbsp;reason)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)">Player.EventListener</a></code></span></div>
+                                   <a href="MediaItem.html" title="class in com.firework.android.exoplayer2">MediaItem</a>&nbsp;mediaItem,
+                                   <a href="Player.MediaItemTransitionReason.html" title="annotation in com.firework.android.exoplayer2">@MediaItemTransitionReason</a>
+                                   @com.firework.android.exoplayer2.Player.MediaItemTransitionReason int&nbsp;reason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when playback transitions to a media item or starts repeating a media item according
  to the current <a href="Player.html#getRepeatMode()"><code>repeat mode</code></a>.
 
  <p>Note that this callback is also called when the playlist becomes non-empty or empty as a
  consequence of a playlist change.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)">onMediaItemTransition</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)">onMediaItemTransition</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaItem</code> - The <a href="MediaItem.html" title="class in com.google.android.exoplayer2"><code>MediaItem</code></a>. May be null if the playlist becomes empty.</dd>
+<dd><code>mediaItem</code> - The <a href="MediaItem.html" title="class in com.firework.android.exoplayer2"><code>MediaItem</code></a>. May be null if the playlist becomes empty.</dd>
 <dd><code>reason</code> - The reason for the transition.</dd>
 </dl>
 </li>
 </ul>
-<a id="onTracksInfoChanged(com.google.android.exoplayer2.TracksInfo)">
+<a id="onTracksInfoChanged(com.firework.android.exoplayer2.TracksInfo)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onTracksInfoChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onTracksInfoChanged&#8203;(<a href="TracksInfo.html" title="class in com.google.android.exoplayer2">TracksInfo</a>&nbsp;tracksInfo)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onTracksInfoChanged(com.google.android.exoplayer2.TracksInfo)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onTracksInfoChanged&#8203;(<a href="TracksInfo.html" title="class in com.firework.android.exoplayer2">TracksInfo</a>&nbsp;tracksInfo)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onTracksInfoChanged(com.firework.android.exoplayer2.TracksInfo)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the available or selected tracks change.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onTracksInfoChanged(com.google.android.exoplayer2.TracksInfo)">onTracksInfoChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onTracksInfoChanged(com.firework.android.exoplayer2.TracksInfo)">onTracksInfoChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tracksInfo</code> - The available tracks information. Never null, but may be of length zero.</dd>
 </dl>
@@ -497,99 +497,99 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onIsLoadingChanged(boolean)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the player starts or stops loading the source.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onIsLoadingChanged(boolean)">onIsLoadingChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onIsLoadingChanged(boolean)">onIsLoadingChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>isLoading</code> - Whether the source is currently being loaded.</dd>
 </dl>
 </li>
 </ul>
-<a id="onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)">
+<a id="onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onAvailableCommandsChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onAvailableCommandsChanged&#8203;(<a href="Player.Commands.html" title="class in com.google.android.exoplayer2">Player.Commands</a>&nbsp;availableCommands)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)">Player.EventListener</a></code></span></div>
-<div class="block">Called when the value returned from <a href="Player.html#isCommandAvailable(@com.google.android.exoplayer2.Player.Commandint)"><code>Player.isCommandAvailable(int)</code></a> changes for at least one
- <a href="Player.Command.html" title="annotation in com.google.android.exoplayer2"><code>Player.Command</code></a>.
+<pre class="methodSignature">default&nbsp;void&nbsp;onAvailableCommandsChanged&#8203;(<a href="Player.Commands.html" title="class in com.firework.android.exoplayer2">Player.Commands</a>&nbsp;availableCommands)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)">Player.EventListener</a></code></span></div>
+<div class="block">Called when the value returned from <a href="Player.html#isCommandAvailable(@com.firework.android.exoplayer2.Player.Commandint)"><code>Player.isCommandAvailable(int)</code></a> changes for at least one
+ <a href="Player.Command.html" title="annotation in com.firework.android.exoplayer2"><code>Player.Command</code></a>.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onAvailableCommandsChanged(com.google.android.exoplayer2.Player.Commands)">onAvailableCommandsChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onAvailableCommandsChanged(com.firework.android.exoplayer2.Player.Commands)">onAvailableCommandsChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>availableCommands</code> - The available <a href="Player.Commands.html" title="class in com.google.android.exoplayer2"><code>Player.Commands</code></a>.</dd>
+<dd><code>availableCommands</code> - The available <a href="Player.Commands.html" title="class in com.firework.android.exoplayer2"><code>Player.Commands</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)">
+<a id="onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlaybackStateChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackStateChanged&#8203;(<a href="Player.State.html" title="annotation in com.google.android.exoplayer2">@State</a>
-                                    @com.google.android.exoplayer2.Player.State int&nbsp;playbackState)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackStateChanged&#8203;(<a href="Player.State.html" title="annotation in com.firework.android.exoplayer2">@State</a>
+                                    @com.firework.android.exoplayer2.Player.State int&nbsp;playbackState)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value returned from <a href="Player.html#getPlaybackState()"><code>Player.getPlaybackState()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)">onPlaybackStateChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)">onPlaybackStateChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>playbackState</code> - The new playback <a href="Player.State.html" title="annotation in com.google.android.exoplayer2"><code>state</code></a>.</dd>
+<dd><code>playbackState</code> - The new playback <a href="Player.State.html" title="annotation in com.firework.android.exoplayer2"><code>state</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">
+<a id="onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayWhenReadyChanged</h4>
 <pre class="methodSignature">default&nbsp;void&nbsp;onPlayWhenReadyChanged&#8203;(boolean&nbsp;playWhenReady,
-                                    <a href="Player.PlayWhenReadyChangeReason.html" title="annotation in com.google.android.exoplayer2">@PlayWhenReadyChangeReason</a>
-                                    @com.google.android.exoplayer2.Player.PlayWhenReadyChangeReason int&nbsp;reason)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">Player.EventListener</a></code></span></div>
+                                    <a href="Player.PlayWhenReadyChangeReason.html" title="annotation in com.firework.android.exoplayer2">@PlayWhenReadyChangeReason</a>
+                                    @com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReason int&nbsp;reason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value returned from <a href="Player.html#getPlayWhenReady()"><code>Player.getPlayWhenReady()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">onPlayWhenReadyChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)">onPlayWhenReadyChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>playWhenReady</code> - Whether playback will proceed when ready.</dd>
-<dd><code>reason</code> - The <a href="Player.PlayWhenReadyChangeReason.html" title="annotation in com.google.android.exoplayer2"><code>reason</code></a> for the change.</dd>
+<dd><code>reason</code> - The <a href="Player.PlayWhenReadyChangeReason.html" title="annotation in com.firework.android.exoplayer2"><code>reason</code></a> for the change.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlaybackSuppressionReasonChanged(@com.google.android.exoplayer2.Player.PlaybackSuppressionReasonint)">
+<a id="onPlaybackSuppressionReasonChanged(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReasonint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlaybackSuppressionReasonChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackSuppressionReasonChanged&#8203;(<a href="Player.PlaybackSuppressionReason.html" title="annotation in com.google.android.exoplayer2">@PlaybackSuppressionReason</a>
-                                                @com.google.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;playbackSuppressionReason)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackSuppressionReasonChanged(@com.google.android.exoplayer2.Player.PlaybackSuppressionReasonint)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackSuppressionReasonChanged&#8203;(<a href="Player.PlaybackSuppressionReason.html" title="annotation in com.firework.android.exoplayer2">@PlaybackSuppressionReason</a>
+                                                @com.firework.android.exoplayer2.Player.PlaybackSuppressionReason int&nbsp;playbackSuppressionReason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackSuppressionReasonChanged(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReasonint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value returned from <a href="Player.html#getPlaybackSuppressionReason()"><code>Player.getPlaybackSuppressionReason()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlaybackSuppressionReasonChanged(@com.google.android.exoplayer2.Player.PlaybackSuppressionReasonint)">onPlaybackSuppressionReasonChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlaybackSuppressionReasonChanged(@com.firework.android.exoplayer2.Player.PlaybackSuppressionReasonint)">onPlaybackSuppressionReasonChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>playbackSuppressionReason</code> - The current <a href="Player.PlaybackSuppressionReason.html" title="annotation in com.google.android.exoplayer2"><code>Player.PlaybackSuppressionReason</code></a>.</dd>
+<dd><code>playbackSuppressionReason</code> - The current <a href="Player.PlaybackSuppressionReason.html" title="annotation in com.firework.android.exoplayer2"><code>Player.PlaybackSuppressionReason</code></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -603,34 +603,34 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onIsPlayingChanged(boolean)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value of <a href="Player.html#isPlaying()"><code>Player.isPlaying()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onIsPlayingChanged(boolean)">onIsPlayingChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onIsPlayingChanged(boolean)">onIsPlayingChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>isPlaying</code> - Whether the player is playing.</dd>
 </dl>
 </li>
 </ul>
-<a id="onRepeatModeChanged(@com.google.android.exoplayer2.Player.RepeatModeint)">
+<a id="onRepeatModeChanged(@com.firework.android.exoplayer2.Player.RepeatModeint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onRepeatModeChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onRepeatModeChanged&#8203;(<a href="Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2">@RepeatMode</a>
-                                 @com.google.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onRepeatModeChanged(@com.google.android.exoplayer2.Player.RepeatModeint)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onRepeatModeChanged&#8203;(<a href="Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2">@RepeatMode</a>
+                                 @com.firework.android.exoplayer2.Player.RepeatMode int&nbsp;repeatMode)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onRepeatModeChanged(@com.firework.android.exoplayer2.Player.RepeatModeint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value of <a href="Player.html#getRepeatMode()"><code>Player.getRepeatMode()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onRepeatModeChanged(@com.google.android.exoplayer2.Player.RepeatModeint)">onRepeatModeChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onRepeatModeChanged(@com.firework.android.exoplayer2.Player.RepeatModeint)">onRepeatModeChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>repeatMode</code> - The <a href="Player.RepeatMode.html" title="annotation in com.google.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</dd>
+<dd><code>repeatMode</code> - The <a href="Player.RepeatMode.html" title="annotation in com.firework.android.exoplayer2"><code>Player.RepeatMode</code></a> used for playback.</dd>
 </dl>
 </li>
 </ul>
@@ -644,111 +644,111 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onShuffleModeEnabledChanged(boolean)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value of <a href="Player.html#getShuffleModeEnabled()"><code>Player.getShuffleModeEnabled()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onShuffleModeEnabledChanged(boolean)">onShuffleModeEnabledChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onShuffleModeEnabledChanged(boolean)">onShuffleModeEnabledChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>shuffleModeEnabled</code> - Whether shuffling of <a href="MediaItem.html" title="class in com.google.android.exoplayer2"><code>media items</code></a> is enabled.</dd>
+<dd><code>shuffleModeEnabled</code> - Whether shuffling of <a href="MediaItem.html" title="class in com.firework.android.exoplayer2"><code>media items</code></a> is enabled.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlayerError(com.google.android.exoplayer2.PlaybackException)">
+<a id="onPlayerError(com.firework.android.exoplayer2.PlaybackException)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerError</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPlayerError&#8203;(<a href="PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a>&nbsp;error)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayerError(com.google.android.exoplayer2.PlaybackException)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPlayerError&#8203;(<a href="PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a>&nbsp;error)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayerError(com.firework.android.exoplayer2.PlaybackException)">Player.EventListener</a></code></span></div>
 <div class="block">Called when an error occurs. The playback state will transition to <a href="Player.html#STATE_IDLE"><code>Player.STATE_IDLE</code></a>
  immediately after this method is called. The player instance can still be used, and <a href="Player.html#release()"><code>Player.release()</code></a> must still be called on the player should it no longer be required.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.
 
- <p>Implementations of Player may pass an instance of a subclass of <a href="PlaybackException.html" title="class in com.google.android.exoplayer2"><code>PlaybackException</code></a>
+ <p>Implementations of Player may pass an instance of a subclass of <a href="PlaybackException.html" title="class in com.firework.android.exoplayer2"><code>PlaybackException</code></a>
  to this method in order to include more information about the error.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlayerError(com.google.android.exoplayer2.PlaybackException)">onPlayerError</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlayerError(com.firework.android.exoplayer2.PlaybackException)">onPlayerError</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>error</code> - The error.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlayerErrorChanged(com.google.android.exoplayer2.PlaybackException)">
+<a id="onPlayerErrorChanged(com.firework.android.exoplayer2.PlaybackException)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerErrorChanged</h4>
 <pre class="methodSignature">default&nbsp;void&nbsp;onPlayerErrorChanged&#8203;(@Nullable
-                                  <a href="PlaybackException.html" title="class in com.google.android.exoplayer2">PlaybackException</a>&nbsp;error)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayerErrorChanged(com.google.android.exoplayer2.PlaybackException)">Player.EventListener</a></code></span></div>
-<div class="block">Called when the <a href="PlaybackException.html" title="class in com.google.android.exoplayer2"><code>PlaybackException</code></a> returned by <a href="Player.html#getPlayerError()"><code>Player.getPlayerError()</code></a> changes.
+                                  <a href="PlaybackException.html" title="class in com.firework.android.exoplayer2">PlaybackException</a>&nbsp;error)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlayerErrorChanged(com.firework.android.exoplayer2.PlaybackException)">Player.EventListener</a></code></span></div>
+<div class="block">Called when the <a href="PlaybackException.html" title="class in com.firework.android.exoplayer2"><code>PlaybackException</code></a> returned by <a href="Player.html#getPlayerError()"><code>Player.getPlayerError()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.
 
- <p>Implementations of Player may pass an instance of a subclass of <a href="PlaybackException.html" title="class in com.google.android.exoplayer2"><code>PlaybackException</code></a>
+ <p>Implementations of Player may pass an instance of a subclass of <a href="PlaybackException.html" title="class in com.firework.android.exoplayer2"><code>PlaybackException</code></a>
  to this method in order to include more information about the error.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlayerErrorChanged(com.google.android.exoplayer2.PlaybackException)">onPlayerErrorChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlayerErrorChanged(com.firework.android.exoplayer2.PlaybackException)">onPlayerErrorChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>error</code> - The new error, or null if the error is being cleared.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,@com.google.android.exoplayer2.Player.DiscontinuityReasonint)">
+<a id="onPositionDiscontinuity(com.firework.android.exoplayer2.Player.PositionInfo,com.firework.android.exoplayer2.Player.PositionInfo,@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPositionDiscontinuity</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPositionDiscontinuity&#8203;(<a href="Player.PositionInfo.html" title="class in com.google.android.exoplayer2">Player.PositionInfo</a>&nbsp;oldPosition,
-                                     <a href="Player.PositionInfo.html" title="class in com.google.android.exoplayer2">Player.PositionInfo</a>&nbsp;newPosition,
-                                     <a href="Player.DiscontinuityReason.html" title="annotation in com.google.android.exoplayer2">@DiscontinuityReason</a>
-                                     @com.google.android.exoplayer2.Player.DiscontinuityReason int&nbsp;reason)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,@com.google.android.exoplayer2.Player.DiscontinuityReasonint)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPositionDiscontinuity&#8203;(<a href="Player.PositionInfo.html" title="class in com.firework.android.exoplayer2">Player.PositionInfo</a>&nbsp;oldPosition,
+                                     <a href="Player.PositionInfo.html" title="class in com.firework.android.exoplayer2">Player.PositionInfo</a>&nbsp;newPosition,
+                                     <a href="Player.DiscontinuityReason.html" title="annotation in com.firework.android.exoplayer2">@DiscontinuityReason</a>
+                                     @com.firework.android.exoplayer2.Player.DiscontinuityReason int&nbsp;reason)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPositionDiscontinuity(com.firework.android.exoplayer2.Player.PositionInfo,com.firework.android.exoplayer2.Player.PositionInfo,@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)">Player.EventListener</a></code></span></div>
 <div class="block">Called when a position discontinuity occurs.
 
  <p>A position discontinuity occurs when the playing period changes, the playback position
  jumps within the period currently being played, or when the playing period has been skipped
  or removed.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPositionDiscontinuity(com.google.android.exoplayer2.Player.PositionInfo,com.google.android.exoplayer2.Player.PositionInfo,@com.google.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPositionDiscontinuity(com.firework.android.exoplayer2.Player.PositionInfo,com.firework.android.exoplayer2.Player.PositionInfo,@com.firework.android.exoplayer2.Player.DiscontinuityReasonint)">onPositionDiscontinuity</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>oldPosition</code> - The position before the discontinuity.</dd>
 <dd><code>newPosition</code> - The position after the discontinuity.</dd>
-<dd><code>reason</code> - The <a href="Player.DiscontinuityReason.html" title="annotation in com.google.android.exoplayer2"><code>Player.DiscontinuityReason</code></a> responsible for the discontinuity.</dd>
+<dd><code>reason</code> - The <a href="Player.DiscontinuityReason.html" title="annotation in com.firework.android.exoplayer2"><code>Player.DiscontinuityReason</code></a> responsible for the discontinuity.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)">
+<a id="onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlaybackParametersChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackParametersChanged&#8203;(<a href="PlaybackParameters.html" title="class in com.google.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPlaybackParametersChanged&#8203;(<a href="PlaybackParameters.html" title="class in com.firework.android.exoplayer2">PlaybackParameters</a>&nbsp;playbackParameters)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the current playback parameters change. The playback parameters may change due to
- a call to <a href="Player.html#setPlaybackParameters(com.google.android.exoplayer2.PlaybackParameters)"><code>Player.setPlaybackParameters(PlaybackParameters)</code></a>, or the player itself may change
+ a call to <a href="Player.html#setPlaybackParameters(com.firework.android.exoplayer2.PlaybackParameters)"><code>Player.setPlaybackParameters(PlaybackParameters)</code></a>, or the player itself may change
  them (for example, if audio playback switches to passthrough or offload mode, where speed
  adjustment is no longer possible).
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlaybackParametersChanged(com.google.android.exoplayer2.PlaybackParameters)">onPlaybackParametersChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlaybackParametersChanged(com.firework.android.exoplayer2.PlaybackParameters)">onPlaybackParametersChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>playbackParameters</code> - The playback parameters.</dd>
 </dl>
@@ -764,11 +764,11 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onSeekForwardIncrementChanged(long)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value of <a href="Player.html#getSeekForwardIncrement()"><code>Player.getSeekForwardIncrement()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onSeekForwardIncrementChanged(long)">onSeekForwardIncrementChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onSeekForwardIncrementChanged(long)">onSeekForwardIncrementChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>seekForwardIncrementMs</code> - The <a href="Player.html#seekForward()"><code>Player.seekForward()</code></a> increment, in milliseconds.</dd>
 </dl>
@@ -784,11 +784,11 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onSeekBackIncrementChanged(long)">Player.EventListener</a></code></span></div>
 <div class="block">Called when the value of <a href="Player.html#getSeekBackIncrement()"><code>Player.getSeekBackIncrement()</code></a> changes.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onSeekBackIncrementChanged(long)">onSeekBackIncrementChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onSeekBackIncrementChanged(long)">onSeekBackIncrementChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>seekBackIncrementMs</code> - The <a href="Player.html#seekBack()"><code>Player.seekBack()</code></a> increment, in milliseconds.</dd>
 </dl>
@@ -808,13 +808,13 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </dl>
 </li>
 </ul>
-<a id="onAudioAttributesChanged(com.google.android.exoplayer2.audio.AudioAttributes)">
+<a id="onAudioAttributesChanged(com.firework.android.exoplayer2.audio.AudioAttributes)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onAudioAttributesChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onAudioAttributesChanged&#8203;(<a href="audio/AudioAttributes.html" title="class in com.google.android.exoplayer2.audio">AudioAttributes</a>&nbsp;audioAttributes)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;onAudioAttributesChanged&#8203;(<a href="audio/AudioAttributes.html" title="class in com.firework.android.exoplayer2.audio">AudioAttributes</a>&nbsp;audioAttributes)</pre>
 <div class="block">Called when the audio attributes change.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -850,13 +850,13 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </dl>
 </li>
 </ul>
-<a id="onDeviceInfoChanged(com.google.android.exoplayer2.DeviceInfo)">
+<a id="onDeviceInfoChanged(com.firework.android.exoplayer2.DeviceInfo)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onDeviceInfoChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onDeviceInfoChanged&#8203;(<a href="DeviceInfo.html" title="class in com.google.android.exoplayer2">DeviceInfo</a>&nbsp;deviceInfo)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;onDeviceInfoChanged&#8203;(<a href="DeviceInfo.html" title="class in com.firework.android.exoplayer2">DeviceInfo</a>&nbsp;deviceInfo)</pre>
 <div class="block">Called when the device information changes.</div>
 </li>
 </ul>
@@ -871,54 +871,54 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <div class="block">Called when the device volume or mute state changes.</div>
 </li>
 </ul>
-<a id="onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)">
+<a id="onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onEvents</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onEvents&#8203;(<a href="Player.html" title="interface in com.google.android.exoplayer2">Player</a>&nbsp;player,
-                      <a href="Player.Events.html" title="class in com.google.android.exoplayer2">Player.Events</a>&nbsp;events)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)">Player.EventListener</a></code></span></div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onEvents&#8203;(<a href="Player.html" title="interface in com.firework.android.exoplayer2">Player</a>&nbsp;player,
+                      <a href="Player.Events.html" title="class in com.firework.android.exoplayer2">Player.Events</a>&nbsp;events)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)">Player.EventListener</a></code></span></div>
 <div class="block">Called when one or more player states changed.
 
  <p>State changes and events that happen within one <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration are
  reported together and only after all individual callbacks were triggered.
 
- <p>Only state changes represented by <a href="Player.Event.html" title="annotation in com.google.android.exoplayer2"><code>events</code></a> are reported through this method.
+ <p>Only state changes represented by <a href="Player.Event.html" title="annotation in com.firework.android.exoplayer2"><code>events</code></a> are reported through this method.
 
  <p>Listeners should prefer this method over individual callbacks in the following cases:
 
  <ul>
    <li>They intend to trigger the same logic for multiple events (e.g. when updating a UI for
-       both <a href="Player.EventListener.html#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a> and <a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.google.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)"><code>Player.EventListener.onPlayWhenReadyChanged(boolean,
+       both <a href="Player.EventListener.html#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a> and <a href="Player.EventListener.html#onPlayWhenReadyChanged(boolean,@com.firework.android.exoplayer2.Player.PlayWhenReadyChangeReasonint)"><code>Player.EventListener.onPlayWhenReadyChanged(boolean,
        int)</code></a>).
-   <li>They need access to the <a href="Player.html" title="interface in com.google.android.exoplayer2"><code>Player</code></a> object to trigger further events (e.g. to call
-       <a href="Player.html#seekTo(long)"><code>Player.seekTo(long)</code></a> after a <a href="Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a>).
-   <li>They intend to use multiple state values together or in combination with <a href="Player.html" title="interface in com.google.android.exoplayer2"><code>Player</code></a>
+   <li>They need access to the <a href="Player.html" title="interface in com.firework.android.exoplayer2"><code>Player</code></a> object to trigger further events (e.g. to call
+       <a href="Player.html#seekTo(long)"><code>Player.seekTo(long)</code></a> after a <a href="Player.EventListener.html#onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a>).
+   <li>They intend to use multiple state values together or in combination with <a href="Player.html" title="interface in com.firework.android.exoplayer2"><code>Player</code></a>
        getter methods. For example using <a href="Player.html#getCurrentMediaItemIndex()"><code>Player.getCurrentMediaItemIndex()</code></a> with the <code>
-       timeline</code> provided in <a href="Player.EventListener.html#onTimelineChanged(com.google.android.exoplayer2.Timeline,@com.google.android.exoplayer2.Player.TimelineChangeReasonint)"><code>Player.EventListener.onTimelineChanged(Timeline, int)</code></a> is only safe from
+       timeline</code> provided in <a href="Player.EventListener.html#onTimelineChanged(com.firework.android.exoplayer2.Timeline,@com.firework.android.exoplayer2.Player.TimelineChangeReasonint)"><code>Player.EventListener.onTimelineChanged(Timeline, int)</code></a> is only safe from
        within this method.
-   <li>They are interested in events that logically happened together (e.g <a href="Player.EventListener.html#onPlaybackStateChanged(@com.google.android.exoplayer2.Player.Stateint)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a> to <a href="Player.html#STATE_BUFFERING"><code>Player.STATE_BUFFERING</code></a> because of <a href="Player.EventListener.html#onMediaItemTransition(com.google.android.exoplayer2.MediaItem,@com.google.android.exoplayer2.Player.MediaItemTransitionReasonint)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a>).
+   <li>They are interested in events that logically happened together (e.g <a href="Player.EventListener.html#onPlaybackStateChanged(@com.firework.android.exoplayer2.Player.Stateint)"><code>Player.EventListener.onPlaybackStateChanged(int)</code></a> to <a href="Player.html#STATE_BUFFERING"><code>Player.STATE_BUFFERING</code></a> because of <a href="Player.EventListener.html#onMediaItemTransition(com.firework.android.exoplayer2.MediaItem,@com.firework.android.exoplayer2.Player.MediaItemTransitionReasonint)"><code>Player.EventListener.onMediaItemTransition(MediaItem, int)</code></a>).
  </ul></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)">onEvents</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)">onEvents</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>player</code> - The <a href="Player.html" title="interface in com.google.android.exoplayer2"><code>Player</code></a> whose state changed. Use the getters to obtain the latest
+<dd><code>player</code> - The <a href="Player.html" title="interface in com.firework.android.exoplayer2"><code>Player</code></a> whose state changed. Use the getters to obtain the latest
      states.</dd>
-<dd><code>events</code> - The <a href="Player.Events.html" title="class in com.google.android.exoplayer2"><code>Player.Events</code></a> that happened in this iteration, indicating which player
+<dd><code>events</code> - The <a href="Player.Events.html" title="class in com.firework.android.exoplayer2"><code>Player.Events</code></a> that happened in this iteration, indicating which player
      states changed.</dd>
 </dl>
 </li>
 </ul>
-<a id="onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize)">
+<a id="onVideoSizeChanged(com.firework.android.exoplayer2.video.VideoSize)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onVideoSizeChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onVideoSizeChanged&#8203;(<a href="video/VideoSize.html" title="class in com.google.android.exoplayer2.video">VideoSize</a>&nbsp;videoSize)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;onVideoSizeChanged&#8203;(<a href="video/VideoSize.html" title="class in com.firework.android.exoplayer2.video">VideoSize</a>&nbsp;videoSize)</pre>
 <div class="block">Called each time there's a change in the size of the video being rendered.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -962,24 +962,24 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 <ul class="blockList">
 <li class="blockList">
 <h4>onCues</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onCues&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="text/Cue.html" title="class in com.google.android.exoplayer2.text" target="_top">Cue</a>&gt;&nbsp;cues)</pre>
-<div class="block">Called when there is a change in the <a href="text/Cue.html" title="class in com.google.android.exoplayer2.text"><code>Cues</code></a>.
+<pre class="methodSignature">default&nbsp;void&nbsp;onCues&#8203;(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text" target="_top">Cue</a>&gt;&nbsp;cues)</pre>
+<div class="block">Called when there is a change in the <a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text"><code>Cues</code></a>.
 
  <p><code>cues</code> is in ascending order of priority. If any of the cue boxes overlap when
- displayed, the <a href="text/Cue.html" title="class in com.google.android.exoplayer2.text"><code>Cue</code></a> nearer the end of the list should be shown on top.</div>
+ displayed, the <a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text"><code>Cue</code></a> nearer the end of the list should be shown on top.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cues</code> - The <a href="text/Cue.html" title="class in com.google.android.exoplayer2.text"><code>Cues</code></a>. May be empty.</dd>
+<dd><code>cues</code> - The <a href="text/Cue.html" title="class in com.firework.android.exoplayer2.text"><code>Cues</code></a>. May be empty.</dd>
 </dl>
 </li>
 </ul>
-<a id="onMetadata(com.google.android.exoplayer2.metadata.Metadata)">
+<a id="onMetadata(com.firework.android.exoplayer2.metadata.Metadata)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onMetadata</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onMetadata&#8203;(<a href="metadata/Metadata.html" title="class in com.google.android.exoplayer2.metadata">Metadata</a>&nbsp;metadata)</pre>
+<pre class="methodSignature">default&nbsp;void&nbsp;onMetadata&#8203;(<a href="metadata/Metadata.html" title="class in com.firework.android.exoplayer2.metadata">Metadata</a>&nbsp;metadata)</pre>
 <div class="block">Called when there is metadata associated with the current playback time.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -987,46 +987,46 @@ extends <a href="Player.EventListener.html" title="interface in com.google.andro
 </dl>
 </li>
 </ul>
-<a id="onMediaMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">
+<a id="onMediaMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onMediaMetadataChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onMediaMetadataChanged&#8203;(<a href="MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onMediaMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">Player.EventListener</a></code></span></div>
-<div class="block">Called when the combined <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> changes.
+<pre class="methodSignature">default&nbsp;void&nbsp;onMediaMetadataChanged&#8203;(<a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onMediaMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">Player.EventListener</a></code></span></div>
+<div class="block">Called when the combined <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> changes.
 
- <p>The provided <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> is a combination of the <a href="MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a>
+ <p>The provided <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> is a combination of the <a href="MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a>
  and the static and dynamic metadata from the <a href="trackselection/TrackSelection.html#getFormat(int)"><code>track
- selections' formats</code></a> and <a href="#onMetadata(com.google.android.exoplayer2.metadata.Metadata)"><code>onMetadata(Metadata)</code></a>. If a field is populated in
+ selections' formats</code></a> and <a href="#onMetadata(com.firework.android.exoplayer2.metadata.Metadata)"><code>onMetadata(Metadata)</code></a>. If a field is populated in
  the <a href="MediaItem.html#mediaMetadata"><code>MediaItem.mediaMetadata</code></a>, it will be prioritised above the same field coming from
  static or dynamic metadata.
 
  <p>This method may be called multiple times in quick succession.
 
- <p><a href="Player.EventListener.html#onEvents(com.google.android.exoplayer2.Player,com.google.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
+ <p><a href="Player.EventListener.html#onEvents(com.firework.android.exoplayer2.Player,com.firework.android.exoplayer2.Player.Events)"><code>Player.EventListener.onEvents(Player, Events)</code></a> will also be called to report this event along with
  other events that happen in the same <a href="https://developer.android.com/reference/android/os/Looper.html" title="class or interface in android.os" class="externalLink" target="_top"><code>Looper</code></a> message queue iteration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onMediaMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onMediaMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">onMediaMetadataChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mediaMetadata</code> - The combined <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a>.</dd>
+<dd><code>mediaMetadata</code> - The combined <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a>.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPlaylistMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">
+<a id="onPlaylistMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onPlaylistMetadataChanged</h4>
-<pre class="methodSignature">default&nbsp;void&nbsp;onPlaylistMetadataChanged&#8203;(<a href="MediaMetadata.html" title="class in com.google.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaylistMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">Player.EventListener</a></code></span></div>
-<div class="block">Called when the playlist <a href="MediaMetadata.html" title="class in com.google.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
+<pre class="methodSignature">default&nbsp;void&nbsp;onPlaylistMetadataChanged&#8203;(<a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2">MediaMetadata</a>&nbsp;mediaMetadata)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Player.EventListener.html#onPlaylistMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">Player.EventListener</a></code></span></div>
+<div class="block">Called when the playlist <a href="MediaMetadata.html" title="class in com.firework.android.exoplayer2"><code>MediaMetadata</code></a> changes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Player.EventListener.html#onPlaylistMetadataChanged(com.google.android.exoplayer2.MediaMetadata)">onPlaylistMetadataChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.google.android.exoplayer2">Player.EventListener</a></code></dd>
+<dd><code><a href="Player.EventListener.html#onPlaylistMetadataChanged(com.firework.android.exoplayer2.MediaMetadata)">onPlaylistMetadataChanged</a></code>&nbsp;in interface&nbsp;<code><a href="Player.EventListener.html" title="interface in com.firework.android.exoplayer2">Player.EventListener</a></code></dd>
 </dl>
 </li>
 </ul>

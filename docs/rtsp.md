@@ -9,7 +9,7 @@ title: RTSP
 To play an RTSP stream, you need to depend on the RTSP module.
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-rtsp:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-rtsp:2.X.X'
 ~~~
 {: .language-gradle}
 

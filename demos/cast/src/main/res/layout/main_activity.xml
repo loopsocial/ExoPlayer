@@ -20,7 +20,7 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-  <com.google.android.exoplayer2.ui.StyledPlayerView android:id="@+id/player_view"
+  <com.firework.android.exoplayer2.ui.StyledPlayerView android:id="@+id/player_view"
       android:layout_width="match_parent"
       android:layout_height="0dp"
       android:layout_weight="1"
@@ -38,7 +38,7 @@
         android:scrollbars="vertical"
         android:fadeScrollbars="false"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/add_sample_button"
+    <com.firework.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/add_sample_button"
         android:src="@drawable/ic_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

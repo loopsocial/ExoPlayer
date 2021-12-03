@@ -19,7 +19,7 @@ To transform media, you need to add the following dependency to your app’s
 `build.gradle` file:
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-transformer:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-transformer:2.X.X'
 ~~~
 {: .language-gradle}
 

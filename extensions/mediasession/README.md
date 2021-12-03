@@ -12,7 +12,7 @@ support other playback and custom actions.
 The easiest way to get the module is to add it as a gradle dependency:
 
 ```gradle
-implementation 'com.google.android.exoplayer:extension-mediasession:2.X.X'
+implementation 'com.firework.android.exoplayer:extension-mediasession:2.X.X'
 ```
 
 where `2.X.X` is the version, which must match the version of the other media
@@ -26,6 +26,6 @@ locally. Instructions for doing this can be found in the [top level README][].
 ## Links
 
 * [Javadoc][]: Classes matching
-  `com.google.android.exoplayer2.ext.mediasession.*` belong to this module.
+  `com.firework.android.exoplayer2.ext.mediasession.*` belong to this module.
 
 [Javadoc]: https://exoplayer.dev/doc/reference/index.html

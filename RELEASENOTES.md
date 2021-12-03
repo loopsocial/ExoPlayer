@@ -78,12 +78,12 @@
     *   Adjust `ExoPlayer` `MediaMetadata` update priority, such that values
         input through the `MediaItem.MediaMetadata` are used above media derived
         values.
-    *   Move `com.google.android.exoplayer2.device.DeviceInfo` to
-        `com.google.android.exoplayer2.DeviceInfo`.
-    *   Move `com.google.android.exoplayer2.drm.DecryptionException` to
-        `com.google.android.exoplayer2.decoder.CryptoException`.
-    *   Move `com.google.android.exoplayer2.upstream.cache.CachedRegionTracker`
-        to `com.google.android.exoplayer2.upstream.CachedRegionTracker`.
+    *   Move `firework.device.DeviceInfo` to
+        `com.firework.android.exoplayer2.DeviceInfo`.
+    *   Move `com.firework.android.exoplayer2.drm.DecryptionException` to
+        `com.firework.android.exoplayer2.decoder.CryptoException`.
+    *   Move `com.firework.android.exoplayer2.upstream.cache.CachedRegionTracker`
+        to `com.firework.android.exoplayer2.upstream.CachedRegionTracker`.
     *   Move `Player.addListener(EventListener)` and
         `Player.removeListener(EventListener)` out of `Player` into subclasses.
 *   Android 12 compatibility:
@@ -589,10 +589,10 @@
     *   Fix bug when transitions from content to ad periods called
         `onMediaItemTransition` by mistake.
     *   `AdsLoader.AdViewProvider` and `AdsLoader.OverlayInfo` have been renamed
-        `com.google.android.exoplayer2.ui.AdViewProvider` and
-        `com.google.android.exoplayer2.ui.AdOverlayInfo` respectively.
+        `com.firework.android.exoplayer2.ui.AdViewProvider` and
+        `com.firework.android.exoplayer2.ui.AdOverlayInfo` respectively.
     *   `CaptionStyleCompat` has been moved to the
-        `com.google.android.exoplayer2.ui` package.
+        `com.firework.android.exoplayer2.ui` package.
     *   `DebugTextViewHelper` has been moved from the `ui` package to the `util`
         package.
 *   RTSP:
@@ -1081,7 +1081,7 @@
         sure to replace this call with a call to
         `SimpleExoPlayer.removeVideoListener(VideoListener)`.
     *   `SimpleExoPlayer.VideoListener`. Use
-        `com.google.android.exoplayer2.video.VideoListener` instead.
+        `com.firework.android.exoplayer2.video.VideoListener` instead.
     *   `SingleSampleMediaSource.EventListener` and constructors. Use
         `MediaSourceEventListener` and `SingleSampleMediaSource.Factory`
         instead.
@@ -1149,7 +1149,7 @@
 *   UI:
     *   Fix incorrect color and text alignment of the `StyledPlayerControlView`
         fast forward and rewind buttons, when used together with the
-        `com.google.android.material` library
+        `com.firework.android.material` library
         ([#7898](https://github.com/google/ExoPlayer/issues/7898)).
     *   Add `dispatchPrepare(Player)` to `ControlDispatcher` and implement it in
         `DefaultControlDispatcher`. Deprecate `PlaybackPreparer` and
@@ -1369,7 +1369,7 @@ To learn more about what's new in 2.12, read the corresponding
         ([#6103](https://github.com/google/ExoPlayer/issues/6103)).
     *   Move `MediaSourceEventListener.LoadEventInfo` and
         `MediaSourceEventListener.MediaLoadData` to be top-level classes in
-        `com.google.android.exoplayer2.source`.
+        `com.firework.android.exoplayer2.source`.
     *   Move `SimpleDecoderVideoRenderer` and `SimpleDecoderAudioRenderer` to
         `DecoderVideoRenderer` and `DecoderAudioRenderer` respectively, and
         generalize them to work with `Decoder` rather than `SimpleDecoder`.
@@ -3751,7 +3751,7 @@ and architectural changes, new features and many bug fixes. You can read about
 some of the motivations behind ExoPlayer 2.x
 [here](https://medium.com/google-exoplayer/exoplayer-2-x-why-what-and-when-74fd9cb139#.am7h8nytm).
 
-*   Root package name changed to `com.google.android.exoplayer2`. The library
+*   Root package name changed to `com.firework.android.exoplayer2`. The library
     structure and class names have also been sanitized. Read more
     [here](https://medium.com/google-exoplayer/exoplayer-2-x-new-package-and-class-names-ef8e1d9ba96f#.lv8sd4nez).
 *   Key architectural changes:

@@ -9,7 +9,7 @@ title: DASH
 To play a DASH stream, you need to depend on the DASH module.
 
 ~~~
-implementation 'com.google.android.exoplayer:exoplayer-dash:2.X.X'
+implementation 'com.firework.android.exoplayer:exoplayer-dash:2.X.X'
 ~~~
 {: .language-gradle}
 

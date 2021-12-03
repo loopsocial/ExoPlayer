@@ -188,11 +188,11 @@ content for others to try in the demo app.
 
 Intents can be used to bypass the list of samples and launch directly into
 playback. To play a single sample set the intent's action to
-`com.google.android.exoplayer.demo.action.VIEW` and its data URI to that of the
+`com.firework.android.exoplayer.demo.action.VIEW` and its data URI to that of the
 sample to play. Such an intent can be fired from the terminal using:
 
 ~~~
-adb shell am start -a com.google.android.exoplayer.demo.action.VIEW \
+adb shell am start -a com.firework.android.exoplayer.demo.action.VIEW \
     -d https://yourdomain.com/sample.mp4
 ~~~
 {: .language-shell}
@@ -234,8 +234,8 @@ optional string array extra can be set with `--esa` (e.g.,
 `--esa drm_key_request_properties name1,value1`).
 
 To play a playlist of samples, set the intent's action to
-`com.google.android.exoplayer.demo.action.VIEW_LIST`. The sample configuration
-extras remain the same as for `com.google.android.exoplayer.demo.action.VIEW`,
+`com.firework.android.exoplayer.demo.action.VIEW_LIST`. The sample configuration
+extras remain the same as for `com.firework.android.exoplayer.demo.action.VIEW`,
 except for two differences:
 
 * The extras' keys should have an underscore and the 0-based index of the sample
@@ -247,7 +247,7 @@ Other extras, which are not sample dependant, do not change. For example, you
 can run the following command in the terminal to play a playlist with two items,
 overriding the extension of the second item:
 ~~~
-adb shell am start -a com.google.android.exoplayer.demo.action.VIEW_LIST \
+adb shell am start -a com.firework.android.exoplayer.demo.action.VIEW_LIST \
     --es uri_0 https://a.com/sample1.mp4 \
     --es uri_1 https://b.com/sample2.fake_mpd \
     --es extension_1 mpd
