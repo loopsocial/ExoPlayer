@@ -18,5 +18,5 @@
     android:id="@+id/exo_settings_listview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/exo_black_opacity_70"
+    android:background="@color/fw_exo_black_opacity_70"
     android:scrollbars="vertical"/>

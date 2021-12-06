@@ -73,63 +73,63 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
  * A high level view for {@link Player} media playbacks. It displays video, subtitles and album art
  * during playback, and displays playback controls using a {@link PlayerControlView}.
  *
- * <p>A PlayerView can be customized by setting attributes (or calling corresponding methods),
+ * <p>A fw_PlayerView can be customized by setting attributes (or calling corresponding methods),
  * overriding drawables, overriding the view's layout file, or by specifying a custom view layout
  * file.
  *
  * <h2>Attributes</h2>
  *
- * The following attributes can be set on a PlayerView when used in a layout XML file:
+ * The following attributes can be set on a fw_PlayerView when used in a layout XML file:
  *
  * <ul>
- *   <li><b>{@code use_artwork}</b> - Whether artwork is used if available in audio streams.
+ *   <li><b>{@code fw_use_artwork}</b> - Whether artwork is used if available in audio streams.
  *       <ul>
  *         <li>Corresponding method: {@link #setUseArtwork(boolean)}
  *         <li>Default: {@code true}
  *       </ul>
- *   <li><b>{@code default_artwork}</b> - Default artwork to use if no artwork available in audio
+ *   <li><b>{@code fw_default_artwork}</b> - Default artwork to use if no artwork available in audio
  *       streams.
  *       <ul>
  *         <li>Corresponding method: {@link #setDefaultArtwork(Drawable)}
  *         <li>Default: {@code null}
  *       </ul>
- *   <li><b>{@code use_controller}</b> - Whether the playback controls can be shown.
+ *   <li><b>{@code fw_use_controller}</b> - Whether the playback controls can be shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setUseController(boolean)}
  *         <li>Default: {@code true}
  *       </ul>
- *   <li><b>{@code hide_on_touch}</b> - Whether the playback controls are hidden by touch events.
+ *   <li><b>{@code fw_hide_on_touch}</b> - Whether the playback controls are hidden by touch events.
  *       <ul>
  *         <li>Corresponding method: {@link #setControllerHideOnTouch(boolean)}
  *         <li>Default: {@code true}
  *       </ul>
- *   <li><b>{@code auto_show}</b> - Whether the playback controls are automatically shown when
+ *   <li><b>{@code fw_auto_show}</b> - Whether the playback controls are automatically shown when
  *       playback starts, pauses, ends, or fails. If set to false, the playback controls can be
  *       manually operated with {@link #showController()} and {@link #hideController()}.
  *       <ul>
  *         <li>Corresponding method: {@link #setControllerAutoShow(boolean)}
  *         <li>Default: {@code true}
  *       </ul>
- *   <li><b>{@code hide_during_ads}</b> - Whether the playback controls are hidden during ads.
+ *   <li><b>{@code fw_hide_during_ads}</b> - Whether the playback controls are hidden during ads.
  *       Controls are always shown during ads if they are enabled and the player is paused.
  *       <ul>
  *         <li>Corresponding method: {@link #setControllerHideDuringAds(boolean)}
  *         <li>Default: {@code true}
  *       </ul>
- *   <li><b>{@code show_buffering}</b> - Whether the buffering spinner is displayed when the player
+ *   <li><b>{@code fw_show_buffering}</b> - Whether the buffering spinner is displayed when the player
  *       is buffering. Valid values are {@code never}, {@code when_playing} and {@code always}.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowBuffering(int)}
  *         <li>Default: {@code never}
  *       </ul>
- *   <li><b>{@code resize_mode}</b> - Controls how video and album art is resized within the view.
+ *   <li><b>{@code fw_resize_mode}</b> - Controls how video and album art is resized within the view.
  *       Valid values are {@code fit}, {@code fixed_width}, {@code fixed_height}, {@code fill} and
  *       {@code zoom}.
  *       <ul>
  *         <li>Corresponding method: {@link #setResizeMode(int)}
  *         <li>Default: {@code fit}
  *       </ul>
- *   <li><b>{@code surface_type}</b> - The type of surface view used for video playbacks. Valid
+ *   <li><b>{@code fw_surface_type}</b> - The type of surface view used for video playbacks. Valid
  *       values are {@code surface_view}, {@code texture_view}, {@code spherical_gl_surface_view},
  *       {@code video_decoder_gl_surface_view} and {@code none}. Using {@code none} is recommended
  *       for audio only applications, since creating the surface can be expensive. Using {@code
@@ -139,34 +139,34 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
  *         <li>Corresponding method: None
  *         <li>Default: {@code surface_view}
  *       </ul>
- *   <li><b>{@code shutter_background_color}</b> - The background color of the {@code exo_shutter}
+ *   <li><b>{@code fw_shutter_background_color}</b> - The background color of the {@code fw_exo_shutter}
  *       view.
  *       <ul>
  *         <li>Corresponding method: {@link #setShutterBackgroundColor(int)}
  *         <li>Default: {@code unset}
  *       </ul>
- *   <li><b>{@code keep_content_on_player_reset}</b> - Whether the currently displayed video frame
+ *   <li><b>{@code fw_keep_content_on_player_reset}</b> - Whether the currently displayed video frame
  *       or media artwork is kept visible when the player is reset.
  *       <ul>
  *         <li>Corresponding method: {@link #setKeepContentOnPlayerReset(boolean)}
  *         <li>Default: {@code false}
  *       </ul>
- *   <li><b>{@code player_layout_id}</b> - Specifies the id of the layout to be inflated. See below
+ *   <li><b>{@code fw_player_layout_id}</b> - Specifies the id of the layout to be inflated. See below
  *       for more details.
  *       <ul>
  *         <li>Corresponding method: None
- *         <li>Default: {@code R.layout.exo_player_view}
+ *         <li>Default: {@code R.layout.fw_exo_player_view}
  *       </ul>
- *   <li><b>{@code controller_layout_id}</b> - Specifies the id of the layout resource to be
+ *   <li><b>{@code fw_controller_layout_id}</b> - Specifies the id of the layout resource to be
  *       inflated by the child {@link PlayerControlView}. See below for more details.
  *       <ul>
  *         <li>Corresponding method: None
- *         <li>Default: {@code R.layout.exo_player_control_view}
+ *         <li>Default: {@code R.layout.fw_exo_player_control_view}
  *       </ul>
  *   <li>All attributes that can be set on {@link PlayerControlView} and {@link DefaultTimeBar} can
- *       also be set on a PlayerView, and will be propagated to the inflated {@link
+ *       also be set on a fw_PlayerView, and will be propagated to the inflated {@link
  *       PlayerControlView} unless the layout is overridden to specify a custom {@code
- *       exo_controller} (see below).
+ *       fw_exo_controller} (see below).
  * </ul>
  *
  * <h2>Overriding drawables</h2>
@@ -177,62 +177,62 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
  *
  * <h2>Overriding the layout file</h2>
  *
- * To customize the layout of PlayerView throughout your app, or just for certain configurations,
+ * To customize the layout of fw_PlayerView throughout your app, or just for certain configurations,
  * you can define {@code exo_player_view.xml} layout files in your application {@code res/layout*}
  * directories. These layouts will override the one provided by the library, and will be inflated
- * for use by PlayerView. The view identifies and binds its children by looking for the following
+ * for use by fw_PlayerView. The view identifies and binds its children by looking for the following
  * ids:
  *
  * <ul>
- *   <li><b>{@code exo_content_frame}</b> - A frame whose aspect ratio is resized based on the video
- *       or album art of the media being played, and the configured {@code resize_mode}. The video
+ *   <li><b>{@code fw_exo_content_frame}</b> - A frame whose aspect ratio is resized based on the video
+ *       or album art of the media being played, and the configured {@code fw_resize_mode}. The video
  *       surface view is inflated into this frame as its first child.
  *       <ul>
  *         <li>Type: {@link AspectRatioFrameLayout}
  *       </ul>
- *   <li><b>{@code exo_shutter}</b> - A view that's made visible when video should be hidden. This
+ *   <li><b>{@code fw_exo_shutter}</b> - A view that's made visible when video should be hidden. This
  *       view is typically an opaque view that covers the video surface, thereby obscuring it when
  *       visible. Obscuring the surface in this way also helps to prevent flicker at the start of
- *       playback when {@code surface_type="surface_view"}.
+ *       playback when {@code fw_surface_type="surface_view"}.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_buffering}</b> - A view that's made visible when the player is buffering.
+ *   <li><b>{@code fw_exo_buffering}</b> - A view that's made visible when the player is buffering.
  *       This view typically displays a buffering spinner or animation.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_subtitles}</b> - Displays subtitles.
+ *   <li><b>{@code fw_exo_subtitles}</b> - Displays subtitles.
  *       <ul>
  *         <li>Type: {@link SubtitleView}
  *       </ul>
- *   <li><b>{@code exo_artwork}</b> - Displays album art.
+ *   <li><b>{@code fw_exo_artwork}</b> - Displays album art.
  *       <ul>
  *         <li>Type: {@link ImageView}
  *       </ul>
- *   <li><b>{@code exo_error_message}</b> - Displays an error message to the user if playback fails.
+ *   <li><b>{@code fw_exo_error_message}</b> - Displays an error message to the user if playback fails.
  *       <ul>
  *         <li>Type: {@link TextView}
  *       </ul>
- *   <li><b>{@code exo_controller_placeholder}</b> - A placeholder that's replaced with the inflated
- *       {@link PlayerControlView}. Ignored if an {@code exo_controller} view exists.
+ *   <li><b>{@code fw_exo_controller_placeholder}</b> - A placeholder that's replaced with the inflated
+ *       {@link PlayerControlView}. Ignored if an {@code fw_exo_controller} view exists.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_controller}</b> - An already inflated {@link PlayerControlView}. Allows use
+ *   <li><b>{@code fw_exo_controller}</b> - An already inflated {@link PlayerControlView}. Allows use
  *       of a custom extension of {@link PlayerControlView}. {@link PlayerControlView} and {@link
- *       DefaultTimeBar} attributes set on the PlayerView will not be automatically propagated
+ *       DefaultTimeBar} attributes set on the fw_PlayerView will not be automatically propagated
  *       through to this instance. If a view exists with this id, any {@code
- *       exo_controller_placeholder} view will be ignored.
+ *       fw_exo_controller_placeholder} view will be ignored.
  *       <ul>
  *         <li>Type: {@link PlayerControlView}
  *       </ul>
- *   <li><b>{@code exo_ad_overlay}</b> - A {@link FrameLayout} positioned on top of the player which
+ *   <li><b>{@code fw_exo_ad_overlay}</b> - A {@link FrameLayout} positioned on top of the player which
  *       is used to show ad UI (if applicable).
  *       <ul>
  *         <li>Type: {@link FrameLayout}
  *       </ul>
- *   <li><b>{@code exo_overlay}</b> - A {@link FrameLayout} positioned on top of the player which
+ *   <li><b>{@code fw_exo_overlay}</b> - A {@link FrameLayout} positioned on top of the player which
  *       the app can access via {@link #getOverlayFrameLayout()}, provided for convenience.
  *       <ul>
  *         <li>Type: {@link FrameLayout}
@@ -244,10 +244,10 @@ import org.checkerframework.checker.nullness.qual.RequiresNonNull;
  *
  * <h2>Specifying a custom layout file</h2>
  *
- * Defining your own {@code exo_player_view.xml} is useful to customize the layout of PlayerView
+ * Defining your own {@code exo_player_view.xml} is useful to customize the layout of fw_PlayerView
  * throughout your application. It's also possible to customize the layout for a single instance in
- * a layout file. This is achieved by setting the {@code player_layout_id} attribute on a
- * PlayerView. This will cause the specified layout to be inflated instead of {@code
+ * a layout file. This is achieved by setting the {@code fw_player_layout_id} attribute on a
+ * fw_PlayerView. This will cause the specified layout to be inflated instead of {@code
  * exo_player_view.xml} for only the instance on which the attribute is set.
  */
 public class PlayerView extends FrameLayout implements AdViewProvider {
@@ -348,7 +348,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
 
     boolean shutterColorSet = false;
     int shutterColor = 0;
-    int playerLayoutId = R.layout.exo_player_view;
+    int playerLayoutId = R.layout.fw_exo_player_view;
     boolean useArtwork = true;
     int defaultArtworkId = 0;
     boolean useController = true;
@@ -364,28 +364,28 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
           context
               .getTheme()
               .obtainStyledAttributes(
-                  attrs, R.styleable.PlayerView, defStyleAttr, /* defStyleRes= */ 0);
+                  attrs, R.styleable.fw_PlayerView, defStyleAttr, /* defStyleRes= */ 0);
       try {
-        shutterColorSet = a.hasValue(R.styleable.PlayerView_shutter_background_color);
-        shutterColor = a.getColor(R.styleable.PlayerView_shutter_background_color, shutterColor);
-        playerLayoutId = a.getResourceId(R.styleable.PlayerView_player_layout_id, playerLayoutId);
-        useArtwork = a.getBoolean(R.styleable.PlayerView_use_artwork, useArtwork);
+        shutterColorSet = a.hasValue(R.styleable.fw_PlayerView_fw_shutter_background_color);
+        shutterColor = a.getColor(R.styleable.fw_PlayerView_fw_shutter_background_color, shutterColor);
+        playerLayoutId = a.getResourceId(R.styleable.fw_PlayerView_fw_player_layout_id, playerLayoutId);
+        useArtwork = a.getBoolean(R.styleable.fw_PlayerView_fw_use_artwork, useArtwork);
         defaultArtworkId =
-            a.getResourceId(R.styleable.PlayerView_default_artwork, defaultArtworkId);
-        useController = a.getBoolean(R.styleable.PlayerView_use_controller, useController);
-        surfaceType = a.getInt(R.styleable.PlayerView_surface_type, surfaceType);
-        resizeMode = a.getInt(R.styleable.PlayerView_resize_mode, resizeMode);
+            a.getResourceId(R.styleable.fw_PlayerView_fw_default_artwork, defaultArtworkId);
+        useController = a.getBoolean(R.styleable.fw_PlayerView_fw_use_controller, useController);
+        surfaceType = a.getInt(R.styleable.fw_PlayerView_fw_surface_type, surfaceType);
+        resizeMode = a.getInt(R.styleable.fw_PlayerView_fw_resize_mode, resizeMode);
         controllerShowTimeoutMs =
-            a.getInt(R.styleable.PlayerView_show_timeout, controllerShowTimeoutMs);
+            a.getInt(R.styleable.fw_PlayerView_fw_show_timeout, controllerShowTimeoutMs);
         controllerHideOnTouch =
-            a.getBoolean(R.styleable.PlayerView_hide_on_touch, controllerHideOnTouch);
-        controllerAutoShow = a.getBoolean(R.styleable.PlayerView_auto_show, controllerAutoShow);
-        showBuffering = a.getInteger(R.styleable.PlayerView_show_buffering, showBuffering);
+            a.getBoolean(R.styleable.fw_PlayerView_fw_hide_on_touch, controllerHideOnTouch);
+        controllerAutoShow = a.getBoolean(R.styleable.fw_PlayerView_fw_auto_show, controllerAutoShow);
+        showBuffering = a.getInteger(R.styleable.fw_PlayerView_fw_show_buffering, showBuffering);
         keepContentOnPlayerReset =
             a.getBoolean(
-                R.styleable.PlayerView_keep_content_on_player_reset, keepContentOnPlayerReset);
+                R.styleable.fw_PlayerView_fw_keep_content_on_player_reset, keepContentOnPlayerReset);
         controllerHideDuringAds =
-            a.getBoolean(R.styleable.PlayerView_hide_during_ads, controllerHideDuringAds);
+            a.getBoolean(R.styleable.fw_PlayerView_fw_hide_during_ads, controllerHideDuringAds);
       } finally {
         a.recycle();
       }
@@ -395,13 +395,13 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
     setDescendantFocusability(FOCUS_AFTER_DESCENDANTS);
 
     // Content frame.
-    contentFrame = findViewById(R.id.exo_content_frame);
+    contentFrame = findViewById(R.id.fw_exo_content_frame);
     if (contentFrame != null) {
       setResizeModeRaw(contentFrame, resizeMode);
     }
 
     // Shutter view.
-    shutterView = findViewById(R.id.exo_shutter);
+    shutterView = findViewById(R.id.fw_exo_shutter);
     if (shutterView != null && shutterColorSet) {
       shutterView.setBackgroundColor(shutterColor);
     }
@@ -443,9 +443,9 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
           break;
       }
       surfaceView.setLayoutParams(params);
-      // We don't want surfaceView to be clickable separately to the PlayerView itself, but we do
+      // We don't want surfaceView to be clickable separately to the fw_PlayerView itself, but we do
       // want to register as an OnClickListener so that surfaceView implementations can propagate
-      // click events up to the PlayerView by calling their own performClick method.
+      // click events up to the fw_PlayerView by calling their own performClick method.
       surfaceView.setOnClickListener(componentListener);
       surfaceView.setClickable(false);
       contentFrame.addView(surfaceView, 0);
@@ -455,48 +455,48 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
     this.surfaceViewIgnoresVideoAspectRatio = surfaceViewIgnoresVideoAspectRatio;
 
     // Ad overlay frame layout.
-    adOverlayFrameLayout = findViewById(R.id.exo_ad_overlay);
+    adOverlayFrameLayout = findViewById(R.id.fw_exo_ad_overlay);
 
     // Overlay frame layout.
-    overlayFrameLayout = findViewById(R.id.exo_overlay);
+    overlayFrameLayout = findViewById(R.id.fw_exo_overlay);
 
     // Artwork view.
-    artworkView = findViewById(R.id.exo_artwork);
+    artworkView = findViewById(R.id.fw_exo_artwork);
     this.useArtwork = useArtwork && artworkView != null;
     if (defaultArtworkId != 0) {
       defaultArtwork = ContextCompat.getDrawable(getContext(), defaultArtworkId);
     }
 
     // Subtitle view.
-    subtitleView = findViewById(R.id.exo_subtitles);
+    subtitleView = findViewById(R.id.fw_exo_subtitles);
     if (subtitleView != null) {
       subtitleView.setUserDefaultStyle();
       subtitleView.setUserDefaultTextSize();
     }
 
     // Buffering view.
-    bufferingView = findViewById(R.id.exo_buffering);
+    bufferingView = findViewById(R.id.fw_exo_buffering);
     if (bufferingView != null) {
       bufferingView.setVisibility(View.GONE);
     }
     this.showBuffering = showBuffering;
 
     // Error message view.
-    errorMessageView = findViewById(R.id.exo_error_message);
+    errorMessageView = findViewById(R.id.fw_exo_error_message);
     if (errorMessageView != null) {
       errorMessageView.setVisibility(View.GONE);
     }
 
     // Playback control view.
-    PlayerControlView customController = findViewById(R.id.exo_controller);
-    View controllerPlaceholder = findViewById(R.id.exo_controller_placeholder);
+    PlayerControlView customController = findViewById(R.id.fw_exo_controller);
+    View controllerPlaceholder = findViewById(R.id.fw_exo_controller_placeholder);
     if (customController != null) {
       this.controller = customController;
     } else if (controllerPlaceholder != null) {
-      // Propagate attrs as playbackAttrs so that PlayerControlView's custom attributes are
+      // Propagate attrs as playbackAttrs so that fw_PlayerControlView's custom attributes are
       // transferred, but standard attributes (e.g. background) are not.
       this.controller = new PlayerControlView(context, null, 0, attrs);
-      controller.setId(R.id.exo_controller);
+      controller.setId(R.id.fw_exo_controller);
       controller.setLayoutParams(controllerPlaceholder.getLayoutParams());
       ViewGroup parent = ((ViewGroup) controllerPlaceholder.getParent());
       int controllerIndex = parent.indexOfChild(controllerPlaceholder);
@@ -696,7 +696,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
   }
 
   /**
-   * Sets the background color of the {@code exo_shutter} view.
+   * Sets the background color of the {@code fw_exo_shutter} view.
    *
    * @param color The background color.
    */
@@ -719,7 +719,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
    * without clearing the view's content.
    *
    * <p>If disabled, the currently displayed video frame or media artwork will be hidden as soon as
-   * the player is reset. Note that the video frame is hidden by making {@code exo_shutter} visible.
+   * the player is reset. Note that the video frame is hidden by making {@code fw_exo_shutter} visible.
    * Hence the video frame will not be hidden if using a custom layout that omits this view.
    *
    * @param keepContentOnPlayerReset Whether the currently displayed video frame or media artwork is
@@ -1027,14 +1027,14 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
    * Gets the view onto which video is rendered. This is a:
    *
    * <ul>
-   *   <li>{@link SurfaceView} by default, or if the {@code surface_type} attribute is set to {@code
+   *   <li>{@link SurfaceView} by default, or if the {@code fw_surface_type} attribute is set to {@code
    *       surface_view}.
-   *   <li>{@link TextureView} if {@code surface_type} is {@code texture_view}.
-   *   <li>{@code SphericalGLSurfaceView} if {@code surface_type} is {@code
+   *   <li>{@link TextureView} if {@code fw_surface_type} is {@code texture_view}.
+   *   <li>{@code SphericalGLSurfaceView} if {@code fw_surface_type} is {@code
    *       spherical_gl_surface_view}.
-   *   <li>{@code VideoDecoderGLSurfaceView} if {@code surface_type} is {@code
+   *   <li>{@code VideoDecoderGLSurfaceView} if {@code fw_surface_type} is {@code
    *       video_decoder_gl_surface_view}.
-   *   <li>{@code null} if {@code surface_type} is {@code none}.
+   *   <li>{@code null} if {@code fw_surface_type} is {@code none}.
    * </ul>
    *
    * @return The {@link SurfaceView}, {@link TextureView}, {@code SphericalGLSurfaceView}, {@code
@@ -1105,7 +1105,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
   }
 
   /**
-   * Should be called when the player is visible to the user, if the {@code surface_type} extends
+   * Should be called when the player is visible to the user, if the {@code fw_surface_type} extends
    * {@link GLSurfaceView}. It is the counterpart to {@link #onPause()}.
    *
    * <p>This method should typically be called in {@code Activity.onStart()}, or {@code
@@ -1118,7 +1118,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
   }
 
   /**
-   * Should be called when the player is no longer visible to the user, if the {@code surface_type}
+   * Should be called when the player is no longer visible to the user, if the {@code fw_surface_type}
    * extends {@link GLSurfaceView}. It is the counterpart to {@link #onResume()}.
    *
    * <p>This method should typically be called in {@code Activity.onStop()}, or {@code
@@ -1149,7 +1149,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
   @Override
   public ViewGroup getAdViewGroup() {
     return Assertions.checkStateNotNull(
-        adOverlayFrameLayout, "exo_ad_overlay must be present for ad playback");
+        adOverlayFrameLayout, "fw_exo_ad_overlay must be present for ad playback");
   }
 
   @Override
@@ -1382,11 +1382,11 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
     } else if (controller.getVisibility() == View.VISIBLE) {
       setContentDescription(
           /* contentDescription= */ controllerHideOnTouch
-              ? getResources().getString(R.string.exo_controls_hide)
+              ? getResources().getString(R.string.fw_exo_controls_hide)
               : null);
     } else {
       setContentDescription(
-          /* contentDescription= */ getResources().getString(R.string.exo_controls_show));
+          /* contentDescription= */ getResources().getString(R.string.fw_exo_controls_show));
     }
   }
 
@@ -1400,13 +1400,13 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
 
   @RequiresApi(23)
   private static void configureEditModeLogoV23(Resources resources, ImageView logo) {
-    logo.setImageDrawable(resources.getDrawable(R.drawable.exo_edit_mode_logo, null));
-    logo.setBackgroundColor(resources.getColor(R.color.exo_edit_mode_background_color, null));
+    logo.setImageDrawable(resources.getDrawable(R.drawable.fw_exo_edit_mode_logo, null));
+    logo.setBackgroundColor(resources.getColor(R.color.fw_exo_edit_mode_background_color, null));
   }
 
   private static void configureEditModeLogo(Resources resources, ImageView logo) {
-    logo.setImageDrawable(resources.getDrawable(R.drawable.exo_edit_mode_logo));
-    logo.setBackgroundColor(resources.getColor(R.color.exo_edit_mode_background_color));
+    logo.setImageDrawable(resources.getDrawable(R.drawable.fw_exo_edit_mode_logo));
+    logo.setBackgroundColor(resources.getColor(R.color.fw_exo_edit_mode_background_color));
   }
 
   @SuppressWarnings("ResourceType")
@@ -1559,7 +1559,7 @@ public class PlayerView extends FrameLayout implements AdViewProvider {
       toggleControllerVisibility();
     }
 
-    // PlayerControlView.VisibilityListener implementation
+    // fw_PlayerControlView.VisibilityListener implementation
 
     @Override
     public void onVisibilityChange(int visibility) {

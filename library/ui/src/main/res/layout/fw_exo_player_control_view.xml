@@ -30,32 +30,32 @@
     android:paddingTop="4dp"
     android:orientation="horizontal">
 
-    <ImageButton android:id="@id/exo_prev"
-      style="@style/ExoMediaButton.Previous"/>
+    <ImageButton android:id="@id/fw_exo_prev"
+      style="@style/fw_ExoMediaButton.Previous"/>
 
-    <ImageButton android:id="@id/exo_rew"
-      style="@style/ExoMediaButton.Rewind"/>
+    <ImageButton android:id="@id/fw_exo_rew"
+      style="@style/fw_ExoMediaButton.Rewind"/>
 
-    <ImageButton android:id="@id/exo_shuffle"
-      style="@style/ExoMediaButton"/>
+    <ImageButton android:id="@id/fw_exo_shuffle"
+      style="@style/fw_ExoMediaButton"/>
 
-    <ImageButton android:id="@id/exo_repeat_toggle"
-      style="@style/ExoMediaButton"/>
+    <ImageButton android:id="@id/fw_exo_repeat_toggle"
+      style="@style/fw_ExoMediaButton"/>
 
-    <ImageButton android:id="@id/exo_play"
-      style="@style/ExoMediaButton.Play"/>
+    <ImageButton android:id="@id/fw_exo_play"
+      style="@style/fw_ExoMediaButton.Play"/>
 
-    <ImageButton android:id="@id/exo_pause"
-      style="@style/ExoMediaButton.Pause"/>
+    <ImageButton android:id="@id/fw_exo_pause"
+      style="@style/fw_ExoMediaButton.Pause"/>
 
-    <ImageButton android:id="@id/exo_ffwd"
-      style="@style/ExoMediaButton.FastForward"/>
+    <ImageButton android:id="@id/fw_exo_ffwd"
+      style="@style/fw_ExoMediaButton.FastForward"/>
 
-    <ImageButton android:id="@id/exo_next"
-      style="@style/ExoMediaButton.Next"/>
+    <ImageButton android:id="@id/fw_exo_next"
+      style="@style/fw_ExoMediaButton.Next"/>
 
-    <ImageButton android:id="@id/exo_vr"
-      style="@style/ExoMediaButton.VR"/>
+    <ImageButton android:id="@id/fw_exo_vr"
+      style="@style/fw_ExoMediaButton.VR"/>
 
   </LinearLayout>
 
@@ -66,7 +66,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <TextView android:id="@id/exo_position"
+    <TextView android:id="@id/fw_exo_position"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:textSize="14sp"
@@ -76,12 +76,12 @@
       android:includeFontPadding="false"
       android:textColor="#FFBEBEBE"/>
 
-    <View android:id="@id/exo_progress_placeholder"
+    <View android:id="@id/fw_exo_progress_placeholder"
       android:layout_width="0dp"
       android:layout_weight="1"
       android:layout_height="26dp"/>
 
-    <TextView android:id="@id/exo_duration"
+    <TextView android:id="@id/fw_exo_duration"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:textSize="14sp"

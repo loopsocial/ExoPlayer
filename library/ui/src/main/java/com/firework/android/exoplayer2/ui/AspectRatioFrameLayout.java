@@ -104,9 +104,9 @@ public final class AspectRatioFrameLayout extends FrameLayout {
       TypedArray a =
           context
               .getTheme()
-              .obtainStyledAttributes(attrs, R.styleable.AspectRatioFrameLayout, 0, 0);
+              .obtainStyledAttributes(attrs, R.styleable.fw_AspectRatioFrameLayout, 0, 0);
       try {
-        resizeMode = a.getInt(R.styleable.AspectRatioFrameLayout_resize_mode, RESIZE_MODE_FIT);
+        resizeMode = a.getInt(R.styleable.fw_AspectRatioFrameLayout_fw_resize_mode, RESIZE_MODE_FIT);
       } finally {
         a.recycle();
       }

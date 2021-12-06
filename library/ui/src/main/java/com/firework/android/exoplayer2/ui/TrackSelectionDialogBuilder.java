@@ -244,7 +244,7 @@ public final class TrackSelectionDialogBuilder {
 
     // Inflate with the builder's context to ensure the correct style is used.
     LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
-    View dialogView = dialogInflater.inflate(R.layout.exo_track_selection_dialog, /* root= */ null);
+    View dialogView = dialogInflater.inflate(R.layout.fw_exo_track_selection_dialog, /* root= */ null);
     Dialog.OnClickListener okClickListener = setUpDialogView(dialogView);
 
     return builder
@@ -270,7 +270,7 @@ public final class TrackSelectionDialogBuilder {
       Context builderContext = (Context) builderClazz.getMethod("getContext").invoke(builder);
       LayoutInflater dialogInflater = LayoutInflater.from(builderContext);
       View dialogView =
-          dialogInflater.inflate(R.layout.exo_track_selection_dialog, /* root= */ null);
+          dialogInflater.inflate(R.layout.fw_exo_track_selection_dialog, /* root= */ null);
       Dialog.OnClickListener okClickListener = setUpDialogView(dialogView);
 
       builderClazz.getMethod("setTitle", CharSequence.class).invoke(builder, title);

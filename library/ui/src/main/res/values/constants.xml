@@ -15,13 +15,13 @@
 -->
 <resources>
 
-  <dimen name="exo_media_button_width">71dp</dimen>
-  <dimen name="exo_media_button_height">52dp</dimen>
+  <dimen name="fw_exo_media_button_width">71dp</dimen>
+  <dimen name="fw_exo_media_button_height">52dp</dimen>
 
-  <integer name="exo_media_button_opacity_percentage_enabled">100</integer>
-  <integer name="exo_media_button_opacity_percentage_disabled">33</integer>
+  <integer name="fw_exo_media_button_opacity_percentage_enabled">100</integer>
+  <integer name="fw_exo_media_button_opacity_percentage_disabled">33</integer>
 
-  <color name="exo_error_message_background_color">#AA000000</color>
-  <color name="exo_edit_mode_background_color">#FFF4F3F0</color>
+  <color name="fw_exo_error_message_background_color">#AA000000</color>
+  <color name="fw_exo_edit_mode_background_color">#FFF4F3F0</color>
 
 </resources>

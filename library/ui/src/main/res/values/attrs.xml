@@ -15,8 +15,8 @@
 -->
 <resources>
 
-  <!-- Must be kept in sync with AspectRatioFrameLayout -->
-  <attr name="resize_mode" format="enum">
+  <!-- Must be kept in sync with fw_AspectRatioFrameLayout -->
+  <attr name="fw_resize_mode" format="enum">
     <enum name="fit" value="0"/>
     <enum name="fixed_width" value="1"/>
     <enum name="fixed_height" value="2"/>
@@ -24,8 +24,8 @@
     <enum name="zoom" value="4"/>
   </attr>
 
-  <!-- Must be kept in sync with PlayerView -->
-  <attr name="surface_type" format="enum">
+  <!-- Must be kept in sync with fw_PlayerView -->
+  <attr name="fw_surface_type" format="enum">
     <enum name="none" value="0"/>
     <enum name="surface_view" value="1"/>
     <enum name="texture_view" value="2"/>
@@ -34,215 +34,215 @@
   </attr>
 
   <!-- Must be kept in sync with RepeatModeUtil -->
-  <attr name="repeat_toggle_modes">
+  <attr name="fw_repeat_toggle_modes">
     <flag name="none" value="0"/>
     <flag name="one" value="1"/>
     <flag name="all" value="2"/>
   </attr>
 
-  <!-- PlayerView and StyledPlayerView attributes -->
-  <attr name="use_artwork" format="boolean"/>
-  <attr name="shutter_background_color" format="color"/>
-  <attr name="default_artwork" format="reference"/>
-  <attr name="use_controller" format="boolean"/>
-  <attr name="hide_on_touch" format="boolean"/>
-  <attr name="hide_during_ads" format="boolean"/>
-  <attr name="auto_show" format="boolean"/>
-  <attr name="show_buffering" format="enum">
+  <!-- fw_PlayerView and fw_StyledPlayerView attributes -->
+  <attr name="fw_use_artwork" format="boolean"/>
+  <attr name="fw_shutter_background_color" format="color"/>
+  <attr name="fw_default_artwork" format="reference"/>
+  <attr name="fw_use_controller" format="boolean"/>
+  <attr name="fw_hide_on_touch" format="boolean"/>
+  <attr name="fw_hide_during_ads" format="boolean"/>
+  <attr name="fw_auto_show" format="boolean"/>
+  <attr name="fw_show_buffering" format="enum">
     <enum name="never" value="0"/>
     <enum name="when_playing" value="1"/>
     <enum name="always" value="2"/>
   </attr>
-  <attr name="keep_content_on_player_reset" format="boolean"/>
-  <attr name="player_layout_id" format="reference"/>
+  <attr name="fw_keep_content_on_player_reset" format="boolean"/>
+  <attr name="fw_player_layout_id" format="reference"/>
 
-  <!-- PlayerControlView and StyledPlayerControlView attributes -->
-  <attr name="show_timeout" format="integer"/>
-  <attr name="show_rewind_button" format="boolean"/>
-  <attr name="show_fastforward_button" format="boolean"/>
-  <attr name="show_previous_button" format="boolean"/>
-  <attr name="show_next_button" format="boolean"/>
-  <attr name="show_shuffle_button" format="boolean"/>
-  <attr name="show_subtitle_button" format="boolean"/>
-  <attr name="show_vr_button" format="boolean"/>
-  <attr name="time_bar_min_update_interval" format="integer"/>
-  <attr name="controller_layout_id" format="reference"/>
-  <attr name="animation_enabled" format="boolean"/>
+  <!-- fw_PlayerControlView and fw_StyledPlayerControlView attributes -->
+  <attr name="fw_show_timeout" format="integer"/>
+  <attr name="fw_show_rewind_button" format="boolean"/>
+  <attr name="fw_show_fastforward_button" format="boolean"/>
+  <attr name="fw_show_previous_button" format="boolean"/>
+  <attr name="fw_show_next_button" format="boolean"/>
+  <attr name="fw_show_shuffle_button" format="boolean"/>
+  <attr name="fw_show_subtitle_button" format="boolean"/>
+  <attr name="fw_show_vr_button" format="boolean"/>
+  <attr name="fw_time_bar_min_update_interval" format="integer"/>
+  <attr name="fw_controller_layout_id" format="reference"/>
+  <attr name="fw_animation_enabled" format="boolean"/>
 
   <!-- Needed for https://github.com/google/ExoPlayer/issues/7898 -->
-  <attr name="backgroundTint" format="color"/>
+  <attr name="fw_backgroundTint" format="color"/>
 
-  <!-- DefaultTimeBar attributes -->
-  <attr name="bar_height" format="dimension"/>
-  <attr name="bar_gravity" format="enum">
+  <!-- fw_DefaultTimeBar attributes -->
+  <attr name="fw_bar_height" format="dimension"/>
+  <attr name="fw_bar_gravity" format="enum">
     <enum name="center" value="0"/>
     <enum name="bottom" value="1"/>
   </attr>
-  <attr name="touch_target_height" format="dimension"/>
-  <attr name="ad_marker_width" format="dimension"/>
-  <attr name="scrubber_enabled_size" format="dimension"/>
-  <attr name="scrubber_disabled_size" format="dimension"/>
-  <attr name="scrubber_dragged_size" format="dimension"/>
-  <attr name="scrubber_drawable" format="reference"/>
-  <attr name="played_color" format="color"/>
-  <attr name="scrubber_color" format="color"/>
-  <attr name="buffered_color" format="color"/>
-  <attr name="unplayed_color" format="color"/>
-  <attr name="ad_marker_color" format="color"/>
-  <attr name="played_ad_marker_color" format="color"/>
+  <attr name="fw_touch_target_height" format="dimension"/>
+  <attr name="fw_ad_marker_width" format="dimension"/>
+  <attr name="fw_scrubber_enabled_size" format="dimension"/>
+  <attr name="fw_scrubber_disabled_size" format="dimension"/>
+  <attr name="fw_scrubber_dragged_size" format="dimension"/>
+  <attr name="fw_scrubber_drawable" format="reference"/>
+  <attr name="fw_played_color" format="color"/>
+  <attr name="fw_scrubber_color" format="color"/>
+  <attr name="fw_buffered_color" format="color"/>
+  <attr name="fw_unplayed_color" format="color"/>
+  <attr name="fw_ad_marker_color" format="color"/>
+  <attr name="fw_played_ad_marker_color" format="color"/>
 
-  <declare-styleable name="PlayerView">
-    <attr name="use_artwork"/>
-    <attr name="shutter_background_color"/>
-    <attr name="default_artwork"/>
-    <attr name="use_controller"/>
-    <attr name="hide_on_touch"/>
-    <attr name="hide_during_ads"/>
-    <attr name="auto_show"/>
-    <attr name="show_buffering"/>
-    <attr name="keep_content_on_player_reset"/>
-    <attr name="player_layout_id"/>
-    <attr name="surface_type"/>
-    <!-- AspectRatioFrameLayout attributes -->
-    <attr name="resize_mode"/>
-    <!-- PlayerControlView attributes -->
-    <attr name="show_timeout"/>
-    <attr name="repeat_toggle_modes"/>
-    <attr name="show_shuffle_button"/>
-    <attr name="time_bar_min_update_interval"/>
-    <attr name="controller_layout_id"/>
-    <!-- DefaultTimeBar attributes -->
-    <attr name="bar_height"/>
-    <attr name="touch_target_height"/>
-    <attr name="ad_marker_width"/>
-    <attr name="scrubber_enabled_size"/>
-    <attr name="scrubber_disabled_size"/>
-    <attr name="scrubber_dragged_size"/>
-    <attr name="scrubber_drawable"/>
-    <attr name="played_color"/>
-    <attr name="scrubber_color"/>
-    <attr name="buffered_color" />
-    <attr name="unplayed_color"/>
-    <attr name="ad_marker_color"/>
-    <attr name="played_ad_marker_color"/>
+  <declare-styleable name="fw_PlayerView">
+    <attr name="fw_use_artwork"/>
+    <attr name="fw_shutter_background_color"/>
+    <attr name="fw_default_artwork"/>
+    <attr name="fw_use_controller"/>
+    <attr name="fw_hide_on_touch"/>
+    <attr name="fw_hide_during_ads"/>
+    <attr name="fw_auto_show"/>
+    <attr name="fw_show_buffering"/>
+    <attr name="fw_keep_content_on_player_reset"/>
+    <attr name="fw_player_layout_id"/>
+    <attr name="fw_surface_type"/>
+    <!-- fw_AspectRatioFrameLayout attributes -->
+    <attr name="fw_resize_mode"/>
+    <!-- fw_PlayerControlView attributes -->
+    <attr name="fw_show_timeout"/>
+    <attr name="fw_repeat_toggle_modes"/>
+    <attr name="fw_show_shuffle_button"/>
+    <attr name="fw_time_bar_min_update_interval"/>
+    <attr name="fw_controller_layout_id"/>
+    <!-- fw_DefaultTimeBar attributes -->
+    <attr name="fw_bar_height"/>
+    <attr name="fw_touch_target_height"/>
+    <attr name="fw_ad_marker_width"/>
+    <attr name="fw_scrubber_enabled_size"/>
+    <attr name="fw_scrubber_disabled_size"/>
+    <attr name="fw_scrubber_dragged_size"/>
+    <attr name="fw_scrubber_drawable"/>
+    <attr name="fw_played_color"/>
+    <attr name="fw_scrubber_color"/>
+    <attr name="fw_buffered_color" />
+    <attr name="fw_unplayed_color"/>
+    <attr name="fw_ad_marker_color"/>
+    <attr name="fw_played_ad_marker_color"/>
   </declare-styleable>
 
-  <declare-styleable name="StyledPlayerView">
-    <attr name="use_artwork"/>
-    <attr name="shutter_background_color"/>
-    <attr name="default_artwork"/>
-    <attr name="use_controller"/>
-    <attr name="hide_on_touch"/>
-    <attr name="hide_during_ads"/>
-    <attr name="auto_show"/>
-    <attr name="show_buffering"/>
-    <attr name="keep_content_on_player_reset"/>
-    <attr name="player_layout_id"/>
-    <attr name="surface_type"/>
-    <!-- AspectRatioFrameLayout attributes -->
-    <attr name="resize_mode"/>
-    <!-- PlayerControlView attributes -->
-    <attr name="show_timeout"/>
-    <attr name="repeat_toggle_modes"/>
-    <attr name="show_shuffle_button"/>
-    <attr name="show_subtitle_button"/>
-    <attr name="show_vr_button"/>
-    <attr name="time_bar_min_update_interval"/>
-    <attr name="controller_layout_id"/>
-    <attr name="animation_enabled"/>
-    <!-- DefaultTimeBar attributes -->
-    <attr name="bar_height"/>
-    <attr name="bar_gravity"/>
-    <attr name="touch_target_height"/>
-    <attr name="ad_marker_width"/>
-    <attr name="scrubber_enabled_size"/>
-    <attr name="scrubber_disabled_size"/>
-    <attr name="scrubber_dragged_size"/>
-    <attr name="scrubber_drawable"/>
-    <attr name="played_color"/>
-    <attr name="scrubber_color"/>
-    <attr name="buffered_color" />
-    <attr name="unplayed_color"/>
-    <attr name="ad_marker_color"/>
-    <attr name="played_ad_marker_color"/>
+  <declare-styleable name="fw_StyledPlayerView">
+    <attr name="fw_use_artwork"/>
+    <attr name="fw_shutter_background_color"/>
+    <attr name="fw_default_artwork"/>
+    <attr name="fw_use_controller"/>
+    <attr name="fw_hide_on_touch"/>
+    <attr name="fw_hide_during_ads"/>
+    <attr name="fw_auto_show"/>
+    <attr name="fw_show_buffering"/>
+    <attr name="fw_keep_content_on_player_reset"/>
+    <attr name="fw_player_layout_id"/>
+    <attr name="fw_surface_type"/>
+    <!-- fw_AspectRatioFrameLayout attributes -->
+    <attr name="fw_resize_mode"/>
+    <!-- fw_PlayerControlView attributes -->
+    <attr name="fw_show_timeout"/>
+    <attr name="fw_repeat_toggle_modes"/>
+    <attr name="fw_show_shuffle_button"/>
+    <attr name="fw_show_subtitle_button"/>
+    <attr name="fw_show_vr_button"/>
+    <attr name="fw_time_bar_min_update_interval"/>
+    <attr name="fw_controller_layout_id"/>
+    <attr name="fw_animation_enabled"/>
+    <!-- fw_DefaultTimeBar attributes -->
+    <attr name="fw_bar_height"/>
+    <attr name="fw_bar_gravity"/>
+    <attr name="fw_touch_target_height"/>
+    <attr name="fw_ad_marker_width"/>
+    <attr name="fw_scrubber_enabled_size"/>
+    <attr name="fw_scrubber_disabled_size"/>
+    <attr name="fw_scrubber_dragged_size"/>
+    <attr name="fw_scrubber_drawable"/>
+    <attr name="fw_played_color"/>
+    <attr name="fw_scrubber_color"/>
+    <attr name="fw_buffered_color" />
+    <attr name="fw_unplayed_color"/>
+    <attr name="fw_ad_marker_color"/>
+    <attr name="fw_played_ad_marker_color"/>
   </declare-styleable>
 
-  <declare-styleable name="AspectRatioFrameLayout">
-    <attr name="resize_mode"/>
+  <declare-styleable name="fw_AspectRatioFrameLayout">
+    <attr name="fw_resize_mode"/>
   </declare-styleable>
 
-  <declare-styleable name="PlayerControlView">
-    <attr name="show_timeout"/>
-    <attr name="repeat_toggle_modes"/>
-    <attr name="show_rewind_button"/>
-    <attr name="show_fastforward_button"/>
-    <attr name="show_previous_button"/>
-    <attr name="show_next_button"/>
-    <attr name="show_shuffle_button"/>
-    <attr name="time_bar_min_update_interval"/>
-    <attr name="controller_layout_id"/>
-    <!-- DefaultTimeBar attributes -->
-    <attr name="bar_height"/>
-    <attr name="bar_gravity"/>
-    <attr name="touch_target_height"/>
-    <attr name="ad_marker_width"/>
-    <attr name="scrubber_enabled_size"/>
-    <attr name="scrubber_disabled_size"/>
-    <attr name="scrubber_dragged_size"/>
-    <attr name="scrubber_drawable"/>
-    <attr name="played_color"/>
-    <attr name="scrubber_color"/>
-    <attr name="buffered_color" />
-    <attr name="unplayed_color"/>
-    <attr name="ad_marker_color"/>
-    <attr name="played_ad_marker_color"/>
+  <declare-styleable name="fw_PlayerControlView">
+    <attr name="fw_show_timeout"/>
+    <attr name="fw_repeat_toggle_modes"/>
+    <attr name="fw_show_rewind_button"/>
+    <attr name="fw_show_fastforward_button"/>
+    <attr name="fw_show_previous_button"/>
+    <attr name="fw_show_next_button"/>
+    <attr name="fw_show_shuffle_button"/>
+    <attr name="fw_time_bar_min_update_interval"/>
+    <attr name="fw_controller_layout_id"/>
+    <!-- fw_DefaultTimeBar attributes -->
+    <attr name="fw_bar_height"/>
+    <attr name="fw_bar_gravity"/>
+    <attr name="fw_touch_target_height"/>
+    <attr name="fw_ad_marker_width"/>
+    <attr name="fw_scrubber_enabled_size"/>
+    <attr name="fw_scrubber_disabled_size"/>
+    <attr name="fw_scrubber_dragged_size"/>
+    <attr name="fw_scrubber_drawable"/>
+    <attr name="fw_played_color"/>
+    <attr name="fw_scrubber_color"/>
+    <attr name="fw_buffered_color" />
+    <attr name="fw_unplayed_color"/>
+    <attr name="fw_ad_marker_color"/>
+    <attr name="fw_played_ad_marker_color"/>
   </declare-styleable>
 
-  <declare-styleable name="StyledPlayerControlView">
-    <attr name="show_timeout"/>
-    <attr name="repeat_toggle_modes"/>
-    <attr name="show_rewind_button"/>
-    <attr name="show_fastforward_button"/>
-    <attr name="show_previous_button"/>
-    <attr name="show_next_button"/>
-    <attr name="show_shuffle_button"/>
-    <attr name="show_subtitle_button"/>
-    <attr name="show_vr_button"/>
-    <attr name="time_bar_min_update_interval"/>
-    <attr name="controller_layout_id"/>
-    <attr name="animation_enabled"/>
-    <!-- DefaultTimeBar attributes -->
-    <attr name="bar_height"/>
-    <attr name="bar_gravity"/>
-    <attr name="touch_target_height"/>
-    <attr name="ad_marker_width"/>
-    <attr name="scrubber_enabled_size"/>
-    <attr name="scrubber_disabled_size"/>
-    <attr name="scrubber_dragged_size"/>
-    <attr name="scrubber_drawable"/>
-    <attr name="played_color"/>
-    <attr name="scrubber_color"/>
-    <attr name="buffered_color" />
-    <attr name="unplayed_color"/>
-    <attr name="ad_marker_color"/>
-    <attr name="played_ad_marker_color"/>
+  <declare-styleable name="fw_StyledPlayerControlView">
+    <attr name="fw_show_timeout"/>
+    <attr name="fw_repeat_toggle_modes"/>
+    <attr name="fw_show_rewind_button"/>
+    <attr name="fw_show_fastforward_button"/>
+    <attr name="fw_show_previous_button"/>
+    <attr name="fw_show_next_button"/>
+    <attr name="fw_show_shuffle_button"/>
+    <attr name="fw_show_subtitle_button"/>
+    <attr name="fw_show_vr_button"/>
+    <attr name="fw_time_bar_min_update_interval"/>
+    <attr name="fw_controller_layout_id"/>
+    <attr name="fw_animation_enabled"/>
+    <!-- fw_DefaultTimeBar attributes -->
+    <attr name="fw_bar_height"/>
+    <attr name="fw_bar_gravity"/>
+    <attr name="fw_touch_target_height"/>
+    <attr name="fw_ad_marker_width"/>
+    <attr name="fw_scrubber_enabled_size"/>
+    <attr name="fw_scrubber_disabled_size"/>
+    <attr name="fw_scrubber_dragged_size"/>
+    <attr name="fw_scrubber_drawable"/>
+    <attr name="fw_played_color"/>
+    <attr name="fw_scrubber_color"/>
+    <attr name="fw_buffered_color" />
+    <attr name="fw_unplayed_color"/>
+    <attr name="fw_ad_marker_color"/>
+    <attr name="fw_played_ad_marker_color"/>
   </declare-styleable>
 
-  <declare-styleable name="DefaultTimeBar">
-    <attr name="bar_height"/>
-    <attr name="bar_gravity"/>
-    <attr name="touch_target_height"/>
-    <attr name="ad_marker_width"/>
-    <attr name="scrubber_enabled_size"/>
-    <attr name="scrubber_disabled_size"/>
-    <attr name="scrubber_dragged_size"/>
-    <attr name="scrubber_drawable"/>
-    <attr name="played_color"/>
-    <attr name="scrubber_color"/>
-    <attr name="buffered_color" />
-    <attr name="unplayed_color"/>
-    <attr name="ad_marker_color"/>
-    <attr name="played_ad_marker_color"/>
+  <declare-styleable name="fw_DefaultTimeBar">
+    <attr name="fw_bar_height"/>
+    <attr name="fw_bar_gravity"/>
+    <attr name="fw_touch_target_height"/>
+    <attr name="fw_ad_marker_width"/>
+    <attr name="fw_scrubber_enabled_size"/>
+    <attr name="fw_scrubber_disabled_size"/>
+    <attr name="fw_scrubber_dragged_size"/>
+    <attr name="fw_scrubber_drawable"/>
+    <attr name="fw_played_color"/>
+    <attr name="fw_scrubber_color"/>
+    <attr name="fw_buffered_color" />
+    <attr name="fw_unplayed_color"/>
+    <attr name="fw_ad_marker_color"/>
+    <attr name="fw_played_ad_marker_color"/>
   </declare-styleable>
 
 </resources>

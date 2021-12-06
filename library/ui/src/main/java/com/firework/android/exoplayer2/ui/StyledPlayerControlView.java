@@ -88,28 +88,28 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * A view for controlling {@link Player} instances.
  *
- * <p>A StyledPlayerControlView can be customized by setting attributes (or calling corresponding
+ * <p>A fw_StyledPlayerControlView can be customized by setting attributes (or calling corresponding
  * methods), overriding drawables, overriding the view's layout file, or by specifying a custom view
  * layout file.
  *
  * <h2>Attributes</h2>
  *
- * The following attributes can be set on a StyledPlayerControlView when used in a layout XML file:
+ * The following attributes can be set on a fw_StyledPlayerControlView when used in a layout XML file:
  *
  * <ul>
- *   <li><b>{@code show_timeout}</b> - The time between the last user interaction and the controls
+ *   <li><b>{@code fw_show_timeout}</b> - The time between the last user interaction and the controls
  *       being automatically hidden, in milliseconds. Use zero if the controls should not
  *       automatically timeout.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowTimeoutMs(int)}
  *         <li>Default: {@link #DEFAULT_SHOW_TIMEOUT_MS}
  *       </ul>
- *   <li><b>{@code show_rewind_button}</b> - Whether the rewind button is shown.
+ *   <li><b>{@code fw_show_rewind_button}</b> - Whether the rewind button is shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowRewindButton(boolean)}
  *         <li>Default: true
  *       </ul>
- *   <li><b>{@code show_fastforward_button}</b> - Whether the fast forward button is shown.
+ *   <li><b>{@code fw_show_fastforward_button}</b> - Whether the fast forward button is shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowFastForwardButton(boolean)}
  *         <li>Default: true
@@ -119,7 +119,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *         <li>Corresponding method: {@link #setShowPreviousButton(boolean)}
  *         <li>Default: true
  *       </ul>
- *   <li><b>{@code show_next_button}</b> - Whether the next button is shown.
+ *   <li><b>{@code fw_show_next_button}</b> - Whether the next button is shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowNextButton(boolean)}
  *         <li>Default: true
@@ -131,161 +131,161 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *         <li>Corresponding method: {@link #setRepeatToggleModes(int)}
  *         <li>Default: {@link #DEFAULT_REPEAT_TOGGLE_MODES}
  *       </ul>
- *   <li><b>{@code show_shuffle_button}</b> - Whether the shuffle button is shown.
+ *   <li><b>{@code fw_show_shuffle_button}</b> - Whether the shuffle button is shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowShuffleButton(boolean)}
  *         <li>Default: false
  *       </ul>
- *   <li><b>{@code show_subtitle_button}</b> - Whether the subtitle button is shown.
+ *   <li><b>{@code fw_show_subtitle_button}</b> - Whether the subtitle button is shown.
  *       <ul>
  *         <li>Corresponding method: {@link #setShowSubtitleButton(boolean)}
  *         <li>Default: false
  *       </ul>
- *   <li><b>{@code animation_enabled}</b> - Whether an animation is used to show and hide the
+ *   <li><b>{@code fw_animation_enabled}</b> - Whether an animation is used to show and hide the
  *       playback controls.
  *       <ul>
  *         <li>Corresponding method: {@link #setAnimationEnabled(boolean)}
  *         <li>Default: true
  *       </ul>
- *   <li><b>{@code time_bar_min_update_interval}</b> - Specifies the minimum interval between time
+ *   <li><b>{@code fw_time_bar_min_update_interval}</b> - Specifies the minimum interval between time
  *       bar position updates.
  *       <ul>
  *         <li>Corresponding method: {@link #setTimeBarMinUpdateInterval(int)}
  *         <li>Default: {@link #DEFAULT_TIME_BAR_MIN_UPDATE_INTERVAL_MS}
  *       </ul>
- *   <li><b>{@code controller_layout_id}</b> - Specifies the id of the layout to be inflated. See
+ *   <li><b>{@code fw_controller_layout_id}</b> - Specifies the id of the layout to be inflated. See
  *       below for more details.
  *       <ul>
  *         <li>Corresponding method: None
- *         <li>Default: {@code R.layout.exo_styled_player_control_view}
+ *         <li>Default: {@code R.layout.fw_exo_styled_player_control_view}
  *       </ul>
  *   <li>All attributes that can be set on {@link DefaultTimeBar} can also be set on a
- *       StyledPlayerControlView, and will be propagated to the inflated {@link DefaultTimeBar}
- *       unless the layout is overridden to specify a custom {@code exo_progress} (see below).
+ *       fw_StyledPlayerControlView, and will be propagated to the inflated {@link DefaultTimeBar}
+ *       unless the layout is overridden to specify a custom {@code fw_exo_progress} (see below).
  * </ul>
  *
  * <h2>Overriding drawables</h2>
  *
- * The drawables used by StyledPlayerControlView (with its default layout file) can be overridden by
+ * The drawables used by fw_StyledPlayerControlView (with its default layout file) can be overridden by
  * drawables with the same names defined in your application. The drawables that can be overridden
  * are:
  *
  * <ul>
- *   <li><b>{@code exo_styled_controls_play}</b> - The play icon.
- *   <li><b>{@code exo_styled_controls_pause}</b> - The pause icon.
- *   <li><b>{@code exo_styled_controls_rewind}</b> - The background of rewind icon.
- *   <li><b>{@code exo_styled_controls_fastforward}</b> - The background of fast forward icon.
- *   <li><b>{@code exo_styled_controls_previous}</b> - The previous icon.
- *   <li><b>{@code exo_styled_controls_next}</b> - The next icon.
- *   <li><b>{@code exo_styled_controls_repeat_off}</b> - The repeat icon for {@link
+ *   <li><b>{@code fw_exo_styled_controls_play}</b> - The play icon.
+ *   <li><b>{@code fw_exo_styled_controls_pause}</b> - The pause icon.
+ *   <li><b>{@code fw_exo_styled_controls_rewind}</b> - The background of rewind icon.
+ *   <li><b>{@code fw_exo_styled_controls_fastforward}</b> - The background of fast forward icon.
+ *   <li><b>{@code fw_exo_styled_controls_previous}</b> - The previous icon.
+ *   <li><b>{@code fw_exo_styled_controls_next}</b> - The next icon.
+ *   <li><b>{@code fw_exo_styled_controls_repeat_off}</b> - The repeat icon for {@link
  *       Player#REPEAT_MODE_OFF}.
- *   <li><b>{@code exo_styled_controls_repeat_one}</b> - The repeat icon for {@link
+ *   <li><b>{@code fw_exo_styled_controls_repeat_one}</b> - The repeat icon for {@link
  *       Player#REPEAT_MODE_ONE}.
- *   <li><b>{@code exo_styled_controls_repeat_all}</b> - The repeat icon for {@link
+ *   <li><b>{@code fw_exo_styled_controls_repeat_all}</b> - The repeat icon for {@link
  *       Player#REPEAT_MODE_ALL}.
- *   <li><b>{@code exo_styled_controls_shuffle_off}</b> - The shuffle icon when shuffling is
+ *   <li><b>{@code fw_exo_styled_controls_shuffle_off}</b> - The shuffle icon when shuffling is
  *       disabled.
- *   <li><b>{@code exo_styled_controls_shuffle_on}</b> - The shuffle icon when shuffling is enabled.
- *   <li><b>{@code exo_styled_controls_vr}</b> - The VR icon.
+ *   <li><b>{@code fw_exo_styled_controls_shuffle_on}</b> - The shuffle icon when shuffling is enabled.
+ *   <li><b>{@code fw_exo_styled_controls_vr}</b> - The VR icon.
  * </ul>
  *
  * <h2>Overriding the layout file</h2>
  *
- * To customize the layout of StyledPlayerControlView throughout your app, or just for certain
+ * To customize the layout of fw_StyledPlayerControlView throughout your app, or just for certain
  * configurations, you can define {@code exo_styled_player_control_view.xml} layout files in your
  * application {@code res/layout*} directories. But, in this case, you need to be careful since the
  * default animation implementation expects certain relative positions between children. See also <a
  * href="CustomLayout">Specifying a custom layout file</a>.
  *
  * <p>The layout files in your {@code res/layout*} will override the one provided by the library,
- * and will be inflated for use by StyledPlayerControlView. The view identifies and binds its
+ * and will be inflated for use by fw_StyledPlayerControlView. The view identifies and binds its
  * children by looking for the following ids:
  *
  * <ul>
- *   <li><b>{@code exo_play_pause}</b> - The play and pause button.
+ *   <li><b>{@code fw_exo_play_pause}</b> - The play and pause button.
  *       <ul>
  *         <li>Type: {@link ImageView}
  *       </ul>
- *   <li><b>{@code exo_rew}</b> - The rewind button.
+ *   <li><b>{@code fw_exo_rew}</b> - The rewind button.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_rew_with_amount}</b> - The rewind button with rewind amount.
+ *   <li><b>{@code fw_exo_rew_with_amount}</b> - The rewind button with rewind amount.
  *       <ul>
  *         <li>Type: {@link TextView}
- *         <li>Note: StyledPlayerControlView will programmatically set the text with the rewind
- *             amount in seconds. Ignored if an {@code exo_rew} exists. Otherwise, it works as the
+ *         <li>Note: fw_StyledPlayerControlView will programmatically set the text with the rewind
+ *             amount in seconds. Ignored if an {@code fw_exo_rew} exists. Otherwise, it works as the
  *             rewind button.
  *       </ul>
- *   <li><b>{@code exo_ffwd}</b> - The fast forward button.
+ *   <li><b>{@code fw_exo_ffwd}</b> - The fast forward button.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_ffwd_with_amount}</b> - The fast forward button with fast forward amount.
+ *   <li><b>{@code fw_exo_ffwd_with_amount}</b> - The fast forward button with fast forward amount.
  *       <ul>
  *         <li>Type: {@link TextView}
- *         <li>Note: StyledPlayerControlView will programmatically set the text with the fast
- *             forward amount in seconds. Ignored if an {@code exo_ffwd} exists. Otherwise, it works
+ *         <li>Note: fw_StyledPlayerControlView will programmatically set the text with the fast
+ *             forward amount in seconds. Ignored if an {@code fw_exo_ffwd} exists. Otherwise, it works
  *             as the fast forward button.
  *       </ul>
- *   <li><b>{@code exo_prev}</b> - The previous button.
+ *   <li><b>{@code fw_exo_prev}</b> - The previous button.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_next}</b> - The next button.
+ *   <li><b>{@code fw_exo_next}</b> - The next button.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_repeat_toggle}</b> - The repeat toggle button.
+ *   <li><b>{@code fw_exo_repeat_toggle}</b> - The repeat toggle button.
  *       <ul>
  *         <li>Type: {@link ImageView}
- *         <li>Note: StyledPlayerControlView will programmatically set the drawable on the repeat
+ *         <li>Note: fw_StyledPlayerControlView will programmatically set the drawable on the repeat
  *             toggle button according to the player's current repeat mode. The drawables used are
- *             {@code exo_controls_repeat_off}, {@code exo_controls_repeat_one} and {@code
- *             exo_controls_repeat_all}. See the section above for information on overriding these
+ *             {@code fw_exo_controls_repeat_off}, {@code fw_exo_controls_repeat_one} and {@code
+ *             fw_exo_controls_repeat_all}. See the section above for information on overriding these
  *             drawables.
  *       </ul>
- *   <li><b>{@code exo_shuffle}</b> - The shuffle button.
+ *   <li><b>{@code fw_exo_shuffle}</b> - The shuffle button.
  *       <ul>
  *         <li>Type: {@link ImageView}
- *         <li>Note: StyledPlayerControlView will programmatically set the drawable on the shuffle
+ *         <li>Note: fw_StyledPlayerControlView will programmatically set the drawable on the shuffle
  *             button according to the player's current repeat mode. The drawables used are {@code
- *             exo_controls_shuffle_off} and {@code exo_controls_shuffle_on}. See the section above
+ *             fw_exo_controls_shuffle_off} and {@code fw_exo_controls_shuffle_on}. See the section above
  *             for information on overriding these drawables.
  *       </ul>
  *   <li><b>{@code exo_vr}</b> - The VR mode button.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_subtitle}</b> - The subtitle button.
+ *   <li><b>{@code fw_exo_subtitle}</b> - The subtitle button.
  *       <ul>
  *         <li>Type: {@link ImageView}
  *       </ul>
- *   <li><b>{@code exo_fullscreen}</b> - The fullscreen button.
+ *   <li><b>{@code fw_exo_fullscreen}</b> - The fullscreen button.
  *       <ul>
  *         <li>Type: {@link ImageView}
  *       </ul>
- *   <li><b>{@code exo_minimal_fullscreen}</b> - The fullscreen button in minimal mode.
+ *   <li><b>{@code fw_exo_minimal_fullscreen}</b> - The fullscreen button in minimal mode.
  *       <ul>
  *         <li>Type: {@link ImageView}
  *       </ul>
- *   <li><b>{@code exo_position}</b> - Text view displaying the current playback position.
+ *   <li><b>{@code fw_exo_position}</b> - Text view displaying the current playback position.
  *       <ul>
  *         <li>Type: {@link TextView}
  *       </ul>
- *   <li><b>{@code exo_duration}</b> - Text view displaying the current media duration.
+ *   <li><b>{@code fw_exo_duration}</b> - Text view displaying the current media duration.
  *       <ul>
  *         <li>Type: {@link TextView}
  *       </ul>
- *   <li><b>{@code exo_progress_placeholder}</b> - A placeholder that's replaced with the inflated
- *       {@link DefaultTimeBar}. Ignored if an {@code exo_progress} view exists.
+ *   <li><b>{@code fw_exo_progress_placeholder}</b> - A placeholder that's replaced with the inflated
+ *       {@link DefaultTimeBar}. Ignored if an {@code fw_exo_progress} view exists.
  *       <ul>
  *         <li>Type: {@link View}
  *       </ul>
- *   <li><b>{@code exo_progress}</b> - Time bar that's updated during playback and allows seeking.
- *       {@link DefaultTimeBar} attributes set on the StyledPlayerControlView will not be
+ *   <li><b>{@code fw_exo_progress}</b> - Time bar that's updated during playback and allows seeking.
+ *       {@link DefaultTimeBar} attributes set on the fw_StyledPlayerControlView will not be
  *       automatically propagated through to this instance. If a view exists with this id, any
- *       {@code exo_progress_placeholder} view will be ignored.
+ *       {@code fw_exo_progress_placeholder} view will be ignored.
  *       <ul>
  *         <li>Type: {@link TimeBar}
  *       </ul>
@@ -297,13 +297,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * <h2 id="CustomLayout">Specifying a custom layout file</h2>
  *
  * Defining your own {@code exo_styled_player_control_view.xml} is useful to customize the layout of
- * StyledPlayerControlView throughout your application. It's also possible to customize the layout
+ * fw_StyledPlayerControlView throughout your application. It's also possible to customize the layout
  * for a single instance in a layout file. This is achieved by setting the {@code
- * controller_layout_id} attribute on a StyledPlayerControlView. This will cause the specified
+ * fw_controller_layout_id} attribute on a fw_StyledPlayerControlView. This will cause the specified
  * layout to be inflated instead of {@code exo_styled_player_control_view.xml} for only the instance
  * on which the attribute is set.
  *
- * <p>You need to be careful when you set the {@code controller_layout_id}, because the default
+ * <p>You need to be careful when you set the {@code fw_controller_layout_id}, because the default
  * animation implementation expects certain relative positions between children.
  */
 public class StyledPlayerControlView extends FrameLayout {
@@ -470,7 +470,7 @@ public class StyledPlayerControlView extends FrameLayout {
       int defStyleAttr,
       @Nullable AttributeSet playbackAttrs) {
     super(context, attrs, defStyleAttr);
-    int controllerLayoutId = R.layout.exo_styled_player_control_view;
+    int controllerLayoutId = R.layout.fw_exo_styled_player_control_view;
     showTimeoutMs = DEFAULT_SHOW_TIMEOUT_MS;
     repeatToggleModes = DEFAULT_REPEAT_TOGGLE_MODES;
     timeBarMinUpdateIntervalMs = DEFAULT_TIME_BAR_MIN_UPDATE_INTERVAL_MS;
@@ -489,39 +489,39 @@ public class StyledPlayerControlView extends FrameLayout {
               .getTheme()
               .obtainStyledAttributes(
                   playbackAttrs,
-                  R.styleable.StyledPlayerControlView,
+                  R.styleable.fw_StyledPlayerControlView,
                   defStyleAttr,
                   /* defStyleRes= */ 0);
       try {
         controllerLayoutId =
             a.getResourceId(
-                R.styleable.StyledPlayerControlView_controller_layout_id, controllerLayoutId);
-        showTimeoutMs = a.getInt(R.styleable.StyledPlayerControlView_show_timeout, showTimeoutMs);
+                R.styleable.fw_StyledPlayerControlView_fw_controller_layout_id, controllerLayoutId);
+        showTimeoutMs = a.getInt(R.styleable.fw_StyledPlayerControlView_fw_show_timeout, showTimeoutMs);
         repeatToggleModes = getRepeatToggleModes(a, repeatToggleModes);
         showRewindButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_rewind_button, showRewindButton);
+            a.getBoolean(R.styleable.fw_StyledPlayerControlView_fw_show_rewind_button, showRewindButton);
         showFastForwardButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_fastforward_button, showFastForwardButton);
+                R.styleable.fw_StyledPlayerControlView_fw_show_fastforward_button, showFastForwardButton);
         showPreviousButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_previous_button, showPreviousButton);
+                R.styleable.fw_StyledPlayerControlView_fw_show_previous_button, showPreviousButton);
         showNextButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_next_button, showNextButton);
+            a.getBoolean(R.styleable.fw_StyledPlayerControlView_fw_show_next_button, showNextButton);
         showShuffleButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_shuffle_button, showShuffleButton);
+                R.styleable.fw_StyledPlayerControlView_fw_show_shuffle_button, showShuffleButton);
         showSubtitleButton =
             a.getBoolean(
-                R.styleable.StyledPlayerControlView_show_subtitle_button, showSubtitleButton);
+                R.styleable.fw_StyledPlayerControlView_fw_show_subtitle_button, showSubtitleButton);
         showVrButton =
-            a.getBoolean(R.styleable.StyledPlayerControlView_show_vr_button, showVrButton);
+            a.getBoolean(R.styleable.fw_StyledPlayerControlView_fw_show_vr_button, showVrButton);
         setTimeBarMinUpdateInterval(
             a.getInt(
-                R.styleable.StyledPlayerControlView_time_bar_min_update_interval,
+                R.styleable.fw_StyledPlayerControlView_fw_time_bar_min_update_interval,
                 timeBarMinUpdateIntervalMs));
         animationEnabled =
-            a.getBoolean(R.styleable.StyledPlayerControlView_animation_enabled, animationEnabled);
+            a.getBoolean(R.styleable.fw_StyledPlayerControlView_fw_animation_enabled, animationEnabled);
       } finally {
         a.recycle();
       }
@@ -542,44 +542,44 @@ public class StyledPlayerControlView extends FrameLayout {
     extraPlayedAdGroups = new boolean[0];
     updateProgressAction = this::updateProgress;
 
-    durationView = findViewById(R.id.exo_duration);
-    positionView = findViewById(R.id.exo_position);
+    durationView = findViewById(R.id.fw_exo_duration);
+    positionView = findViewById(R.id.fw_exo_position);
 
-    subtitleButton = findViewById(R.id.exo_subtitle);
+    subtitleButton = findViewById(R.id.fw_exo_subtitle);
     if (subtitleButton != null) {
       subtitleButton.setOnClickListener(componentListener);
     }
 
-    fullScreenButton = findViewById(R.id.exo_fullscreen);
+    fullScreenButton = findViewById(R.id.fw_exo_fullscreen);
     initializeFullScreenButton(fullScreenButton, this::onFullScreenButtonClicked);
-    minimalFullScreenButton = findViewById(R.id.exo_minimal_fullscreen);
+    minimalFullScreenButton = findViewById(R.id.fw_exo_minimal_fullscreen);
     initializeFullScreenButton(minimalFullScreenButton, this::onFullScreenButtonClicked);
 
-    settingsButton = findViewById(R.id.exo_settings);
+    settingsButton = findViewById(R.id.fw_exo_settings);
     if (settingsButton != null) {
       settingsButton.setOnClickListener(componentListener);
     }
 
-    playbackSpeedButton = findViewById(R.id.exo_playback_speed);
+    playbackSpeedButton = findViewById(R.id.fw_exo_playback_speed);
     if (playbackSpeedButton != null) {
       playbackSpeedButton.setOnClickListener(componentListener);
     }
 
-    audioTrackButton = findViewById(R.id.exo_audio_track);
+    audioTrackButton = findViewById(R.id.fw_exo_audio_track);
     if (audioTrackButton != null) {
       audioTrackButton.setOnClickListener(componentListener);
     }
 
-    TimeBar customTimeBar = findViewById(R.id.exo_progress);
-    View timeBarPlaceholder = findViewById(R.id.exo_progress_placeholder);
+    TimeBar customTimeBar = findViewById(R.id.fw_exo_progress);
+    View timeBarPlaceholder = findViewById(R.id.fw_exo_progress_placeholder);
     if (customTimeBar != null) {
       timeBar = customTimeBar;
     } else if (timeBarPlaceholder != null) {
-      // Propagate playbackAttrs as timebarAttrs so that DefaultTimeBar's custom attributes are
+      // Propagate playbackAttrs as timebarAttrs so that fw_DefaultTimeBar's custom attributes are
       // transferred, but standard attributes (e.g. background) are not.
       DefaultTimeBar defaultTimeBar =
-          new DefaultTimeBar(context, null, 0, playbackAttrs, R.style.ExoStyledControls_TimeBar);
-      defaultTimeBar.setId(R.id.exo_progress);
+          new DefaultTimeBar(context, null, 0, playbackAttrs, R.style.fw_ExoStyledControls_TimeBar);
+      defaultTimeBar.setId(R.id.fw_exo_progress);
       defaultTimeBar.setLayoutParams(timeBarPlaceholder.getLayoutParams());
       ViewGroup parent = ((ViewGroup) timeBarPlaceholder.getParent());
       int timeBarIndex = parent.indexOfChild(timeBarPlaceholder);
@@ -593,21 +593,21 @@ public class StyledPlayerControlView extends FrameLayout {
       timeBar.addListener(componentListener);
     }
 
-    playPauseButton = findViewById(R.id.exo_play_pause);
+    playPauseButton = findViewById(R.id.fw_exo_play_pause);
     if (playPauseButton != null) {
       playPauseButton.setOnClickListener(componentListener);
     }
-    previousButton = findViewById(R.id.exo_prev);
+    previousButton = findViewById(R.id.fw_exo_prev);
     if (previousButton != null) {
       previousButton.setOnClickListener(componentListener);
     }
-    nextButton = findViewById(R.id.exo_next);
+    nextButton = findViewById(R.id.fw_exo_next);
     if (nextButton != null) {
       nextButton.setOnClickListener(componentListener);
     }
-    Typeface typeface = ResourcesCompat.getFont(context, R.font.roboto_medium_numbers);
-    View rewButton = findViewById(R.id.exo_rew);
-    rewindButtonTextView = rewButton == null ? findViewById(R.id.exo_rew_with_amount) : null;
+    Typeface typeface = ResourcesCompat.getFont(context, R.font.fw_roboto_medium_numbers);
+    View rewButton = findViewById(R.id.fw_exo_rew);
+    rewindButtonTextView = rewButton == null ? findViewById(R.id.fw_exo_rew_with_amount) : null;
     if (rewindButtonTextView != null) {
       rewindButtonTextView.setTypeface(typeface);
     }
@@ -615,8 +615,8 @@ public class StyledPlayerControlView extends FrameLayout {
     if (rewindButton != null) {
       rewindButton.setOnClickListener(componentListener);
     }
-    View ffwdButton = findViewById(R.id.exo_ffwd);
-    fastForwardButtonTextView = ffwdButton == null ? findViewById(R.id.exo_ffwd_with_amount) : null;
+    View ffwdButton = findViewById(R.id.fw_exo_ffwd);
+    fastForwardButtonTextView = ffwdButton == null ? findViewById(R.id.fw_exo_ffwd_with_amount) : null;
     if (fastForwardButtonTextView != null) {
       fastForwardButtonTextView.setTypeface(typeface);
     }
@@ -624,22 +624,22 @@ public class StyledPlayerControlView extends FrameLayout {
     if (fastForwardButton != null) {
       fastForwardButton.setOnClickListener(componentListener);
     }
-    repeatToggleButton = findViewById(R.id.exo_repeat_toggle);
+    repeatToggleButton = findViewById(R.id.fw_exo_repeat_toggle);
     if (repeatToggleButton != null) {
       repeatToggleButton.setOnClickListener(componentListener);
     }
-    shuffleButton = findViewById(R.id.exo_shuffle);
+    shuffleButton = findViewById(R.id.fw_exo_shuffle);
     if (shuffleButton != null) {
       shuffleButton.setOnClickListener(componentListener);
     }
 
     resources = context.getResources();
     buttonAlphaEnabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_enabled) / 100;
+        (float) resources.getInteger(R.integer.fw_exo_media_button_opacity_percentage_enabled) / 100;
     buttonAlphaDisabled =
-        (float) resources.getInteger(R.integer.exo_media_button_opacity_percentage_disabled) / 100;
+        (float) resources.getInteger(R.integer.fw_exo_media_button_opacity_percentage_disabled) / 100;
 
-    vrButton = findViewById(R.id.exo_vr);
+    vrButton = findViewById(R.id.fw_exo_vr);
     if (vrButton != null) {
       updateButton(/* enabled= */ false, vrButton);
     }
@@ -650,19 +650,19 @@ public class StyledPlayerControlView extends FrameLayout {
     String[] settingTexts = new String[2];
     Drawable[] settingIcons = new Drawable[2];
     settingTexts[SETTINGS_PLAYBACK_SPEED_POSITION] =
-        resources.getString(R.string.exo_controls_playback_speed);
+        resources.getString(R.string.fw_exo_controls_playback_speed);
     settingIcons[SETTINGS_PLAYBACK_SPEED_POSITION] =
-        resources.getDrawable(R.drawable.exo_styled_controls_speed);
+        resources.getDrawable(R.drawable.fw_exo_styled_controls_speed);
     settingTexts[SETTINGS_AUDIO_TRACK_SELECTION_POSITION] =
-        resources.getString(R.string.exo_track_selection_title_audio);
+        resources.getString(R.string.fw_exo_track_selection_title_audio);
     settingIcons[SETTINGS_AUDIO_TRACK_SELECTION_POSITION] =
-        resources.getDrawable(R.drawable.exo_styled_controls_audiotrack);
+        resources.getDrawable(R.drawable.fw_exo_styled_controls_audiotrack);
     settingsAdapter = new SettingsAdapter(settingTexts, settingIcons);
-    settingsWindowMargin = resources.getDimensionPixelSize(R.dimen.exo_settings_offset);
+    settingsWindowMargin = resources.getDimensionPixelSize(R.dimen.fw_exo_settings_offset);
     settingsView =
         (RecyclerView)
             LayoutInflater.from(context)
-                .inflate(R.layout.exo_styled_settings_list, /* root= */ null);
+                .inflate(R.layout.fw_exo_styled_settings_list, /* root= */ null);
     settingsView.setAdapter(settingsAdapter);
     settingsView.setLayoutManager(new LinearLayoutManager(getContext()));
     settingsWindow =
@@ -676,43 +676,43 @@ public class StyledPlayerControlView extends FrameLayout {
     needToHideBars = true;
 
     trackNameProvider = new DefaultTrackNameProvider(getResources());
-    subtitleOnButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_subtitle_on);
-    subtitleOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_subtitle_off);
+    subtitleOnButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_subtitle_on);
+    subtitleOffButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_subtitle_off);
     subtitleOnContentDescription =
-        resources.getString(R.string.exo_controls_cc_enabled_description);
+        resources.getString(R.string.fw_exo_controls_cc_enabled_description);
     subtitleOffContentDescription =
-        resources.getString(R.string.exo_controls_cc_disabled_description);
+        resources.getString(R.string.fw_exo_controls_cc_disabled_description);
     textTrackSelectionAdapter = new TextTrackSelectionAdapter();
     audioTrackSelectionAdapter = new AudioTrackSelectionAdapter();
     playbackSpeedAdapter =
         new PlaybackSpeedAdapter(
-            resources.getStringArray(R.array.exo_playback_speeds),
-            resources.getIntArray(R.array.exo_speed_multiplied_by_100));
+            resources.getStringArray(R.array.fw_exo_playback_speeds),
+            resources.getIntArray(R.array.fw_exo_speed_multiplied_by_100));
 
-    fullScreenExitDrawable = resources.getDrawable(R.drawable.exo_styled_controls_fullscreen_exit);
+    fullScreenExitDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_fullscreen_exit);
     fullScreenEnterDrawable =
-        resources.getDrawable(R.drawable.exo_styled_controls_fullscreen_enter);
-    repeatOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_off);
-    repeatOneButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_one);
-    repeatAllButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_repeat_all);
-    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_shuffle_on);
-    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.exo_styled_controls_shuffle_off);
+        resources.getDrawable(R.drawable.fw_exo_styled_controls_fullscreen_enter);
+    repeatOffButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_repeat_off);
+    repeatOneButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_repeat_one);
+    repeatAllButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_repeat_all);
+    shuffleOnButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_shuffle_on);
+    shuffleOffButtonDrawable = resources.getDrawable(R.drawable.fw_exo_styled_controls_shuffle_off);
     fullScreenExitContentDescription =
-        resources.getString(R.string.exo_controls_fullscreen_exit_description);
+        resources.getString(R.string.fw_exo_controls_fullscreen_exit_description);
     fullScreenEnterContentDescription =
-        resources.getString(R.string.exo_controls_fullscreen_enter_description);
+        resources.getString(R.string.fw_exo_controls_fullscreen_enter_description);
     repeatOffButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_off_description);
+        resources.getString(R.string.fw_exo_controls_repeat_off_description);
     repeatOneButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_one_description);
+        resources.getString(R.string.fw_exo_controls_repeat_one_description);
     repeatAllButtonContentDescription =
-        resources.getString(R.string.exo_controls_repeat_all_description);
-    shuffleOnContentDescription = resources.getString(R.string.exo_controls_shuffle_on_description);
+        resources.getString(R.string.fw_exo_controls_repeat_all_description);
+    shuffleOnContentDescription = resources.getString(R.string.fw_exo_controls_shuffle_on_description);
     shuffleOffContentDescription =
-        resources.getString(R.string.exo_controls_shuffle_off_description);
+        resources.getString(R.string.fw_exo_controls_shuffle_off_description);
 
     // TODO(insun) : Make showing bottomBar configurable. (ex. show_bottom_bar attribute).
-    ViewGroup bottomBar = findViewById(R.id.exo_bottom_bar);
+    ViewGroup bottomBar = findViewById(R.id.fw_exo_bottom_bar);
     controlViewLayoutManager.setShowButton(bottomBar, true);
     controlViewLayoutManager.setShowButton(fastForwardButton, showFastForwardButton);
     controlViewLayoutManager.setShowButton(rewindButton, showRewindButton);
@@ -1076,14 +1076,14 @@ public class StyledPlayerControlView extends FrameLayout {
     if (playPauseButton != null) {
       if (shouldShowPauseButton()) {
         ((ImageView) playPauseButton)
-            .setImageDrawable(resources.getDrawable(R.drawable.exo_styled_controls_pause));
+            .setImageDrawable(resources.getDrawable(R.drawable.fw_exo_styled_controls_pause));
         playPauseButton.setContentDescription(
-            resources.getString(R.string.exo_controls_pause_description));
+            resources.getString(R.string.fw_exo_controls_pause_description));
       } else {
         ((ImageView) playPauseButton)
-            .setImageDrawable(resources.getDrawable(R.drawable.exo_styled_controls_play));
+            .setImageDrawable(resources.getDrawable(R.drawable.fw_exo_styled_controls_play));
         playPauseButton.setContentDescription(
-            resources.getString(R.string.exo_controls_play_description));
+            resources.getString(R.string.fw_exo_controls_play_description));
       }
     }
   }
@@ -1133,7 +1133,7 @@ public class StyledPlayerControlView extends FrameLayout {
     if (rewindButton != null) {
       rewindButton.setContentDescription(
           resources.getQuantityString(
-              R.plurals.exo_controls_rewind_by_amount_description, rewindSec, rewindSec));
+              R.plurals.fw_exo_controls_rewind_by_amount_description, rewindSec, rewindSec));
     }
   }
 
@@ -1147,7 +1147,7 @@ public class StyledPlayerControlView extends FrameLayout {
     if (fastForwardButton != null) {
       fastForwardButton.setContentDescription(
           resources.getQuantityString(
-              R.plurals.exo_controls_fastforward_by_amount_description,
+              R.plurals.fw_exo_controls_fastforward_by_amount_description,
               fastForwardSec,
               fastForwardSec));
     }
@@ -1686,7 +1686,7 @@ public class StyledPlayerControlView extends FrameLayout {
   @SuppressWarnings("ResourceType")
   private static @RepeatModeUtil.RepeatToggleModes int getRepeatToggleModes(
       TypedArray a, @RepeatModeUtil.RepeatToggleModes int defaultValue) {
-    return a.getInt(R.styleable.StyledPlayerControlView_repeat_toggle_modes, defaultValue);
+    return a.getInt(R.styleable.fw_StyledPlayerControlView_fw_repeat_toggle_modes, defaultValue);
   }
 
   private final class ComponentListener
@@ -1819,7 +1819,7 @@ public class StyledPlayerControlView extends FrameLayout {
     public SettingViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       View v =
           LayoutInflater.from(getContext())
-              .inflate(R.layout.exo_styled_settings_list_item, parent, /* attachToRoot= */ false);
+              .inflate(R.layout.fw_exo_styled_settings_list_item, parent, /* attachToRoot= */ false);
       return new SettingViewHolder(v);
     }
 
@@ -1908,7 +1908,7 @@ public class StyledPlayerControlView extends FrameLayout {
       View v =
           LayoutInflater.from(getContext())
               .inflate(
-                  R.layout.exo_styled_sub_settings_list_item, parent, /* attachToRoot= */ false);
+                  R.layout.fw_exo_styled_sub_settings_list_item, parent, /* attachToRoot= */ false);
       return new SubSettingViewHolder(v);
     }
 
@@ -1975,7 +1975,7 @@ public class StyledPlayerControlView extends FrameLayout {
     @Override
     public void onBindViewHolderAtZeroPosition(SubSettingViewHolder holder) {
       // CC options include "Off" at the first position, which disables text rendering.
-      holder.textView.setText(R.string.exo_track_selection_none);
+      holder.textView.setText(R.string.fw_exo_track_selection_none);
       boolean isTrackSelectionOff = true;
       for (int i = 0; i < tracks.size(); i++) {
         if (tracks.get(i).isSelected()) {
@@ -2023,7 +2023,7 @@ public class StyledPlayerControlView extends FrameLayout {
     @Override
     public void onBindViewHolderAtZeroPosition(SubSettingViewHolder holder) {
       // Audio track selection option includes "Auto" at the top.
-      holder.textView.setText(R.string.exo_track_selection_auto);
+      holder.textView.setText(R.string.fw_exo_track_selection_auto);
       // hasSelectionOverride is true means there is an explicit track selection, not "Auto".
       TrackSelectionParameters parameters = checkNotNull(player).getTrackSelectionParameters();
       boolean hasSelectionOverride = hasSelectionOverride(parameters.trackSelectionOverrides);
@@ -2053,7 +2053,7 @@ public class StyledPlayerControlView extends FrameLayout {
                         .build());
             settingsAdapter.setSubTextAtPosition(
                 SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-                getResources().getString(R.string.exo_track_selection_auto));
+                getResources().getString(R.string.fw_exo_track_selection_auto));
             settingsWindow.dismiss();
           });
     }
@@ -2081,13 +2081,13 @@ public class StyledPlayerControlView extends FrameLayout {
       if (trackInformations.isEmpty()) {
         settingsAdapter.setSubTextAtPosition(
             SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-            getResources().getString(R.string.exo_track_selection_none));
+            getResources().getString(R.string.fw_exo_track_selection_none));
         // TODO(insun) : Make the audio item in main settings (settingsAdapater)
         //  to be non-clickable.
       } else if (!hasSelectionOverride(params.trackSelectionOverrides)) {
         settingsAdapter.setSubTextAtPosition(
             SETTINGS_AUDIO_TRACK_SELECTION_POSITION,
-            getResources().getString(R.string.exo_track_selection_auto));
+            getResources().getString(R.string.fw_exo_track_selection_auto));
       } else {
         for (int i = 0; i < trackInformations.size(); i++) {
           TrackInformation track = trackInformations.get(i);
@@ -2116,7 +2116,7 @@ public class StyledPlayerControlView extends FrameLayout {
       View v =
           LayoutInflater.from(getContext())
               .inflate(
-                  R.layout.exo_styled_sub_settings_list_item, parent, /* attachToRoot= */ false);
+                  R.layout.fw_exo_styled_sub_settings_list_item, parent, /* attachToRoot= */ false);
       return new SubSettingViewHolder(v);
     }
 

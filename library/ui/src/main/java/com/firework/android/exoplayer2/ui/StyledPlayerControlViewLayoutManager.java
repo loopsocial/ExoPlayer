@@ -97,26 +97,26 @@ import java.util.List;
     shownButtons = new ArrayList<>();
 
     // Relating to Center View
-    controlsBackground = styledPlayerControlView.findViewById(R.id.exo_controls_background);
-    centerControls = styledPlayerControlView.findViewById(R.id.exo_center_controls);
+    controlsBackground = styledPlayerControlView.findViewById(R.id.fw_exo_controls_background);
+    centerControls = styledPlayerControlView.findViewById(R.id.fw_exo_center_controls);
 
     // Relating to Minimal Layout
-    minimalControls = styledPlayerControlView.findViewById(R.id.exo_minimal_controls);
+    minimalControls = styledPlayerControlView.findViewById(R.id.fw_exo_minimal_controls);
 
     // Relating to Bottom Bar View
-    bottomBar = styledPlayerControlView.findViewById(R.id.exo_bottom_bar);
+    bottomBar = styledPlayerControlView.findViewById(R.id.fw_exo_bottom_bar);
 
     // Relating to Bottom Bar Left View
-    timeView = styledPlayerControlView.findViewById(R.id.exo_time);
-    timeBar = styledPlayerControlView.findViewById(R.id.exo_progress);
+    timeView = styledPlayerControlView.findViewById(R.id.fw_exo_time);
+    timeBar = styledPlayerControlView.findViewById(R.id.fw_exo_progress);
 
     // Relating to Bottom Bar Right View
-    basicControls = styledPlayerControlView.findViewById(R.id.exo_basic_controls);
-    extraControls = styledPlayerControlView.findViewById(R.id.exo_extra_controls);
+    basicControls = styledPlayerControlView.findViewById(R.id.fw_exo_basic_controls);
+    extraControls = styledPlayerControlView.findViewById(R.id.fw_exo_extra_controls);
     extraControlsScrollView =
-        styledPlayerControlView.findViewById(R.id.exo_extra_controls_scroll_view);
-    overflowShowButton = styledPlayerControlView.findViewById(R.id.exo_overflow_show);
-    View overflowHideButton = styledPlayerControlView.findViewById(R.id.exo_overflow_hide);
+        styledPlayerControlView.findViewById(R.id.fw_exo_extra_controls_scroll_view);
+    overflowShowButton = styledPlayerControlView.findViewById(R.id.fw_exo_overflow_show);
+    View overflowHideButton = styledPlayerControlView.findViewById(R.id.fw_exo_overflow_hide);
     if (overflowShowButton != null && overflowHideButton != null) {
       overflowShowButton.setOnClickListener(this::onOverflowButtonClick);
       overflowHideButton.setOnClickListener(this::onOverflowButtonClick);
@@ -196,9 +196,9 @@ import java.util.List;
 
     Resources resources = styledPlayerControlView.getResources();
     float translationYForProgressBar =
-        resources.getDimension(R.dimen.exo_styled_bottom_bar_height)
-            - resources.getDimension(R.dimen.exo_styled_progress_bar_height);
-    float translationYForNoBars = resources.getDimension(R.dimen.exo_styled_bottom_bar_height);
+        resources.getDimension(R.dimen.fw_exo_styled_bottom_bar_height)
+            - resources.getDimension(R.dimen.fw_exo_styled_progress_bar_height);
+    float translationYForNoBars = resources.getDimension(R.dimen.fw_exo_styled_bottom_bar_height);
 
     hideMainBarAnimator = new AnimatorSet();
     hideMainBarAnimator.setDuration(DURATION_FOR_HIDING_ANIMATION_MS);
@@ -495,9 +495,9 @@ import java.util.List;
 
   private void onOverflowButtonClick(View v) {
     resetHideCallbacks();
-    if (v.getId() == R.id.exo_overflow_show) {
+    if (v.getId() == R.id.fw_exo_overflow_show) {
       overflowShowAnimator.start();
-    } else if (v.getId() == R.id.exo_overflow_hide) {
+    } else if (v.getId() == R.id.fw_exo_overflow_hide) {
       overflowHideAnimator.start();
     }
   }
@@ -609,7 +609,7 @@ import java.util.List;
       int timeBarMarginBottom =
           styledPlayerControlView
               .getResources()
-              .getDimensionPixelSize(R.dimen.exo_styled_progress_margin_bottom);
+              .getDimensionPixelSize(R.dimen.fw_exo_styled_progress_margin_bottom);
       timeBarParams.bottomMargin = (isMinimalMode ? 0 : timeBarMarginBottom);
       timeBar.setLayoutParams(timeBarParams);
       if (timeBar instanceof DefaultTimeBar) {
@@ -631,13 +631,13 @@ import java.util.List;
 
   private boolean shouldHideInMinimalMode(View button) {
     int id = button.getId();
-    return (id == R.id.exo_bottom_bar
-        || id == R.id.exo_prev
-        || id == R.id.exo_next
-        || id == R.id.exo_rew
-        || id == R.id.exo_rew_with_amount
-        || id == R.id.exo_ffwd
-        || id == R.id.exo_ffwd_with_amount);
+    return (id == R.id.fw_exo_bottom_bar
+        || id == R.id.fw_exo_prev
+        || id == R.id.fw_exo_next
+        || id == R.id.fw_exo_rew
+        || id == R.id.fw_exo_rew_with_amount
+        || id == R.id.fw_exo_ffwd
+        || id == R.id.fw_exo_ffwd_with_amount);
   }
 
   private void onLayoutWidthChanged() {

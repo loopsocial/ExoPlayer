@@ -52,7 +52,7 @@ public class DefaultTrackNameProvider implements TrackNameProvider {
     } else {
       trackName = buildLanguageOrLabelString(format);
     }
-    return trackName.length() == 0 ? resources.getString(R.string.exo_track_unknown) : trackName;
+    return trackName.length() == 0 ? resources.getString(R.string.fw_exo_track_unknown) : trackName;
   }
 
   private String buildResolutionString(Format format) {
@@ -60,14 +60,14 @@ public class DefaultTrackNameProvider implements TrackNameProvider {
     int height = format.height;
     return width == Format.NO_VALUE || height == Format.NO_VALUE
         ? ""
-        : resources.getString(R.string.exo_track_resolution, width, height);
+        : resources.getString(R.string.fw_exo_track_resolution, width, height);
   }
 
   private String buildBitrateString(Format format) {
     int bitrate = format.bitrate;
     return bitrate == Format.NO_VALUE
         ? ""
-        : resources.getString(R.string.exo_track_bitrate, bitrate / 1000000f);
+        : resources.getString(R.string.fw_exo_track_bitrate, bitrate / 1000000f);
   }
 
   private String buildAudioChannelString(Format format) {
@@ -77,16 +77,16 @@ public class DefaultTrackNameProvider implements TrackNameProvider {
     }
     switch (channelCount) {
       case 1:
-        return resources.getString(R.string.exo_track_mono);
+        return resources.getString(R.string.fw_exo_track_mono);
       case 2:
-        return resources.getString(R.string.exo_track_stereo);
+        return resources.getString(R.string.fw_exo_track_stereo);
       case 6:
       case 7:
-        return resources.getString(R.string.exo_track_surround_5_point_1);
+        return resources.getString(R.string.fw_exo_track_surround_5_point_1);
       case 8:
-        return resources.getString(R.string.exo_track_surround_7_point_1);
+        return resources.getString(R.string.fw_exo_track_surround_7_point_1);
       default:
-        return resources.getString(R.string.exo_track_surround);
+        return resources.getString(R.string.fw_exo_track_surround);
     }
   }
 
@@ -126,17 +126,17 @@ public class DefaultTrackNameProvider implements TrackNameProvider {
   private String buildRoleString(Format format) {
     String roles = "";
     if ((format.roleFlags & C.ROLE_FLAG_ALTERNATE) != 0) {
-      roles = resources.getString(R.string.exo_track_role_alternate);
+      roles = resources.getString(R.string.fw_exo_track_role_alternate);
     }
     if ((format.roleFlags & C.ROLE_FLAG_SUPPLEMENTARY) != 0) {
-      roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_supplementary));
+      roles = joinWithSeparator(roles, resources.getString(R.string.fw_exo_track_role_supplementary));
     }
     if ((format.roleFlags & C.ROLE_FLAG_COMMENTARY) != 0) {
-      roles = joinWithSeparator(roles, resources.getString(R.string.exo_track_role_commentary));
+      roles = joinWithSeparator(roles, resources.getString(R.string.fw_exo_track_role_commentary));
     }
     if ((format.roleFlags & (C.ROLE_FLAG_CAPTION | C.ROLE_FLAG_DESCRIBES_MUSIC_AND_SOUND)) != 0) {
       roles =
-          joinWithSeparator(roles, resources.getString(R.string.exo_track_role_closed_captions));
+          joinWithSeparator(roles, resources.getString(R.string.fw_exo_track_role_closed_captions));
     }
     return roles;
   }
@@ -148,7 +148,7 @@ public class DefaultTrackNameProvider implements TrackNameProvider {
         if (TextUtils.isEmpty(itemList)) {
           itemList = item;
         } else {
-          itemList = resources.getString(R.string.exo_item_list, itemList, item);
+          itemList = resources.getString(R.string.fw_exo_item_list, itemList, item);
         }
       }
     }

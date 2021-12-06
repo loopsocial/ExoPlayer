@@ -115,20 +115,20 @@ public class TrackSelectionView extends LinearLayout {
         (CheckedTextView)
             inflater.inflate(android.R.layout.simple_list_item_single_choice, this, false);
     disableView.setBackgroundResource(selectableItemBackgroundResourceId);
-    disableView.setText(R.string.exo_track_selection_none);
+    disableView.setText(R.string.fw_exo_track_selection_none);
     disableView.setEnabled(false);
     disableView.setFocusable(true);
     disableView.setOnClickListener(componentListener);
     disableView.setVisibility(View.GONE);
     addView(disableView);
     // Divider view.
-    addView(inflater.inflate(R.layout.exo_list_divider, this, false));
+    addView(inflater.inflate(R.layout.fw_exo_list_divider, this, false));
     // View for clearing the override to allow the selector to use its default selection logic.
     defaultView =
         (CheckedTextView)
             inflater.inflate(android.R.layout.simple_list_item_single_choice, this, false);
     defaultView.setBackgroundResource(selectableItemBackgroundResourceId);
-    defaultView.setText(R.string.exo_track_selection_auto);
+    defaultView.setText(R.string.fw_exo_track_selection_auto);
     defaultView.setEnabled(false);
     defaultView.setFocusable(true);
     defaultView.setOnClickListener(componentListener);
@@ -280,7 +280,7 @@ public class TrackSelectionView extends LinearLayout {
 
       for (int trackIndex = 0; trackIndex < trackInfos.length; trackIndex++) {
         if (trackIndex == 0) {
-          addView(inflater.inflate(R.layout.exo_list_divider, this, false));
+          addView(inflater.inflate(R.layout.fw_exo_list_divider, this, false));
         }
         int trackViewLayoutId =
             enableMultipleChoiceForAdaptiveSelections || enableMultipleChoiceForMultipleOverrides

@@ -90,14 +90,14 @@ import java.util.Map;
           @Override
           public boolean onTouchEvent(MotionEvent event) {
             super.onTouchEvent(event);
-            // Return false so that touch events are allowed down into @id/exo_content_frame below.
+            // Return false so that touch events are allowed down into @id/fw_exo_content_frame below.
             return false;
           }
 
           @Override
           public boolean performClick() {
             super.performClick();
-            // Return false so that clicks are allowed down into @id/exo_content_frame below.
+            // Return false so that clicks are allowed down into @id/fw_exo_content_frame below.
             return false;
           }
         };
