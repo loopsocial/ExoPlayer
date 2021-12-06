@@ -22,12 +22,12 @@ and extend, and can be updated through Play Store application updates.
 
 ## Using ExoPlayer
 
-ExoPlayer modules can be obtained from [the Google Maven repository][]. It's
+ExoPlayer modules can be obtained from [the jitpack Maven repository][]. It's
 also possible to clone the repository and depend on the modules locally.
 
-[the Google Maven repository]: https://developer.android.com/studio/build/dependencies#google-maven
+[the jitpack Maven repository]: https://jitpack.io/
 
-### From the Google Maven repository
+### From the jitpack Maven repository
 
 #### 1. Add ExoPlayer module dependencies
 
