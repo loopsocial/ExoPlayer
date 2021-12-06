@@ -1,4 +1,4 @@
-# ExoPlayer <img src="https://img.shields.io/github/v/release/google/ExoPlayer.svg?label=latest"/>
+# ExoPlayer lastest r2.16.1.5
 
 ExoPlayer is an application level media player for Android. It provides an
 alternative to Android’s MediaPlayer API for playing audio and video both
@@ -36,7 +36,7 @@ dependency in the `build.gradle` file of your app module. The following will add
 a dependency to the full library:
 
 ```gradle
-implementation 'com.firework.android.exoplayer:exoplayer:2.X.X'
+implementation 'com.github.loopsocial.ExoPlayer:exoplayer:2.X.X'
 ```
 
 where `2.X.X` is your preferred version.
@@ -46,10 +46,11 @@ modules that you actually need. For example the following will add dependencies
 on the Core, DASH and UI library modules, as might be required for an app that
 only plays DASH content:
 
+
 ```gradle
-implementation 'com.firework.android.exoplayer:exoplayer-core:2.X.X'
-implementation 'com.firework.android.exoplayer:exoplayer-dash:2.X.X'
-implementation 'com.firework.android.exoplayer:exoplayer-ui:2.X.X'
+implementation 'com.github.loopsocial.ExoPlayer:exoplayer-core:2.X.X'
+implementation 'com.github.loopsocial.ExoPlayer:exoplayer-dash:2.X.X'
+implementation 'com.github.loopsocial.ExoPlayer:exoplayer-ui:2.X.X'
 ```
 
 When depending on individual modules they must all be the same version.
@@ -75,7 +76,7 @@ More information on the library and extension modules that are available can be
 found on the [Google Maven ExoPlayer page][].
 
 [extensions directory]: https://github.com/google/ExoPlayer/tree/release-v2/extensions/
-[Google Maven ExoPlayer page]: https://maven.google.com/web/index.html#com.firework.android.exoplayer
+[Google Maven ExoPlayer page]: https://maven.google.com/web/index.html#com.github.loopsocial.ExoPlayer
 
 #### 2. Turn on Java 8 support
 
