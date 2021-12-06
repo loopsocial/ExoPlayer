@@ -83,7 +83,7 @@ public final class MainActivity extends Activity {
     VideoProcessingGLSurfaceView videoProcessingGLSurfaceView =
         new VideoProcessingGLSurfaceView(
             context, requestSecureSurface, new BitmapOverlayVideoProcessor(context));
-    FrameLayout contentFrame = findViewById(R.id.exo_content_frame);
+    FrameLayout contentFrame = findViewById(R.id.fw_exo_content_frame);
     contentFrame.addView(videoProcessingGLSurfaceView);
     this.videoProcessingGLSurfaceView = videoProcessingGLSurfaceView;
   }
