@@ -36,6 +36,6 @@ public class DefaultTrackNameProviderTest {
 
     String name = provider.getTrackName(format);
 
-    assertThat(name).isEqualTo(resources.getString(R.string.exo_track_unknown));
+    assertThat(name).isEqualTo(resources.getString(R.string.fw_exo_track_unknown));
   }
 }

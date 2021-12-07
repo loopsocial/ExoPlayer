@@ -62,7 +62,7 @@ public class ActionFileUpgradeUtilTest {
   @Test
   public void upgradeAndDelete_progressiveActionFile_createsDownloads() throws IOException {
     byte[] actionFileBytes =
-        com.TestUtil.android.exoplayer2.testutil.TestUtil.getByteArray(
+        com.firework.android.exoplayer2.testutil.TestUtil.getByteArray(
             ApplicationProvider.getApplicationContext(),
             "media/offline/action_file_for_download_index_upgrade_progressive.exi");
     try (FileOutputStream output = new FileOutputStream(tempFile)) {
@@ -97,7 +97,7 @@ public class ActionFileUpgradeUtilTest {
   @Test
   public void upgradeAndDelete_dashActionFile_createsDownloads() throws IOException {
     byte[] actionFileBytes =
-        com.TestUtil.android.exoplayer2.testutil.TestUtil.getByteArray(
+        com.firework.android.exoplayer2.testutil.TestUtil.getByteArray(
             ApplicationProvider.getApplicationContext(),
             "media/offline/action_file_for_download_index_upgrade_dash.exi");
     try (FileOutputStream output = new FileOutputStream(tempFile)) {
@@ -136,7 +136,7 @@ public class ActionFileUpgradeUtilTest {
   @Test
   public void upgradeAndDelete_hlsActionFile_createsDownloads() throws IOException {
     byte[] actionFileBytes =
-        com.TestUtil.android.exoplayer2.testutil.TestUtil.getByteArray(
+        com.firework.android.exoplayer2.testutil.TestUtil.getByteArray(
             ApplicationProvider.getApplicationContext(),
             "media/offline/action_file_for_download_index_upgrade_hls.exi");
     try (FileOutputStream output = new FileOutputStream(tempFile)) {
@@ -175,7 +175,7 @@ public class ActionFileUpgradeUtilTest {
   @Test
   public void upgradeAndDelete_smoothStreamingActionFile_createsDownloads() throws IOException {
     byte[] actionFileBytes =
-        com.TestUtil.android.exoplayer2.testutil.TestUtil.getByteArray(
+        com.firework.android.exoplayer2.testutil.TestUtil.getByteArray(
             ApplicationProvider.getApplicationContext(),
             "media/offline/action_file_for_download_index_upgrade_ss.exi");
     try (FileOutputStream output = new FileOutputStream(tempFile)) {

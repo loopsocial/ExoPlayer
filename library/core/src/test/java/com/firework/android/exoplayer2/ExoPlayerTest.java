@@ -222,7 +222,7 @@ public final class ExoPlayerTest {
     player.play();
     runUntilPlaybackState(player, Player.STATE_ENDED);
 
-    InOrder inOrder = inOrder(mockListener);
+    InOrder inOrder =Mockito.inOrder(mockListener);
     inOrder
         .verify(mockListener)
         .onTimelineChanged(
@@ -326,7 +326,7 @@ public final class ExoPlayerTest {
     player.play();
     runUntilPlaybackState(player, Player.STATE_ENDED);
 
-    InOrder inOrder = inOrder(mockPlayerListener);
+    InOrder inOrder = Mockito.inOrder(mockPlayerListener);
     inOrder
         .verify(mockPlayerListener)
         .onTimelineChanged(
@@ -550,7 +550,7 @@ public final class ExoPlayerTest {
     player.play();
     runUntilPlaybackState(player, Player.STATE_ENDED);
 
-    InOrder inOrder = inOrder(mockPlayerListener);
+    InOrder inOrder = Mockito.inOrder(mockPlayerListener);
     inOrder
         .verify(mockPlayerListener)
         .onTimelineChanged(
@@ -605,7 +605,7 @@ public final class ExoPlayerTest {
     // prepared, it immediately exposed a placeholder timeline, but the source info refresh from the
     // second source was suppressed as we replace it with the third source before the update
     // arrives.
-    InOrder inOrder = inOrder(mockPlayerListener);
+    InOrder inOrder = Mockito.inOrder(mockPlayerListener);
     inOrder
         .verify(mockPlayerListener)
         .onTimelineChanged(
@@ -9788,7 +9788,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     // Expect media item transition for repeat mode ONE to be attributed to
     // DISCONTINUITY_REASON_REPEAT.
     inOrder
@@ -10340,7 +10340,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(
@@ -10401,7 +10401,7 @@ public final class ExoPlayerTest {
 
     ArgumentCaptor<PositionInfo> newPositionArgumentCaptor =
         ArgumentCaptor.forClass(PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(
@@ -10466,7 +10466,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(any(), any(), eq(Player.DISCONTINUITY_REASON_AUTO_TRANSITION));
@@ -10553,7 +10553,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(any(), any(), eq(Player.DISCONTINUITY_REASON_AUTO_TRANSITION));
@@ -10627,7 +10627,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(any(), any(), eq(Player.DISCONTINUITY_REASON_AUTO_TRANSITION));
@@ -10685,7 +10685,7 @@ public final class ExoPlayerTest {
     player.play();
     TestPlayerRunHelper.runUntilPlaybackState(player, Player.STATE_ENDED);
 
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onTimelineChanged(timeline.capture(), eq(Player.TIMELINE_CHANGE_REASON_PLAYLIST_CHANGED));
@@ -11109,7 +11109,7 @@ public final class ExoPlayerTest {
         ArgumentCaptor.forClass(Player.PositionInfo.class);
     ArgumentCaptor<Player.PositionInfo> newPosition =
         ArgumentCaptor.forClass(Player.PositionInfo.class);
-    InOrder inOrder = inOrder(listener);
+    InOrder inOrder = Mockito.inOrder(listener);
     inOrder
         .verify(listener)
         .onPositionDiscontinuity(any(), any(), eq(Player.DISCONTINUITY_REASON_AUTO_TRANSITION));

@@ -23,7 +23,7 @@ import com.firework.android.exoplayer2.C;
 import com.firework.android.exoplayer2.MediaItem;
 import com.firework.android.exoplayer2.MediaMetadata;
 import com.firework.android.exoplayer2.util.MimeTypes;
-import com.firework.android.gms.cast.MediaQueueItem;
+import com.google.android.gms.cast.MediaQueueItem;
 import com.google.common.collect.ImmutableMap;
 import org.junit.Test;
 import org.junit.runner.RunWith;
