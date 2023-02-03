@@ -13,23 +13,44 @@
 // limitations under the License.
 
 apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
 afterEvaluate {
+
     publishing {
         repositories {
             maven {
+                name = 'mavenRepo'
                 url = findProperty('mavenRepo') ?: "${buildDir}/repo"
             }
+            maven {
+                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+
+                url = releaseVersion.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+
+                credentials {
+                    username = System.getenv("OSSRH_USERNAME")
+                    password = System.getenv("OSSRH_PASSWORD")
+                }
+            }
         }
+
         publications {
             release(MavenPublication) {
-                from components.release
-                artifact androidSourcesJar
                 groupId = 'com.firework.android.exoplayer'
                 artifactId = releaseArtifactId
                 version releaseVersion
+
+                from components.release
+
+                artifact androidSourcesJar
+
                 pom {
                     name = releaseArtifactId
                     description = releaseDescription
+                    url = 'https://firework.com'
+
                     licenses {
                         license {
                             name = 'The Apache Software License, Version 2.0'
@@ -39,19 +60,32 @@ afterEvaluate {
                     }
                     developers {
                         developer {
-                            name = 'The Android Open Source Project'
+                            id = 'Firework'
+                            name = 'Firework Android Team'
+                            email = 'team-android@fireworkhq.com'
                         }
                     }
+
                     scm {
-                        connection = 'scm:git:https://github.com/google/ExoPlayer.git'
-                        url = 'https://github.com/google/ExoPlayer'
+                        connection = 'scm:git:git@github.com:loopsocial/ExoPlayer.git'
+                        url = 'https://github.com/loopsocial/ExoPlayer'
                     }
                 }
             }
         }
     }
+
+    signing {
+        def signingKeyId = System.getenv("GPG_SIGNING_KEY_ID")
+        def signingSecretKey = System.getenv("GPG_SIGNING_SECRET_KEY")
+        def signingPassword = System.getenv("GPG_SIGNING_PASSWORD")
+        useInMemoryPgpKeys(signingKeyId, signingSecretKey, signingPassword)
+
+        sign publishing.publications.release
+    }
 }
-tasks.withType(PublishToMavenRepository) { it.dependsOn lint, test }
+
+// tasks.withType(PublishToMavenRepository) { it.dependsOn lint, test }
 
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set('sources')
